@@ -2,57 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f65712c-76b8-47ab-a8b3-e05b47f820ed" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/control/ButtonsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/ButtonsMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exam/ExaminationParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exam/ExaminationParts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exam/LangExam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exercise/ExerciseParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exercise/ExerciseParts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exercise/IExercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exercise/IExercises.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Language_2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/control/AddExerciseExam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/control/ButtonsMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/control/ClearDisplay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/control/MenuBarEngRus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/CreateDB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/TableDB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/AddMistakesTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/Counters.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/ExamPS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/ExamText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/ExamTobe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/ExaminationParts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/Exams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/IExam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/LangExam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/MergingPanels.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/Numerations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/PanelTips.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/RecordErrorsExams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/WorkCounter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exercise/ExercisePS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exercise/ExerciseParts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exercise/ExerciseText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exercise/ExerciseToBe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exercise/Exercises.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exercise/IExercises.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/ArgumentsExam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/ArgumentsExercise.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/ArgumentsMyWords.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/ClockDisplay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/EffectColor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/EffectFont.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/Root.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/SoundClick.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/myWords/MyWords.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/TextLevelOne$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/TextLevelOne$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/TextLevelOne$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/TextLevelOne.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/language_2-2.0.4-jar-with-dependencies.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/language_2-2.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/language_2.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -129,8 +79,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,11 +126,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -279,22 +230,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1394" height="916" extended-state="6" />
+    <frame x="0" y="26" width="1920" height="1053" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.16416791" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="7" side_tool="true" visible="true" weight="0.3292683" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.1638207" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.26322752" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20389806" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20597652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -307,6 +257,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -324,9 +275,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -463,13 +411,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exam/LangExam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exam/LangExam.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/exam/MergingPanels.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -586,9 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
