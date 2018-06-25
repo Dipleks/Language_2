@@ -17,6 +17,7 @@ public class ExerciseParts extends ButtonsMenu implements Root, ArgumentsExercis
             buttonApp[i].setText("Задание " + (i+1));
             buttonApp[i].setPrefWidth(widthSize-widthSize/1.07);
             buttonApp[i].setPrefHeight(widthSize-widthSize/1.03);
+            buttonApp[i].setStyle("-fx-focus-color: DARKGREEN;");
             int finalI = i;
             buttonApp[i].setOnAction(event -> {
                 soundClick.soundClick();
@@ -44,6 +45,7 @@ public class ExerciseParts extends ButtonsMenu implements Root, ArgumentsExercis
             buttonNeg[i].setText("Задание " + (i + 1));
             buttonNeg[i].setPrefWidth(widthSize-widthSize/1.07);
             buttonNeg[i].setPrefHeight(widthSize-widthSize/1.03);
+            buttonNeg[i].setStyle("-fx-focus-color: DARKGREEN;");
             int finalI = i;
             buttonNeg[i].setOnAction(event -> {
                 soundClick.soundClick();
@@ -72,6 +74,7 @@ public class ExerciseParts extends ButtonsMenu implements Root, ArgumentsExercis
             buttonQues[i].setText("Задание " + (i + 1));
             buttonQues[i].setPrefWidth(widthSize-widthSize/1.07);
             buttonQues[i].setPrefHeight(widthSize-widthSize/1.03);
+            buttonQues[i].setStyle("-fx-focus-color: DARKGREEN;");
             int finalI = i;
             buttonQues[i].setOnAction(event -> {
                 soundClick.soundClick();

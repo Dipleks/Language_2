@@ -24,6 +24,7 @@ public class ExaminationParts extends ButtonsMenu implements Root, ArgumentsExer
             buttonExam[i].setText("Часть №" + (i + 1));
             buttonExam[i].setPrefWidth(widthSize-widthSize/1.06);
             buttonExam[i].setPrefHeight(widthSize-widthSize/1.03);
+            buttonExam[i].setStyle("-fx-focus-color: DARKGREEN;");
             int finalI = i;
             buttonExam[i].setOnAction(event -> {
 

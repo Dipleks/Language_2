@@ -57,6 +57,7 @@ public class MenuBarEngRus implements Root
         menuWHITE.setDisable(true);
         menuBLACK.setDisable(true);
         menuHelp.setDisable(true);
+        menuTexts.setDisable(true);
 
         menuBar.setMinWidth(widthSize);
         menuTexts.getItems().addAll(textsLevelOne);
@@ -110,8 +111,8 @@ public class MenuBarEngRus implements Root
             label.setPrefSize(widthSize/4, heightSize/4);
             label.setText("Автор программы Ghost \n" + "\n" + "Программа предназначена " +
                     "\nдля изучения Английского языка." +
-                    "\n\n                                    Версия программы: 2.02" +
-                    "\n\n\nИзменения:\nДобавлено выделение ошибок красным цветом.");
+                    "\n\n                                    Версия программы: 2.0.4" +
+                    "\n\n\nИзменения:\nОптимизация кода. Изменение кнопок управления.");
             label.setFont(Font.font("Time New Roman", FontWeight.BOLD,
                     FontPosture.ITALIC, heightSize*0.015));
             label.setAlignment(Pos.CENTER);

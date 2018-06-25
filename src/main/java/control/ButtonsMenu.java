@@ -7,9 +7,7 @@ import interfaceRoot.EffectColor;
 import interfaceRoot.EffectFont;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
-import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 
 import static interfaceRoot.ArgumentsExercise.groupRadBut;
@@ -23,22 +21,14 @@ public class ButtonsMenu
     private HBox lengthButtonExam = new HBox();
 
     private ToggleGroup group = new ToggleGroup();
-    private RadioButton enBut = new RadioButton("English");
-    private RadioButton ruBut = new RadioButton("Русский");
-    private RadioButton exit = new RadioButton("В меню");
+    private ToggleButton enBut = new ToggleButton("English");
+    private ToggleButton ruBut = new ToggleButton("Русский");
+    private ToggleButton exit = new ToggleButton("В меню");
 
     private Label appL = new Label();
     private Label negL = new Label();
     private Label quesL = new Label();
     private Label examL = new Label();
-
-    public RadioButton getEnBut() {
-        return enBut;
-    }
-
-    public RadioButton getRuBut() {
-        return ruBut;
-    }
 
     public Label getExamL() {
         return examL;
@@ -64,6 +54,10 @@ public class ButtonsMenu
         enBut.setToggleGroup(group);
         enBut.setSelected(true);
         ruBut.setToggleGroup(group);
+
+        enBut.setStyle("-fx-color: #E5E5E5; -fx-focus-color: DARKGREEN;");
+        ruBut.setStyle("-fx-color: #E5E5E5; -fx-focus-color: DARKGREEN;");
+        exit.setStyle("-fx-color: #E5E5E5; -fx-focus-color: DARKGREEN;");
         groupRadBut.getChildren().addAll(enBut, ruBut, exit);
         groupRadBut.setSpacing(widthSize-widthSize/1.03);
 //        groupRadBut.setStyle("-fx-border-color: RED");
