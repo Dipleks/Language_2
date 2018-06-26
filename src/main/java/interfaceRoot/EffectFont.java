@@ -20,7 +20,7 @@ public class EffectFont implements Root
 
     public static Font getFontTextLevel() {
         Font fontTextLevel = Font.font("Time New Roman",
-                FontPosture.ITALIC, heightSize * 0.015);
+                FontPosture.ITALIC, heightSize * 0.018);
         return fontTextLevel;
     }
 

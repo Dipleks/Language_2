@@ -15,7 +15,8 @@ import javafx.scene.text.FontWeight;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import myWords.MyWords;
-import texts.TextLevelOne;
+import texts.CallText;
+import texts.TextPanels;
 
 public class MenuBarEngRus implements Root
 {
@@ -57,7 +58,7 @@ public class MenuBarEngRus implements Root
         menuWHITE.setDisable(true);
         menuBLACK.setDisable(true);
         menuHelp.setDisable(true);
-        menuTexts.setDisable(true);
+//        menuTexts.setDisable(true);
 
         menuBar.setMinWidth(widthSize);
         menuTexts.getItems().addAll(textsLevelOne);
@@ -165,8 +166,8 @@ public class MenuBarEngRus implements Root
             ClearDisplay.clearMethod();
             MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
             menuBarEngRus.getMenu();
-            TextLevelOne textLevelOne = new TextLevelOne();
-            textLevelOne.text1();
+            TextPanels textPanels = new TextPanels();
+            textPanels.call();
         });
     }
 }
