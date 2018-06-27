@@ -20,16 +20,5 @@ public interface Root
     Group ROOT = new Group();
     Scene SCENE_ROOT = new Scene(ROOT, widthSize*0.95, heightSize*0.95, EffectColor.getColorScene());
 
-    // Окно первого запуска программы:
-    Label showTextOne = new Label();
-    Label showTextTwo = new Label();
-    VBox showDB = new VBox();
-    HBox showNoDB = new HBox();
-    BorderPane rootShowDB = new BorderPane();
-    Stage showStageDB = new Stage();
-    Scene showSceneDB = new Scene(rootShowDB, 450, 200);
-    Button yesDB = new Button("Да, создать!");
-    Button noDB = new Button("Использовать без БД!");
-
     SoundClick soundClick = new SoundClick();
 }

@@ -29,10 +29,9 @@ import static interfaceRoot.Root.ROOT;
 import static interfaceRoot.Root.heightSize;
 import static interfaceRoot.Root.widthSize;
 
-public class Counters
+class Counters
 {
-    protected void counter() throws SQLException, ClassNotFoundException {
-        if (CreateDB.newCounterRun()) {
+    void counter() {
             ROOT.getChildren().remove(counterVB);
             YES.setFont(EffectFont.getFontTextExam());
             YES.setTextFill(EffectColor.getColorTextClickPERU());
@@ -54,10 +53,6 @@ public class Counters
 //            counterVB.setStyle("-fx-border-color: RED");
             counterVB.getChildren().addAll(YES, counterYES, NO, counterNO, resultExam);
             ROOT.getChildren().add(counterVB);
-        } else {
-            CreateDB.newCounterFirstRun();
-            counter();
-        }
     }
     private void statisticsWindow() {
         Stage statistics = new Stage();
@@ -99,20 +94,7 @@ public class Counters
 
         ObservableList<AddMistakesTable> list = FXCollections.observableArrayList();
         try {
-            Class.forName("org.postgresql.Driver");
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-        Connection connection = null;
-        try {
-            connection = DriverManager.getConnection(TableDB.DB_URL + TableDB.db, TableDB.USER, TableDB.PASS);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        try {
-            assert connection != null;
-            Statement stmt2 = connection.createStatement();
-            ResultSet rs1 = stmt2.executeQuery("SELECT date_time, numb, original, mistakes, part " +
+            ResultSet rs1 = CreateDB.connection().executeQuery("SELECT date_time, numb, original, mistakes, part " +
                     "FROM (SELECT DISTINCT ON (mistakes) date_time, numb, " +
                     "original, mistakes, part FROM counter) AS td " +
                     "ORDER BY date_time;"); //sql запрос
@@ -160,15 +142,10 @@ public class Counters
                 list.add(new AddMistakesTable(result, rs1.getString("numb"),
                         rs1.getString("original"), mistakesCallus, rs1.getString("part")));
             }
+            rs1.close();
+            CreateDB.connection().close();
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                assert connection != null;
-                connection.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
         tableStatisticExam.setItems(list);
         tableStatisticExam.getColumns().addAll(dateTime, returnNumber, returnOriginal, returnMistakes, returnPart);
@@ -181,9 +158,8 @@ public class Counters
     }
     private void counterDeleteStatistic(){
         try {
-            Connection connection = DriverManager.getConnection(TableDB.DB_URL + TableDB.db, TableDB.USER, TableDB.PASS);
-            Statement statement = connection.createStatement();
-            statement.executeUpdate("DELETE FROM counter; ALTER SEQUENCE counter_id_seq RESTART WITH 1;");
+            CreateDB.connection().executeUpdate("DELETE FROM counter; ALTER SEQUENCE counter_id_seq RESTART WITH 1;");
+            CreateDB.connection().close();
         } catch (SQLException ex) {
             ex.printStackTrace();
         }

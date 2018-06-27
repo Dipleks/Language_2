@@ -2,10 +2,6 @@ package exam;
 
 import javafx.scene.layout.HBox;
 
-/**
- * Класс создающий таблицу {@link Exams#getExamList()} с параметрами
- * <>dateTime</>, <>numberText</>, <>originalText</>, <>mistakesText</>, <>numberPart</>
- */
 public class AddMistakesTable
 {
     /** Время и дата ошибки */
@@ -31,7 +27,7 @@ public class AddMistakesTable
      * @param mistakesText - значние полученное от пользователя
      * @param numberPart - номер части Контрольной
      */
-    public AddMistakesTable(String dateTime, String numberText, String originalText, HBox mistakesText, String numberPart) {
+    AddMistakesTable(String dateTime, String numberText, String originalText, HBox mistakesText, String numberPart) {
         this.dateTime = dateTime;
         this.numberText = numberText;
         this.originalText = originalText;

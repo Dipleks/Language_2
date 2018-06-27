@@ -20,7 +20,7 @@ public class Exams implements ArgumentsExam
         this.START = START;
     }
 
-    public void getExamList(IExam iExam){
+    void getExamList(IExam iExam){
         getExamColumnLab(iExam);
     }
 
@@ -76,12 +76,8 @@ public class Exams implements ArgumentsExam
             });
         }
         // Счетчик:
-        try {
-            Counters counters = new Counters();
-            counters.counter();
-        } catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+        Counters counters = new Counters();
+        counters.counter();
         // Нумерация контольных:
         Numerations numerations = new Numerations();
         numerations.numberingOfExam(number, arrayOfOffersExam, START, iExam);

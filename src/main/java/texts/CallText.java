@@ -1,9 +1,13 @@
 package texts;
 
+import db.CreateDB;
 import interfaceRoot.ArgumentsTexts;
 import interfaceRoot.EffectFont;
 import javafx.geometry.Insets;
 import javafx.scene.layout.HBox;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class CallText implements ArgumentsTexts, Texts
 {

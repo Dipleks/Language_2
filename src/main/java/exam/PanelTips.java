@@ -11,9 +11,9 @@ import javafx.stage.Stage;
 import static interfaceRoot.Root.heightSize;
 import static interfaceRoot.Root.widthSize;
 
-public class PanelTips
+class PanelTips
 {
-    protected static void panes(String str) {
+    static void panes(String str) {
         Stage win = new Stage();
         Label label = new Label(str);
         Button button = new Button("Закрыть");

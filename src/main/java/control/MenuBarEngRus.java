@@ -15,7 +15,6 @@ import javafx.scene.text.FontWeight;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import myWords.MyWords;
-import texts.CallText;
 import texts.TextPanels;
 
 public class MenuBarEngRus implements Root
@@ -72,7 +71,7 @@ public class MenuBarEngRus implements Root
     }
     private void getMenu_my_words() {
 
-        if (CreateDB.connectDB()) {
+        if (CreateDB.checkConnection()) {
             menu_my_words.setOnAction(event -> {
                 ClearDisplay.clearMethod();
                 MenuBarEngRus menuBarEngRus = new MenuBarEngRus();

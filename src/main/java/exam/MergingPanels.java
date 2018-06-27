@@ -12,9 +12,9 @@ import static interfaceRoot.Root.ROOT;
 import static interfaceRoot.Root.heightSize;
 import static interfaceRoot.Root.widthSize;
 
-public class MergingPanels
+class MergingPanels
 {
-    protected void addPaneExam(Label[] number, Label[] correctly, Label[] arrayOfOffersExam){
+    void addPaneExam(Label[] number, Label[] correctly, Label[] arrayOfOffersExam){
         //          numberColumn.setStyle("-fx-border-color: RED");
         numberColumn.setSpacing(heightSize-heightSize/1.009);
         numberColumn.setPadding(new Insets(0, 0, 0, 0));

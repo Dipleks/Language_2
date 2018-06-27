@@ -1,8 +1,12 @@
 package texts;
 
+import db.CreateDB;
 import javafx.scene.control.Pagination;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.HBox;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class TextPanels extends CallText
 {
@@ -30,26 +34,48 @@ public class TextPanels extends CallText
         buttonsTransfer.getChildren().addAll(translation, origin_translation);
         ButtonsTransfer buttons = new ButtonsTransfer();
 
-        if (s.byteValue()==0){
-            ROOT.getChildren().remove(buttonsTransfer);
-            ROOT.getChildren().add(buttonsTransfer);
-            buttons.getTransfer(textOneRu, textOneEn);
-            buttons.getOriginTranslation(textOneRu);
-            setText(textOneEn);
-        } else if (s.byteValue()==1){
-            ROOT.getChildren().remove(buttonsTransfer);
-            ROOT.getChildren().add(buttonsTransfer);
-            buttons.getTransfer(textTwoRu, textTwoEn);
-            buttons.getOriginTranslation(textTwoRu);
-            setText(textTwoEn);
-        } else if (s.byteValue()==2){
-            ROOT.getChildren().remove(buttonsTransfer);
-            ROOT.getChildren().add(buttonsTransfer);
-            buttons.getTransfer(textThreeRu, textThreeEn);
-            buttons.getOriginTranslation(textThreeRu);
-            setText(textThreeEn);
+        for (int i = 0; i < NumberOfLines.numberOfLines(); i++) {
+            if (s.byteValue()==i){
+                ROOT.getChildren().remove(buttonsTransfer);
+                ROOT.getChildren().add(buttonsTransfer);
+                buttons.getTransfer(textRUS(i), textENG(i));
+                buttons.addMyText();
+                setText(textENG(i));
+            }
         }
-
         return scrollPane;
+    }
+
+    private String textENG(int i){
+        ResultSet resultSet = null;
+        String str = null;
+        try {
+            resultSet = CreateDB.connection().executeQuery("SELECT text_eng FROM my_text WHERE id = "+ (i+1) +";");
+            resultSet.next();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            str = resultSet.getString("text_eng");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return str;
+    }
+    private String textRUS(int i){
+        ResultSet resultSet = null;
+        String str = null;
+        try {
+            resultSet = CreateDB.connection().executeQuery("SELECT text_rus FROM my_text WHERE id = "+ (i+1) +";");
+            resultSet.next();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            str = resultSet.getString("text_rus");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return str;
     }
 }
