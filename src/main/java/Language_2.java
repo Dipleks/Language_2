@@ -42,7 +42,7 @@ public class Language_2 extends Application implements Root
 
         ROOT.getChildren().addAll();
 
-        WINDOW.setTitle("EngRus");
+        WINDOW.setTitle("language_2");
         WINDOW.setMaximized(true); //устанавливаем размер окна на весь экран
         WINDOW.setScene(SCENE_ROOT);
         WINDOW.show();

@@ -35,10 +35,10 @@ public class AddExerciseExam
     private Exercises[] appToBe = new Exercises[6];
 
     /** отрицания To Be */
-    private Exercises[] negToBe = new Exercises[4];
+    private Exercises[] negToBe = new Exercises[2];
 
     /** вопросы To Be */
-    private Exercises[] quesToBe = new Exercises[7];
+    private Exercises[] quesToBe = new Exercises[8];
 
     /** контрольные To Be */
     private Exams[] examToBe = new Exams[1];
@@ -144,21 +144,20 @@ public class AddExerciseExam
         appToBe[4] = new Exercises(new Label[15], new Label[15],120, 135);
         appToBe[5] = new Exercises(new Label[19], new Label[19],150, 169);
 
-        negToBe[0] = new Exercises(new Label[15], new Label[15],193, 208);
-//        negToBe[1] = new Exercises(new Label[15], new Label[15],223, 238);
-//        negToBe[2] = new Exercises(new Label[15], new Label[15],253, 268);
-//        negToBe[3] = new Exercises(new Label[14], new Label[15],283, 297);
+        negToBe[0] = new Exercises(new Label[15], new Label[15],188, 203);
+        negToBe[1] = new Exercises(new Label[5], new Label[5],218, 223);
 
-        quesToBe[0] = new Exercises(new Label[15], new Label[15],312, 327);
-//        quesToBe[1] = new Exercises(new Label[15], new Label[15],342, 357);
-//        quesToBe[2] = new Exercises(new Label[15], new Label[15],372, 387);
-//        quesToBe[3] = new Exercises(new Label[15], new Label[15],402, 417);
-//        quesToBe[4] = new Exercises(new Label[15], new Label[15],432, 447);
-//        quesToBe[5] = new Exercises(new Label[15], new Label[15],462, 477);
-//        quesToBe[6] = new Exercises(new Label[12], new Label[12],492, 504);
+        quesToBe[0] = new Exercises(new Label[15], new Label[15],228, 243);
+        quesToBe[1] = new Exercises(new Label[15], new Label[15],258, 273);
+        quesToBe[2] = new Exercises(new Label[15], new Label[15],288, 303);
+        quesToBe[3] = new Exercises(new Label[15], new Label[15],318, 333);
+        quesToBe[4] = new Exercises(new Label[15], new Label[15],348, 363);
+        quesToBe[5] = new Exercises(new Label[15], new Label[15],378, 393);
+        quesToBe[6] = new Exercises(new Label[15], new Label[15],408, 423);
+        quesToBe[7] = new Exercises(new Label[12], new Label[12],438, 450);
 
         exercisePartsToBe.exercise(appToBe, negToBe, quesToBe,
-                new Button[6], new Button[1], new Button[1], new ExerciseToBe());
+                new Button[6], new Button[2], new Button[8], new ExerciseToBe());
     }
 
     /**
