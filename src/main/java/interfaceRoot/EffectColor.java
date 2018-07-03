@@ -43,4 +43,9 @@ public class EffectColor
         Color colorClock = Color.DARKGREEN;
         return colorClock;
     }
+
+    public static Color getColorTextTITLE() {
+        Color colorTextClick = Color.DARKGRAY;
+        return colorTextClick;
+    }
 }

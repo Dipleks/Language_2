@@ -11,6 +11,7 @@ import java.sql.SQLException;
 
 public class CallText implements ArgumentsTexts, Texts
 {
+    private ContextMenuTexts contextMenuTexts = new ContextMenuTexts();
 
     protected void setText(String s){
         HBox hBox = new HBox();
@@ -21,6 +22,7 @@ public class CallText implements ArgumentsTexts, Texts
         text.setWrapText(true);
         text.setPadding(new Insets(10, 0, 0, 20));
         text.setPrefWidth(scrollPane.getPrefWidth()/1.055);
+        text.setOnContextMenuRequested(event -> contextMenuTexts.menuTexts().show(text, event.getScreenX(), event.getScreenY()));
 
         textRU.setFont(EffectFont.getFontTextLevel());
         textRU.setWrapText(true);

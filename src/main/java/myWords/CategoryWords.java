@@ -2,7 +2,7 @@ package myWords;
 
 public class CategoryWords
 {
-    String category;
+    private String category;
 
     CategoryWords(String category) {
         this.category = category;

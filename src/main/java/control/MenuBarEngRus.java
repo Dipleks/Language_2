@@ -107,7 +107,7 @@ public class MenuBarEngRus implements Root
             StackPane stackPane = new StackPane();
             Scene scene = new Scene(stackPane, widthSize/3, heightSize/3);
             Label label = new Label();
-//                label.setStyle("-fx-border-color: RED");
+//                TITLE.setStyle("-fx-border-color: RED");
             label.setPrefSize(widthSize/4, heightSize/4);
             label.setText("Автор программы Ghost \n" + "\n" + "Программа предназначена " +
                     "\nдля изучения Английского языка." +

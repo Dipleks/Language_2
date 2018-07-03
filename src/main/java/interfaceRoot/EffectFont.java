@@ -29,4 +29,10 @@ public class EffectFont implements Root
                 FontPosture.ITALIC, heightSize * 0.018);
         return fontTitle;
     }
+
+    public static Font getFontTITLE() {
+        Font fontText = Font.font("Time New Roman", FontWeight.BOLD,
+                FontPosture.ITALIC, heightSize * 0.020);
+        return fontText;
+    }
 }

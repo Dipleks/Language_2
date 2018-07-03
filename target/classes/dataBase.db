@@ -1,0 +1,11 @@
+--создаем БД:
+CREATE DATABASE text_proposal;
+
+--создаем таблицу для статистики ответов контрольных:
+CREATE TABLE IF NOT EXISTS counter
+(id SERIAL PRIMARY KEY, date_time timestamp, numb text, original text, mistakes text, part VARCHAR(12));
+
+--удаление таблицы "Счетчик контрольных":
+DELETE FROM counter;
+
+--пример ввода даты INSERT INTO counter VALUES ('01.06.2018 14:45', 5, 0);

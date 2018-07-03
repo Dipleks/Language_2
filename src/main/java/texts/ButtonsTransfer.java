@@ -1,5 +1,7 @@
 package texts;
 
+import control.ClearDisplay;
+import control.MenuBarEngRus;
 import db.CreateDB;
 import interfaceRoot.ArgumentsTexts;
 import interfaceRoot.EffectFont;
@@ -7,15 +9,11 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.sql.SQLException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 class ButtonsTransfer implements ArgumentsTexts, Texts
 {
@@ -39,7 +37,7 @@ class ButtonsTransfer implements ArgumentsTexts, Texts
     }
 
     Button addMyText() {
-        origin_translation.setOnAction(e -> {
+        add_my_test.setOnAction(e -> {
 
             VBox vBox = new VBox();
 
@@ -69,7 +67,7 @@ class ButtonsTransfer implements ArgumentsTexts, Texts
 //            panelAddText.initModality(Modality.APPLICATION_MODAL);
             panelAddText.show();
         });
-        return origin_translation;
+        return add_my_test;
     }
     private void getNewText() {
         addNewText.setOnAction(event -> {
@@ -83,6 +81,12 @@ class ButtonsTransfer implements ArgumentsTexts, Texts
                     nameText.clear();
                     textRus.clear();
                     textEng.clear();
+//                    ClearDisplay.clearMethod();
+//                    MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
+//                    menuBarEngRus.getMenu();
+//                    TextPanels textPanels = new TextPanels();
+//                    textPanels.call();
+
                     panelAddText.close();
                     CreateDB.connection().close();
                 } catch (SQLException e) {
