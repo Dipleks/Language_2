@@ -32,7 +32,7 @@ public class ExaminationParts extends ButtonsMenu implements Root, ArgumentsExer
                 nameExam.setFont(EffectFont.getFontTextExam());
                 nameExam.setTextFill(EffectColor.getColorText());
 
-                soundClick.soundClick();
+                soundClick.soundClick(1);
                 groupRadBut.setSpacing(widthSize-widthSize/1.03);
 //                groupRadBut.setStyle("-fx-border-color: RED");
                 groupRadBut.setPadding(new Insets(10, 10, 10, 10));

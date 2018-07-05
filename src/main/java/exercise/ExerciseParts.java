@@ -20,7 +20,7 @@ public class ExerciseParts extends ButtonsMenu implements Root, ArgumentsExercis
             buttonApp[i].setStyle("-fx-focus-color: DARKGREEN;");
             int finalI = i;
             buttonApp[i].setOnAction(event -> {
-                soundClick.soundClick();
+                soundClick.soundClick(1);
                 radioBut();
                 groupButton(app, finalI, iExercises);
                 app[finalI].getEnRu("LEFT", "EN", iExercises);
@@ -48,7 +48,7 @@ public class ExerciseParts extends ButtonsMenu implements Root, ArgumentsExercis
             buttonNeg[i].setStyle("-fx-focus-color: DARKGREEN;");
             int finalI = i;
             buttonNeg[i].setOnAction(event -> {
-                soundClick.soundClick();
+                soundClick.soundClick(1);
                 radioBut();
                 groupButton(neg, finalI, iExercises);
                 neg[finalI].getEnRu("LEFT", "EN", iExercises);
@@ -77,7 +77,7 @@ public class ExerciseParts extends ButtonsMenu implements Root, ArgumentsExercis
             buttonQues[i].setStyle("-fx-focus-color: DARKGREEN;");
             int finalI = i;
             buttonQues[i].setOnAction(event -> {
-                soundClick.soundClick();
+                soundClick.soundClick(1);
                 radioBut();
                 groupButton(ques, finalI, iExercises);
                 ques[finalI].getEnRu("LEFT", "EN", iExercises);

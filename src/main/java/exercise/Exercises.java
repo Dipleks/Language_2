@@ -53,7 +53,7 @@ public class Exercises implements ArgumentsExercise
             int finalI = i;
             list[i].setCursor(Cursor.HAND);
             list[i].setOnMouseClicked(event -> {
-                soundClick.soundClick();
+                soundClick.soundClick(1);
                 if (list[finalI].getText().equals(iExercises.methodExercise(finalI, START_CLOSE, set))){
                     list[finalI].setText(iExercises.methodExercise(finalI, START_CLOSE, get));
                     list[finalI].setTextFill(EffectColor.getColorTextClick());
