@@ -17,6 +17,8 @@ import javafx.stage.Stage;
 import myWords.MyWords;
 import texts.TextPanels;
 
+import java.sql.SQLException;
+
 public class MenuBarEngRus implements Root
 {
     private final MenuBar menuBar = new MenuBar();

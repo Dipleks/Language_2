@@ -1,11 +1,13 @@
 package texts;
 
+import control.ClearDisplay;
 import db.CreateDB;
 import interfaceRoot.EffectColor;
 import interfaceRoot.EffectFont;
 import javafx.scene.control.Pagination;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -19,13 +21,18 @@ public class TextPanels extends CallText
     }
 
     private Pagination getPagination () {
+
         pagination.setPageFactory(this::getScroll);
         pagination.setMaxPageIndicatorCount(15);
-        pagination.setLayoutX(widthSize/6);
-        pagination.setLayoutY(heightSize/8);
+//        pagination.setLayoutX(widthSize/6);
+//        pagination.setLayoutY(heightSize/8);
         pagination.setPrefSize(widthSize/1.5, heightSize/1.5);
 
-        ROOT.getChildren().addAll(pagination, listNameText.getListName(), TITLE);
+        stackPaneText.getChildren().addAll(pagination);
+        stackPaneText.setLayoutX(widthSize/6);
+        stackPaneText.setLayoutY(heightSize/8);
+
+        ROOT.getChildren().addAll(stackPaneText, listNameText.getListName(), TITLE);
         return pagination;
     }
 
@@ -55,7 +62,6 @@ public class TextPanels extends CallText
                 TITLE.setText(getNameTitle(pagination.getCurrentPageIndex()+1));
             }
         }
-
 
         return scrollPane;
     }

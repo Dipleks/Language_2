@@ -78,6 +78,9 @@ class ButtonsTransfer implements ArgumentsTexts, Texts
                     // TODO и обратную замену при выводе на экран
                     CreateDB.connection().executeUpdate("INSERT INTO my_text (title_text, text_eng, text_rus) " +
                             "VALUES ('" + nameText.getText() + " ', '" + textEng.getText() + "', '" + textRus.getText() + "');");
+
+//                    list.clear();
+
                     nameText.clear();
                     textRus.clear();
                     textEng.clear();
@@ -89,6 +92,12 @@ class ButtonsTransfer implements ArgumentsTexts, Texts
 
                     panelAddText.close();
                     CreateDB.connection().close();
+
+//                    ListNameText listNameText = new ListNameText();
+//                    listNameText.getListName();
+
+//                    TextPanels textPanels = new TextPanels();
+//                    textPanels.call();
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }

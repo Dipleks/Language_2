@@ -1,13 +1,9 @@
 package texts;
 
-import db.CreateDB;
 import interfaceRoot.ArgumentsTexts;
 import interfaceRoot.EffectFont;
 import javafx.geometry.Insets;
 import javafx.scene.layout.HBox;
-
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 public class CallText implements ArgumentsTexts, Texts
 {
@@ -22,7 +18,8 @@ public class CallText implements ArgumentsTexts, Texts
         text.setWrapText(true);
         text.setPadding(new Insets(10, 0, 0, 20));
         text.setPrefWidth(scrollPane.getPrefWidth()/1.055);
-        text.setOnContextMenuRequested(event -> contextMenuTexts.menuTexts().show(text, event.getScreenX(), event.getScreenY()));
+        text.setOnContextMenuRequested(event ->
+                contextMenuTexts.menuTexts().show(text, event.getScreenX(), event.getScreenY()));
 
         textRU.setFont(EffectFont.getFontTextLevel());
         textRU.setWrapText(true);

@@ -2,76 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f65712c-76b8-47ab-a8b3-e05b47f820ed" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/click.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/music.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/ne_verno.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/transition.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/verno.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exam/ExaminationParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exam/ExaminationParts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exam/Exams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exam/Exams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exam/Numerations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exam/Numerations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exercise/ExerciseParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exercise/ExerciseParts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exercise/Exercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exercise/Exercises.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaceRoot/SoundClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaceRoot/SoundClick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dataBase.db" beforeDir="false" afterPath="$PROJECT_DIR$/resources/dataBase.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/my_text.db" beforeDir="false" afterPath="$PROJECT_DIR$/resources/my_text.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/my_words.db" beforeDir="false" afterPath="$PROJECT_DIR$/resources/my_words.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Language_2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/control/AddExerciseExam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/control/ButtonsMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/control/ClearDisplay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/control/MenuBarEngRus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataBase.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/CreateDB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/TableDB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/AddMistakesTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/Counters.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/ExamPS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/ExamText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/ExamTobe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/ExaminationParts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/Exams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/IExam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/MergingPanels.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/Numerations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/PanelTips.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/RecordErrorsExams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/WorkCounter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exercise/ExercisePS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exercise/ExerciseParts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exercise/ExerciseText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exercise/ExerciseToBe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exercise/Exercises.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exercise/IExercises.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/ArgumentsExam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/ArgumentsExercise.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/ArgumentsMyWords.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/ArgumentsTexts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/ClockDisplay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/EffectColor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/EffectFont.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/Root.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/SoundClick.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/myWords/CategoryWords.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/myWords/ContextMenuMyWords.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/myWords/ListCategory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/myWords/MyWords.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/myWords/NewWords.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/myWords/RestartTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/myWords/Search.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my_text.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my_words.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/ButtonsTransfer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/CallText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/ContextMenuTexts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/ListNameText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/MaxCountText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/NameText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/NumberOfLines.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/TextPanels.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/Texts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/ClearDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/ClearDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsTexts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsTexts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/texts/ButtonsTransfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/texts/ButtonsTransfer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/texts/CallText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/texts/CallText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/texts/ListNameText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/texts/ListNameText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/texts/TextPanels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/texts/TextPanels.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -83,7 +21,81 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="TextPanels.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/texts/TextPanels.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
+              <folding>
+                <element signature="e#430#431#0" expanded="true" />
+                <element signature="e#461#462#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ButtonsTransfer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/texts/ButtonsTransfer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-360">
+              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArgumentsTexts.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsTexts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CallText.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/texts/CallText.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClearDisplay.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/control/ClearDisplay.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateDB.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/db/CreateDB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListNameText.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/texts/ListNameText.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -99,9 +111,8 @@
       <find>'</find>
       <find>’</find>
       <find>^</find>
-      <find />
-      <find />
       <find>private final</find>
+      <find>getCountTable</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -127,7 +138,6 @@
         <option value="$PROJECT_DIR$/src/main/java/texts/NumberOfLines.java" />
         <option value="$PROJECT_DIR$/src/main/java/myWords/ContextMenuMyWords.java" />
         <option value="$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsMyWords.java" />
-        <option value="$PROJECT_DIR$/src/main/java/db/CreateDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/myWords/NewWords.java" />
         <option value="$PROJECT_DIR$/src/main/java/myWords/RestartTable.java" />
         <option value="$PROJECT_DIR$/src/main/java/myWords/Search.java" />
@@ -143,15 +153,7 @@
         <option value="$PROJECT_DIR$/src/main/java/interfaceRoot/EffectFont.java" />
         <option value="$PROJECT_DIR$/src/main/java/interfaceRoot/EffectColor.java" />
         <option value="$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsMenuBar.java" />
-        <option value="$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/texts/CallText.java" />
-        <option value="$PROJECT_DIR$/src/main/java/texts/ContextMenuTexts.java" />
         <option value="$PROJECT_DIR$/src/main/java/texts/MaxCountText.java" />
-        <option value="$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsTexts.java" />
-        <option value="$PROJECT_DIR$/src/main/java/texts/ButtonsTransfer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/control/ClearDisplay.java" />
-        <option value="$PROJECT_DIR$/src/main/java/texts/ListNameText.java" />
-        <option value="$PROJECT_DIR$/src/main/java/texts/TextPanels.java" />
         <option value="$PROJECT_DIR$/src/main/resources/dataBase.db" />
         <option value="$PROJECT_DIR$/src/main/java/exam/ExaminationParts.java" />
         <option value="$PROJECT_DIR$/src/main/java/exam/Exams.java" />
@@ -161,6 +163,15 @@
         <option value="$PROJECT_DIR$/src/main/resources/music.db" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/interfaceRoot/SoundClick.java" />
+        <option value="$PROJECT_DIR$/src/main/java/texts/CallText.java" />
+        <option value="$PROJECT_DIR$/src/main/java/texts/ContextMenuTexts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/texts/ButtonsTransfer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/texts/TextPanels.java" />
+        <option value="$PROJECT_DIR$/src/main/java/texts/ListNameText.java" />
+        <option value="$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsTexts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/control/ClearDisplay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/db/CreateDB.java" />
       </list>
     </option>
   </component>
@@ -206,7 +217,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -239,16 +249,84 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="language_2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="language_2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaceRoot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="language_2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="myWords" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="language_2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="texts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
+            <path>
+              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 (3) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 (3) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 (3) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javafx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 (3) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javafx" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 (3) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javafx" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -384,12 +462,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.16260745" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.261708" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.261708" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19126074" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3292011" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19412607" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -401,6 +478,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3292011" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -412,20 +490,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/myWords/CategoryWords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/texts/NumberOfLines.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/interfaceRoot/EffectFont.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -455,66 +519,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/myWords/RestartTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/texts/CallText.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/myWords/ContextMenuMyWords.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="40" selection-end-line="38" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/myWords/NewWords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/texts/TextPanels.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="27" column="72" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsTexts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/texts/MaxCountText.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/texts/ListNameText.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/texts/ButtonsTransfer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -543,27 +551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/control/ClearDisplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="164" column="30" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/CreateDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -728,24 +715,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Language_2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/music.db">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="83" selection-start-line="1" selection-start-column="83" selection-end-line="1" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/texts/ContextMenuTexts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="91" column="35" lean-forward="true" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -763,6 +736,121 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Language_2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsMyWords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/myWords/NewWords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="34" column="41" lean-forward="true" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/texts/ContextMenuTexts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="98" column="39" selection-start-line="98" selection-start-column="39" selection-end-line="98" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/myWords/RestartTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/javafx-src.zip!/javafx/scene/layout/Region.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="1078" column="24" selection-start-line="1078" selection-start-column="24" selection-end-line="1078" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/texts/CallText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/texts/MaxCountText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/texts/TextPanels.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
+          <folding>
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsTexts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/control/ClearDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="167" selection-start-line="167" selection-end-line="167" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/texts/ListNameText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/CreateDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/texts/ButtonsTransfer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
         </state>
       </provider>
     </entry>

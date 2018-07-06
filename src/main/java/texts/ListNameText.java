@@ -1,16 +1,12 @@
 package texts;
 
-import control.ClearDisplay;
-import control.MenuBarEngRus;
 import db.CreateDB;
 import interfaceRoot.ArgumentsTexts;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.ChoiceBox;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 import static texts.MaxCountText.getCountTable;
 
 class ListNameText implements ArgumentsTexts
@@ -18,6 +14,7 @@ class ListNameText implements ArgumentsTexts
 
     ChoiceBox<NameText> getListName() {
 
+//        ROOT.getChildren().remove(listName);
         listName.setLayoutX(widthSize/1.5);
         listName.setLayoutY(heightSize/14);
         listName.setItems(listName());
@@ -28,7 +25,7 @@ class ListNameText implements ArgumentsTexts
     // Получаем список названий текстов:
     private ObservableList<NameText> listName() {
         NameText[] title = new NameText[1000];
-        ObservableList<NameText> list = FXCollections.observableArrayList();
+
         ResultSet resultSet;
         String str;
         try {

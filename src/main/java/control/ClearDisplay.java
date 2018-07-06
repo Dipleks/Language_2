@@ -30,6 +30,8 @@ public class ClearDisplay implements ArgumentsExam, ArgumentsExercise, Arguments
         numberColumn.getChildren().clear();
         improveV.getChildren().clear();
         counterVB.getChildren().clear();
+        stackPaneText.getChildren().clear();
+        list.clear();
         ROOT.getChildren().clear();
 
         ClockDisplay.clock();

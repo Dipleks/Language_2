@@ -1,18 +1,19 @@
 package interfaceRoot;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.scene.control.*;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import texts.NameText;
 import texts.NumberOfLines;
 
-import static texts.MaxCountText.getCountTable;
-
 public interface ArgumentsTexts extends Root
 {
     Pagination pagination = new Pagination(NumberOfLines.numberOfLines(), 0);
     ScrollPane scrollPane = new ScrollPane();
+    StackPane stackPaneText = new StackPane();
+
     Label text = new Label();
     Label textRU = new Label();
     Button translation = new Button("Перевод");
@@ -37,4 +38,5 @@ public interface ArgumentsTexts extends Root
 
     ChoiceBox<NameText> listName = new ChoiceBox<>();
     Label TITLE = new Label();
+    ObservableList<NameText> list = FXCollections.observableArrayList();
 }
