@@ -3,6 +3,7 @@ package texts;
 import control.ClearDisplay;
 import control.MenuBarEngRus;
 import db.CreateDB;
+import db.TableDB;
 import interfaceRoot.ArgumentsTexts;
 import interfaceRoot.EffectFont;
 import javafx.geometry.Insets;
@@ -13,9 +14,12 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 
-class ButtonsTransfer implements ArgumentsTexts, Texts
+class ButtonsTransfer implements ArgumentsTexts, Texts, TableDB
 {
     private Stage panelAddText = new Stage();
 
@@ -76,7 +80,17 @@ class ButtonsTransfer implements ArgumentsTexts, Texts
                 try {
                     // TODO добавить авто замену одинарных ковычик на опостроф при получении текста из TextArea
                     // TODO и обратную замену при выводе на экран
-                    CreateDB.connection().executeUpdate("INSERT INTO my_text (title_text, text_eng, text_rus) " +
+                    Statement statement = null;
+                    Connection connection = null;
+                    try {
+                        Class.forName("org.postgresql.Driver");
+                        connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+                        statement = connection.createStatement();
+                    } catch (ClassNotFoundException | SQLException e) {
+                        e.printStackTrace();
+                    }
+                    assert statement != null;
+                    statement.executeUpdate("INSERT INTO my_text (title_text, text_eng, text_rus) " +
                             "VALUES ('" + nameText.getText() + " ', '" + textEng.getText() + "', '" + textRus.getText() + "');");
 
 //                    list.clear();
@@ -91,7 +105,8 @@ class ButtonsTransfer implements ArgumentsTexts, Texts
 //                    textPanels.call();
 
                     panelAddText.close();
-                    CreateDB.connection().close();
+                    statement.close();
+                    connection.close();
 
 //                    ListNameText listNameText = new ListNameText();
 //                    listNameText.getListName();

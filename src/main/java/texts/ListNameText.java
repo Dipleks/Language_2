@@ -1,15 +1,18 @@
 package texts;
 
 import db.CreateDB;
+import db.TableDB;
 import interfaceRoot.ArgumentsTexts;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.ChoiceBox;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+
+import java.sql.*;
+
+import static db.TableDB.DB_URL;
 import static texts.MaxCountText.getCountTable;
 
-class ListNameText implements ArgumentsTexts
+class ListNameText implements ArgumentsTexts, TableDB
 {
 
     ChoiceBox<NameText> getListName() {
@@ -26,10 +29,14 @@ class ListNameText implements ArgumentsTexts
     private ObservableList<NameText> listName() {
         NameText[] title = new NameText[1000];
 
-        ResultSet resultSet;
+        Statement statement;
+        Connection connection;
         String str;
         try {
-            resultSet = CreateDB.connection().executeQuery("SELECT title_text FROM my_text;");
+            Class.forName("org.postgresql.Driver");
+            connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+            statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT title_text FROM my_text;");
 
             for (int i = 0; i < getCountTable(); i++) {
                 resultSet.next();
@@ -39,8 +46,9 @@ class ListNameText implements ArgumentsTexts
             }
             listName.setValue(title[0]);
             resultSet.close();
-            CreateDB.connection().close();
-        } catch (SQLException e) {
+            statement.close();
+            connection.close();
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
 
@@ -49,16 +57,22 @@ class ListNameText implements ArgumentsTexts
 
     // Получаем номер текста
     int getNumberText(){
-        ResultSet resultSet;
+
+        Statement statement;
+        Connection connection;
         int number = 0;
         try {
-            resultSet = CreateDB.connection().executeQuery("SELECT id FROM my_text WHERE title_text = '"+ listName.getValue() +"';");
+            Class.forName("org.postgresql.Driver");
+            connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+            statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT id FROM my_text WHERE title_text = '"+ listName.getValue() +"';");
             while (resultSet.next()){
                 number = resultSet.getInt("id");
             }
             resultSet.close();
-            CreateDB.connection().close();
-        } catch (SQLException e) {
+            statement.close();
+            connection.close();
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         return number;

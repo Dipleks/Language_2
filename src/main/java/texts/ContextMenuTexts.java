@@ -1,6 +1,7 @@
 package texts;
 
 import db.CreateDB;
+import db.TableDB;
 import interfaceRoot.ArgumentsTexts;
 import interfaceRoot.EffectFont;
 import javafx.geometry.Insets;
@@ -12,10 +13,9 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
-public class ContextMenuTexts implements ArgumentsTexts
+public class ContextMenuTexts implements ArgumentsTexts, TableDB
 {
     private MenuItem menuEditTexts = new MenuItem("Редактировать");
     private Stage panelEditTexts = new Stage();
@@ -92,12 +92,20 @@ public class ContextMenuTexts implements ArgumentsTexts
     // Действие кнопок OK и CANCEL:
     private void ok_cancel(){
         OK.setOnAction(event -> {
+            Statement statement = null;
+            Connection connection = null;
             try {
-                CreateDB.connection().executeUpdate("UPDATE my_text SET title_text = '" + editName.getText() + "', text_eng = '"+ textEdit.getText()+"', text_rus = '"+ textEditRU.getText()+"' WHERE id = "+ pagination.getCurrentPageIndex()+"+1;");
-                CreateDB.connection().close();
+                Class.forName("org.postgresql.Driver");
+                connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+                statement = connection.createStatement();
+                statement.executeUpdate("UPDATE my_text SET title_text = '" + editName.getText()
+                        + "', text_eng = '"+ textEdit.getText()+"', text_rus = '"+ textEditRU.getText()
+                        + "' WHERE id = "+ pagination.getCurrentPageIndex()+"+1;");
+                statement.close();
+                connection.close();
                 SAVE_EDIT.close();
                 panelEditTexts.close();
-            } catch (SQLException e) {
+            } catch (ClassNotFoundException | SQLException e) {
                 e.printStackTrace();
             }
         });
@@ -108,42 +116,60 @@ public class ContextMenuTexts implements ArgumentsTexts
 
     private String getTextEN(){
         String s = null;
+        Statement statement;
+        Connection connection;
         try {
-            ResultSet resultSet = CreateDB.connection().executeQuery("SELECT text_eng FROM my_text WHERE id = " + (pagination.getCurrentPageIndex()+1) + ";");
-            CreateDB.connection().close();
+            Class.forName("org.postgresql.Driver");
+            connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+            statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT text_eng FROM my_text WHERE id = "
+                    + (pagination.getCurrentPageIndex()+1) + ";");
             resultSet.next();
             s = resultSet.getString("text_eng");
             resultSet.close();
-            CreateDB.connection().close();
-        } catch (SQLException e) {
+            statement.close();
+            connection.close();
+        } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
         return s;
     }
     private String getTextRu(){
         String s = null;
+        Statement statement;
+        Connection connection;
         try {
-            ResultSet resultSet = CreateDB.connection().executeQuery("SELECT text_rus FROM my_text WHERE id = " + (pagination.getCurrentPageIndex()+1) + ";");
-            CreateDB.connection().close();
+            Class.forName("org.postgresql.Driver");
+            connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+            statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT text_rus FROM my_text WHERE id = "
+                    + (pagination.getCurrentPageIndex()+1) + ";");
             resultSet.next();
             s = resultSet.getString("text_rus");
             resultSet.close();
-            CreateDB.connection().close();
-        } catch (SQLException e) {
+            statement.close();
+            connection.close();
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         return s;
     }
     private String getTextName(){
         String s = null;
+        Statement statement;
+        Connection connection;
         try {
-            ResultSet resultSet = CreateDB.connection().executeQuery("SELECT title_text FROM my_text WHERE id = " + (pagination.getCurrentPageIndex()+1) + ";");
-            CreateDB.connection().close();
+            Class.forName("org.postgresql.Driver");
+            connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+            statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT title_text FROM my_text WHERE id = "
+                    + (pagination.getCurrentPageIndex()+1) + ";");
             resultSet.next();
             s = resultSet.getString("title_text");
             resultSet.close();
-            CreateDB.connection().close();
-        } catch (SQLException e) {
+            statement.close();
+            connection.close();
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         return s;

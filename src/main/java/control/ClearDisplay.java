@@ -32,6 +32,7 @@ public class ClearDisplay implements ArgumentsExam, ArgumentsExercise, Arguments
         counterVB.getChildren().clear();
         stackPaneText.getChildren().clear();
         list.clear();
+//        buttonsTransfer.getChildren().clear();
         ROOT.getChildren().clear();
 
         ClockDisplay.clock();

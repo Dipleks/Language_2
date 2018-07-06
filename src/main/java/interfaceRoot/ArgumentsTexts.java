@@ -3,6 +3,7 @@ package interfaceRoot;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.*;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import texts.NameText;
@@ -10,7 +11,7 @@ import texts.NumberOfLines;
 
 public interface ArgumentsTexts extends Root
 {
-    Pagination pagination = new Pagination(NumberOfLines.numberOfLines(), 0);
+    Pagination pagination = new Pagination();
     ScrollPane scrollPane = new ScrollPane();
     StackPane stackPaneText = new StackPane();
 
@@ -39,4 +40,5 @@ public interface ArgumentsTexts extends Root
     ChoiceBox<NameText> listName = new ChoiceBox<>();
     Label TITLE = new Label();
     ObservableList<NameText> list = FXCollections.observableArrayList();
+//    HBox buttonsTransfer = new HBox();
 }

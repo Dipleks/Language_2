@@ -1,26 +1,29 @@
 package texts;
 
 import db.CreateDB;
+import db.TableDB;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
-public class NumberOfLines
+public class NumberOfLines implements TableDB
 {
     // Кол-во строк таблицы:
     public static int numberOfLines(){
-        ResultSet resultSet = null;
+
         int lines = 0;
+        Statement statement;
+        Connection connection;
         try {
-            resultSet = CreateDB.connection().executeQuery("SELECT count(*) FROM my_text;");
+            Class.forName("org.postgresql.Driver");
+            connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+            statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT count(*) FROM my_text;");
             resultSet.next();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        try {
-            assert resultSet != null;
             lines = resultSet.getInt("count");
-        } catch (SQLException e) {
+            resultSet.close();
+            statement.close();
+            connection.close();
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         return lines;

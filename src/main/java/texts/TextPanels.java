@@ -2,6 +2,7 @@ package texts;
 
 import control.ClearDisplay;
 import db.CreateDB;
+import db.TableDB;
 import interfaceRoot.EffectColor;
 import interfaceRoot.EffectFont;
 import javafx.scene.control.Pagination;
@@ -9,10 +10,9 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
-public class TextPanels extends CallText
+public class TextPanels extends CallText implements TableDB
 {
     private ListNameText listNameText = new ListNameText();
 
@@ -24,6 +24,8 @@ public class TextPanels extends CallText
 
         pagination.setPageFactory(this::getScroll);
         pagination.setMaxPageIndicatorCount(15);
+        pagination.setPageCount(NumberOfLines.numberOfLines());
+        pagination.setMaxPageIndicatorCount(10);
 //        pagination.setLayoutX(widthSize/6);
 //        pagination.setLayoutY(heightSize/8);
         pagination.setPrefSize(widthSize/1.5, heightSize/1.5);
@@ -33,12 +35,12 @@ public class TextPanels extends CallText
         stackPaneText.setLayoutY(heightSize/8);
 
         ROOT.getChildren().addAll(stackPaneText, listNameText.getListName(), TITLE);
+
         return pagination;
     }
 
     private ScrollPane getScroll(Integer s) {
         HBox buttonsTransfer = new HBox();
-
         buttonsTransfer.setLayoutX(widthSize/2.5);
         buttonsTransfer.setLayoutY(heightSize/14);
         buttonsTransfer.setSpacing(20);
@@ -68,15 +70,20 @@ public class TextPanels extends CallText
 
     // Получаем название текста
     private static String getNameTitle(int n){
-        ResultSet resultSet;
+        Statement statement;
+        Connection connection;
         String str = null;
         try {
-            resultSet = CreateDB.connection().executeQuery("SELECT title_text FROM my_text WHERE id ="+ n +";");
+            Class.forName("org.postgresql.Driver");
+            connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+            statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT title_text FROM my_text WHERE id ="+ n +";");
             resultSet.next();
             str = resultSet.getString("title_text");
             resultSet.close();
-            CreateDB.connection().close();
-        } catch (SQLException e) {
+            statement.close();
+            connection.close();
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         return str;
