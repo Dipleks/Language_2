@@ -15,6 +15,7 @@ import java.sql.*;
 public class TextPanels extends CallText implements TableDB
 {
     private ListNameText listNameText = new ListNameText();
+    private NumberOfLines numberOfLines = new NumberOfLines();
 
     public void call(){
         getPagination();
@@ -23,9 +24,9 @@ public class TextPanels extends CallText implements TableDB
     private Pagination getPagination () {
 
         pagination.setPageFactory(this::getScroll);
-        pagination.setMaxPageIndicatorCount(15);
-        pagination.setPageCount(NumberOfLines.numberOfLines());
+        pagination.setPageCount(numberOfLines.numberOfLines());
         pagination.setMaxPageIndicatorCount(10);
+        pagination.setCurrentPageIndex(0);
 //        pagination.setLayoutX(widthSize/6);
 //        pagination.setLayoutY(heightSize/8);
         pagination.setPrefSize(widthSize/1.5, heightSize/1.5);
@@ -49,7 +50,7 @@ public class TextPanels extends CallText implements TableDB
 
 
 
-        for (int i = 0; i < NumberOfLines.numberOfLines(); i++) {
+        for (int i = 0; i < numberOfLines.numberOfLines(); i++) {
             if (s.byteValue()==i){
                 ROOT.getChildren().remove(buttonsTransfer);
                 ROOT.getChildren().add(buttonsTransfer);

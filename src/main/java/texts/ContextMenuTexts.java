@@ -1,5 +1,7 @@
 package texts;
 
+import control.ClearDisplay;
+import control.MenuBarEngRus;
 import db.CreateDB;
 import db.TableDB;
 import interfaceRoot.ArgumentsTexts;
@@ -92,8 +94,8 @@ public class ContextMenuTexts implements ArgumentsTexts, TableDB
     // Действие кнопок OK и CANCEL:
     private void ok_cancel(){
         OK.setOnAction(event -> {
-            Statement statement = null;
-            Connection connection = null;
+            Statement statement;
+            Connection connection;
             try {
                 Class.forName("org.postgresql.Driver");
                 connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
@@ -103,8 +105,20 @@ public class ContextMenuTexts implements ArgumentsTexts, TableDB
                         + "' WHERE id = "+ pagination.getCurrentPageIndex()+"+1;");
                 statement.close();
                 connection.close();
+
+                nameText.clear();
+                textRus.clear();
+                textEng.clear();
+
+                ClearDisplay.clearMethod();
+                MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
+                menuBarEngRus.getMenu();
+                TextPanels textPanels = new TextPanels();
+                textPanels.call();
+
                 SAVE_EDIT.close();
                 panelEditTexts.close();
+
             } catch (ClassNotFoundException | SQLException e) {
                 e.printStackTrace();
             }

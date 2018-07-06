@@ -3,23 +3,70 @@
   <component name="ChangeListManager">
     <list default="true" id="4f65712c-76b8-47ab-a8b3-e05b47f820ed" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/control/ClearDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/ClearDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsTexts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsTexts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/texts/ButtonsTransfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/texts/ButtonsTransfer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/texts/ContextMenuTexts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/texts/ContextMenuTexts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/texts/ListNameText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/texts/ListNameText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/texts/MaxCountText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/texts/MaxCountText.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/texts/NumberOfLines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/texts/NumberOfLines.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/texts/TextPanels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/texts/TextPanels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/control/ClearDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/control/ClearDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/control/MenuBarEngRus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/control/MenuBarEngRus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/ArgumentsTexts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/interfaceRoot/ArgumentsTexts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/ButtonsTransfer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/texts/ButtonsTransfer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/ContextMenuTexts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/texts/ContextMenuTexts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/ListNameText.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/texts/ListNameText.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/MaxCountText.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/texts/MaxCountText.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/NumberOfLines.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/texts/NumberOfLines.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/texts/TextPanels.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/texts/TextPanels.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Language_2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/click.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/control/AddExerciseExam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/control/ButtonsMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/control/ClearDisplay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/control/MenuBarEngRus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dataBase.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/CreateDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/TableDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exam/AddMistakesTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exam/Counters.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exam/ExamPS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exam/ExamText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exam/ExamTobe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exam/ExaminationParts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exam/Exams.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exam/IExam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exam/MergingPanels.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exam/Numerations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exam/PanelTips.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exam/RecordErrorsExams.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exam/WorkCounter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exercise/ExercisePS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exercise/ExerciseParts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exercise/ExerciseText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exercise/ExerciseToBe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exercise/Exercises.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exercise/IExercises.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/ArgumentsExam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/ArgumentsExercise.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/ArgumentsMyWords.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/ArgumentsTexts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/ClockDisplay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/EffectColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/EffectFont.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/Root.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/SoundClick.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/music.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/myWords/CategoryWords.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/myWords/ContextMenuMyWords.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/myWords/ListCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/myWords/MyWords.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/myWords/NewWords.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/myWords/RestartTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/myWords/Search.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/my_text.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/my_words.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ne_verno.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/texts/ButtonsTransfer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/texts/CallText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/texts/ContextMenuTexts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/texts/ListNameText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/texts/MaxCountText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/texts/NameText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/texts/NumberOfLines.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/texts/TextPanels.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/texts/Texts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/transition.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/verno.mp3" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,29 +78,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="TextPanels.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/texts/TextPanels.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArgumentsTexts.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsTexts.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -118,18 +143,18 @@
         <option value="$PROJECT_DIR$/src/main/resources/music.db" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/interfaceRoot/SoundClick.java" />
-        <option value="$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/texts/ButtonsTransfer.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/CreateDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/texts/MaxCountText.java" />
-        <option value="$PROJECT_DIR$/src/main/java/texts/NumberOfLines.java" />
-        <option value="$PROJECT_DIR$/src/main/java/control/ClearDisplay.java" />
         <option value="$PROJECT_DIR$/src/main/java/texts/PaginationSet.java" />
         <option value="$PROJECT_DIR$/src/main/java/texts/CallText.java" />
-        <option value="$PROJECT_DIR$/src/main/java/texts/ContextMenuTexts.java" />
         <option value="$PROJECT_DIR$/src/main/java/texts/ListNameText.java" />
         <option value="$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsTexts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/control/ClearDisplay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/texts/NumberOfLines.java" />
         <option value="$PROJECT_DIR$/src/main/java/texts/TextPanels.java" />
+        <option value="$PROJECT_DIR$/src/main/java/texts/ButtonsTransfer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/texts/ContextMenuTexts.java" />
       </list>
     </option>
   </component>
@@ -207,78 +232,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="control" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="language_2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="language_2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaceRoot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="language_2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="myWords" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="language_2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="texts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 (3) &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 (3) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 (3) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="javafx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 (3) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="javafx" type="462c0819:PsiDirectoryNode" />
-              <item name="scene" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 (3) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="javafx" type="462c0819:PsiDirectoryNode" />
-              <item name="scene" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -410,7 +368,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1456" height="886" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -421,11 +378,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.16260745" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.261708" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.261708" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19412607" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19412607" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -711,24 +668,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="167" selection-start-line="167" selection-end-line="167" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/db/CreateDB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/control/ClearDisplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -739,24 +682,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/texts/ButtonsTransfer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/texts/Texts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="83" column="48" selection-start-line="83" selection-start-column="48" selection-end-line="83" selection-end-column="48" />
+        <state relative-caret-position="36">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/control/ClearDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="173" column="76" selection-start-line="173" selection-start-column="76" selection-end-line="173" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/texts/CallText.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="20">
           <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/texts/ContextMenuTexts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="165" column="33" selection-start-line="165" selection-start-column="33" selection-end-line="165" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -786,22 +736,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/texts/NumberOfLines.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="56">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/texts/Texts.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/texts/ButtonsTransfer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="-162">
+          <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/texts/ContextMenuTexts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsTexts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        <state relative-caret-position="414">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -810,8 +767,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/texts/TextPanels.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        <state relative-caret-position="216">
+          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+          <folding>
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

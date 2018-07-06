@@ -164,11 +164,16 @@ public class MenuBarEngRus implements Root
     }
     private void getTextsLevelOne(){
         textsLevelOne.setOnAction(event -> {
-            ClearDisplay.clearMethod();
-            MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
-            menuBarEngRus.getMenu();
-            TextPanels textPanels = new TextPanels();
-            textPanels.call();
+            try {
+                ClearDisplay.clearMethod();
+                MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
+                menuBarEngRus.getMenu();
+                TextPanels textPanels = new TextPanels();
+                textPanels.call();
+            } catch (Exception e){
+                System.out.println("ошибка повторного нажатия меню Уровень 1");
+            }
+
         });
     }
 }

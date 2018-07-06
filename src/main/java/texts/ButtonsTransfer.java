@@ -77,52 +77,40 @@ class ButtonsTransfer implements ArgumentsTexts, Texts, TableDB
         addNewText.setOnAction(event -> {
 
             if(!nameText.getText().equals("") & !textEng.getText().equals("") & !textRus.getText().equals("")) {
+                Statement statement;
+                Connection connection;
                 try {
                     // TODO добавить авто замену одинарных ковычик на опостроф при получении текста из TextArea
                     // TODO и обратную замену при выводе на экран
-                    Statement statement = null;
-                    Connection connection = null;
-                    try {
-                        Class.forName("org.postgresql.Driver");
-                        connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
-                        statement = connection.createStatement();
-                    } catch (ClassNotFoundException | SQLException e) {
-                        e.printStackTrace();
-                    }
-                    assert statement != null;
-                    statement.executeUpdate("INSERT INTO my_text (title_text, text_eng, text_rus) " +
-                            "VALUES ('" + nameText.getText() + " ', '" + textEng.getText() + "', '" + textRus.getText() + "');");
 
-//                    list.clear();
+                    Class.forName("org.postgresql.Driver");
+                    connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+                    statement = connection.createStatement();
+                    statement.executeUpdate("INSERT INTO my_text (title_text, text_eng, text_rus) "
+                            + "VALUES ('" + nameText.getText() + " ', '" + textEng.getText() + "', '"
+                            + textRus.getText() + "');");
+                    statement.close();
+                    connection.close();
 
                     nameText.clear();
                     textRus.clear();
                     textEng.clear();
-//                    ClearDisplay.clearMethod();
-//                    MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
-//                    menuBarEngRus.getMenu();
-//                    TextPanels textPanels = new TextPanels();
-//                    textPanels.call();
+
+                    ClearDisplay.clearMethod();
+                    MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
+                    menuBarEngRus.getMenu();
+                    TextPanels textPanels = new TextPanels();
+                    textPanels.call();
 
                     panelAddText.close();
-                    statement.close();
-                    connection.close();
-
-//                    ListNameText listNameText = new ListNameText();
-//                    listNameText.getListName();
-
-//                    TextPanels textPanels = new TextPanels();
-//                    textPanels.call();
-                } catch (SQLException e) {
-                    e.printStackTrace();
+                } catch (SQLException | ClassNotFoundException e) {
+                    System.out.println("ошибка после добавления текста");
                 }
             } else {
                 System.out.println("Заполните все поля!");
             }
-
         });
     }
 
     // TODO создать методы удаления текста (с обновлением счетчика ALTER SEQUENCE my_text_id_seq RESTART WITH 1;)
-    // TODO и метод оглавления
 }

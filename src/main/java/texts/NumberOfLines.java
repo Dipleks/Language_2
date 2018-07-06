@@ -8,7 +8,7 @@ import java.sql.*;
 public class NumberOfLines implements TableDB
 {
     // Кол-во строк таблицы:
-    public static int numberOfLines(){
+    int numberOfLines(){
 
         int lines = 0;
         Statement statement;
