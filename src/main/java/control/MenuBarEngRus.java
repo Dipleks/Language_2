@@ -15,7 +15,9 @@ import javafx.scene.text.FontWeight;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import myWords.MyWords;
-import texts.TextLevelOne;
+import texts.TextPanels;
+
+import java.sql.SQLException;
 
 public class MenuBarEngRus implements Root
 {
@@ -57,7 +59,7 @@ public class MenuBarEngRus implements Root
         menuWHITE.setDisable(true);
         menuBLACK.setDisable(true);
         menuHelp.setDisable(true);
-        menuTexts.setDisable(true);
+//        menuTexts.setDisable(true);
 
         menuBar.setMinWidth(widthSize);
         menuTexts.getItems().addAll(textsLevelOne);
@@ -71,7 +73,7 @@ public class MenuBarEngRus implements Root
     }
     private void getMenu_my_words() {
 
-        if (CreateDB.connectDB()) {
+        if (CreateDB.checkConnection()) {
             menu_my_words.setOnAction(event -> {
                 ClearDisplay.clearMethod();
                 MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
@@ -107,7 +109,7 @@ public class MenuBarEngRus implements Root
             StackPane stackPane = new StackPane();
             Scene scene = new Scene(stackPane, widthSize/3, heightSize/3);
             Label label = new Label();
-//                label.setStyle("-fx-border-color: RED");
+//                TITLE.setStyle("-fx-border-color: RED");
             label.setPrefSize(widthSize/4, heightSize/4);
             label.setText("Автор программы Ghost \n" + "\n" + "Программа предназначена " +
                     "\nдля изучения Английского языка." +
@@ -162,11 +164,16 @@ public class MenuBarEngRus implements Root
     }
     private void getTextsLevelOne(){
         textsLevelOne.setOnAction(event -> {
-            ClearDisplay.clearMethod();
-            MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
-            menuBarEngRus.getMenu();
-            TextLevelOne textLevelOne = new TextLevelOne();
-            textLevelOne.text1();
+            try {
+                ClearDisplay.clearMethod();
+                MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
+                menuBarEngRus.getMenu();
+                TextPanels textPanels = new TextPanels();
+                textPanels.call();
+            } catch (Exception e){
+                System.out.println("ошибка повторного нажатия меню Уровень 1");
+            }
+
         });
     }
 }

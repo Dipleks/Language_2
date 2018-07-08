@@ -20,7 +20,7 @@ public class Exams implements ArgumentsExam
         this.START = START;
     }
 
-    public void getExamList(IExam iExam){
+    void getExamList(IExam iExam){
         getExamColumnLab(iExam);
     }
 
@@ -43,11 +43,11 @@ public class Exams implements ArgumentsExam
 
             int finalI = i;
             arrayOfOffersExam[i].setOnMouseClicked(event -> {
-                soundClick.soundClick();
                 if (improve.getText().replaceAll("[!?.'^]", "").equalsIgnoreCase(iExam.getExamENG(finalI, START).
                         replaceAll("[!?.'^]", ""))){
                     arrayOfOffersExam[finalI].setTextFill(EffectColor.getColorTextClick());
                     correctly[finalI].setText("ВЕРНО!!!");
+                    soundClick.soundClick(2);
                     correctly[finalI].setTextFill(EffectColor.getColorTextClick());
                     improveClick1.setFont(EffectFont.getFontTextExam());
                     improveClick1.setTextFill(EffectColor.getColorText());
@@ -59,6 +59,7 @@ public class Exams implements ArgumentsExam
                     /////////////
                     arrayOfOffersExam[finalI].setTextFill(EffectColor.getColorTextClickRED());
                     correctly[finalI].setText("НЕ ВЕРНО!!!");
+                    soundClick.soundClick(3);
                     correctly[finalI].setTextFill(EffectColor.getColorTextClickRED());
                     improveClick1.setFont(EffectFont.getFontTextExam());
                     improveClick1.setTextFill(EffectColor.getColorText());
@@ -76,12 +77,8 @@ public class Exams implements ArgumentsExam
             });
         }
         // Счетчик:
-        try {
-            Counters counters = new Counters();
-            counters.counter();
-        } catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+        Counters counters = new Counters();
+        counters.counter();
         // Нумерация контольных:
         Numerations numerations = new Numerations();
         numerations.numberingOfExam(number, arrayOfOffersExam, START, iExam);

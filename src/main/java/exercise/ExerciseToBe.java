@@ -7,17 +7,7 @@ import static control.ClearDisplay.clearMethod;
 
 public class ExerciseToBe implements IExercises
 {
-    ExerciseText text = new ExerciseText();
-
-//        @Override
-//    public String getExerciseRUS(int a, int b, String rus) {
-//        return text.getToBeFileRu().get(a + b);
-//    }
-//
-//    @Override
-//    public String getExerciseENG(int a, int b, String eng) {
-//        return text.getToBeFileEn().get(a + b);
-//    }
+    private ExerciseText text = new ExerciseText();
 
     @Override
     public String methodExercise(int a, int b, String lang){

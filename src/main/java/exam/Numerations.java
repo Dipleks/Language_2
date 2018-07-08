@@ -9,9 +9,9 @@ import javafx.scene.control.Label;
 import static interfaceRoot.Root.soundClick;
 import static interfaceRoot.Root.widthSize;
 
-public class Numerations
+class Numerations
 {
-    protected void numberingOfExam(Label[] labels, Label[] arrayOfOffersExam, int START, IExam iExam){
+    void numberingOfExam(Label[] labels, Label[] arrayOfOffersExam, int START, IExam iExam){
         for (int i = 0; i < labels.length; i++) {
             labels[i] = new Label();
             labels[i].setFont(EffectFont.getFontTextExam());
@@ -23,7 +23,7 @@ public class Numerations
             labels[i].setText("-"+(i+1+START)+"-");
             int finalI = i;
             labels[i].setOnMouseClicked(ev -> {
-                soundClick.soundClick();
+                soundClick.soundClick(4);
                 if (arrayOfOffersExam[finalI].getText().equals(iExam.getExamRUS(finalI, START))){
                     arrayOfOffersExam[finalI].setText(iExam.getExamENG(finalI, START));
                     arrayOfOffersExam[finalI].setTextFill(EffectColor.getColorTextImpr());

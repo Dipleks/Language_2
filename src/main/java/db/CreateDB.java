@@ -10,6 +10,18 @@ public class CreateDB implements TableDB
     /** Подключение к БД */
     private static Connection connection;
 
+    public static Statement connection(){
+        Statement statement = null;
+        try {
+            Class.forName("org.postgresql.Driver");
+            connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+            statement = connection.createStatement();
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+        return statement;
+    }
+
     /**
      * Процедура создания новой БД
      * @throws SQLException - ошибка в работе с базой данных
@@ -23,7 +35,7 @@ public class CreateDB implements TableDB
     }
 
     /**
-     * Процедура создающая таблицу {@link exam.AddMistakesTable}
+     * Процедура создающая таблицы {@link exam.AddMistakesTable} и {@link }
      * @throws SQLException - ошибка в работе с базой данных
      * @throws ClassNotFoundException - отсутствие драйвера JDBC
      */
@@ -32,13 +44,15 @@ public class CreateDB implements TableDB
         connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
         Statement statement = connection.createStatement();
         statement.executeUpdate(counterExam);
+        statement.executeUpdate(my_words);
+        statement.executeUpdate(my_text);
     }
 
     /**
      * Функция проверяющая наличие базы данных
      * @return - вернет false если БД нет и вернет true если БД создана
      */
-    public static boolean connectDB() {
+    public static boolean checkConnection() {
         try {
             Class.forName("org.postgresql.Driver");
         } catch (ClassNotFoundException e) {
@@ -68,22 +82,18 @@ public class CreateDB implements TableDB
         return false;
     }
 
-    /**
-     * Функция проверяющая наличие таблицы ошибок при запуске приложения
-     * @return - вернет false если таблица отсутствует и вернет true если создана
-     */
-    public static boolean newCounterRun() throws SQLException, ClassNotFoundException {
-        Class.forName("org.postgresql.Driver");
-        connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
-        Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery("SELECT table_name FROM information_schema.tables " +
-                "WHERE table_name = 'counter';");
-        while (resultSet.next()) {
-            if (resultSet.getString("table_name").equals("counter")){
-                resultSet.close();
-                return true;
-            }
-        }
-        return false;
-    }
+//    public static boolean newCounterRun() throws SQLException, ClassNotFoundException {
+//        Class.forName("org.postgresql.Driver");
+//        connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+//        Statement statement = connection.createStatement();
+//        ResultSet resultSet = statement.executeQuery("SELECT table_name FROM information_schema.tables " +
+//                "WHERE table_name = 'counter';");
+//        while (resultSet.next()) {
+//            if (resultSet.getString("table_name").equals("counter")){
+//                resultSet.close();
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
 }

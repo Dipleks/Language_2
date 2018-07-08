@@ -1,11 +1,8 @@
 package control;
 
-import interfaceRoot.ArgumentsExam;
-import interfaceRoot.ArgumentsExercise;
-import interfaceRoot.ArgumentsMyWords;
-import interfaceRoot.ClockDisplay;
+import interfaceRoot.*;
 
-public class ClearDisplay implements ArgumentsExam, ArgumentsExercise, ArgumentsMyWords
+public class ClearDisplay implements ArgumentsExam, ArgumentsExercise, ArgumentsMyWords, ArgumentsTexts
 {
     // Очистка колонок упражнений:
     public static void clearColumn() {
@@ -33,7 +30,11 @@ public class ClearDisplay implements ArgumentsExam, ArgumentsExercise, Arguments
         numberColumn.getChildren().clear();
         improveV.getChildren().clear();
         counterVB.getChildren().clear();
+        stackPaneText.getChildren().clear();
+        list.clear();
+//        buttonsTransfer.getChildren().clear();
         ROOT.getChildren().clear();
+
         ClockDisplay.clock();
     }
 }

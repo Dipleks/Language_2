@@ -28,4 +28,7 @@ public interface TableDB
     String counterExam = "CREATE TABLE IF NOT EXISTS counter " +
             "(id SERIAL PRIMARY KEY, date_time timestamp, numb text, " +
             "original text, mistakes text, part VARCHAR(12));";
+
+    String my_text = "CREATE TABLE IF NOT EXISTS my_text " +
+            "(id SERIAL PRIMARY KEY, date_time timestamp, title_text VARCHAR(20), text_col text);";
 }

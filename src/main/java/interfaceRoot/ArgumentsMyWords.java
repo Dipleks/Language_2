@@ -1,11 +1,9 @@
 package interfaceRoot;
 
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import myWords.CategoryWords;
 
 public interface ArgumentsMyWords extends Root
 {
@@ -23,4 +21,7 @@ public interface ArgumentsMyWords extends Root
     Label[] my_word_ru = new Label[500];
     Button searchWords = new Button("Поиск");
     Button addWords = new Button("Добавить");
+    Button addCategory = new Button("Выбрать категорию");
+
+
 }
