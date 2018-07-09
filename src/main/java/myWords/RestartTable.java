@@ -1,6 +1,7 @@
 package myWords;
 
 import db.CreateDB;
+import db.TableDB;
 import interfaceRoot.ArgumentsMyWords;
 import interfaceRoot.EffectColor;
 import interfaceRoot.EffectFont;
@@ -8,10 +9,9 @@ import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.control.Tooltip;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
-class RestartTable implements ArgumentsMyWords
+class RestartTable implements ArgumentsMyWords, TableDB
 {
     private ContextMenuMyWords contextMenuMyWords = new ContextMenuMyWords();
     private NewWords newWords = new NewWords();

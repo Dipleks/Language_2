@@ -41,4 +41,12 @@ public interface ArgumentsTexts extends Root
     Label TITLE = new Label();
     ObservableList<NameText> list = FXCollections.observableArrayList();
 //    HBox buttonsTransfer = new HBox();
+
+    MenuItem yellow = new MenuItem();
+    MenuItem red = new MenuItem();
+    MenuItem green = new MenuItem();
+    MenuItem blue = new MenuItem();
+    MenuItem purple = new MenuItem();
+    MenuItem black = new MenuItem();
+
 }

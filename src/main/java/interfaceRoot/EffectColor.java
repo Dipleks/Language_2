@@ -48,4 +48,28 @@ public class EffectColor
         Color colorTextClick = Color.DARKGRAY;
         return colorTextClick;
     }
+    public static Color getColorYellow(){
+        Color colorYellow = Color.YELLOW;
+        return colorYellow;
+    }
+    public static Color getColorRed(){
+        Color colorRed = Color.RED;
+        return colorRed;
+    }
+    public static Color getColorGreen(){
+        Color colorGreen = Color.GREEN;
+        return colorGreen;
+    }
+    public static Color getColorBlue(){
+        Color colorBlue = Color.BLUE;
+        return colorBlue;
+    }
+    public static Color getColorPurple(){
+        Color colorPurple = Color.PURPLE;
+        return colorPurple;
+    }
+    public static Color getColorBlack(){
+        Color colorBlack = Color.BLACK;
+        return colorBlack;
+    }
 }

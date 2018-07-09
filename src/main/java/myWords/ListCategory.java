@@ -12,21 +12,23 @@ class ListCategory implements ArgumentsMyWords
 {
     private ChoiceBox<CategoryWords> categoryWordsChoiceBox = new ChoiceBox<>();
     private static CategoryWords it = new CategoryWords("Программирование");
-    private static CategoryWords medical = new CategoryWords("Медицина");
+    private static CategoryWords profession = new CategoryWords("Профессии");
+    private static CategoryWords for_communication = new CategoryWords("Для общения");
     private static CategoryWords architecture = new CategoryWords("Архитектура");
     private static CategoryWords biologe = new CategoryWords("Анатомия");
     private static CategoryWords geogragh = new CategoryWords("География");
     private static CategoryWords nature = new CategoryWords("Природа");
     private static CategoryWords things = new CategoryWords("Вещи");
     private static CategoryWords other = new CategoryWords("Другое");
+    private static CategoryWords all = new CategoryWords("Всё");
 
-    private ObservableList<CategoryWords> list = FXCollections.observableArrayList(it, medical, architecture,
-            biologe, geogragh, nature, things, other);
+    private ObservableList<CategoryWords> list = FXCollections.observableArrayList(all, it, profession,
+            for_communication, architecture, biologe, geogragh, nature, things, other);
 
     ChoiceBox<CategoryWords> addCategory(){
 
         categoryWordsChoiceBox.setItems(list);
-        categoryWordsChoiceBox.setValue(other);
+        categoryWordsChoiceBox.setValue(all);
 
         return categoryWordsChoiceBox;
     }
@@ -34,7 +36,7 @@ class ListCategory implements ArgumentsMyWords
     ChoiceBox<CategoryWords> getCategory(){
 
         categoryWordsChoiceBox.setItems(list);
-        categoryWordsChoiceBox.setValue(other);
+        categoryWordsChoiceBox.setValue(all);
         categoryWordsChoiceBox.setOnAction(event -> {
             try {
                 ResultSet r = CreateDB.connection().executeQuery("SELECT word_en FROM my_words");
@@ -60,16 +62,44 @@ class ListCategory implements ArgumentsMyWords
         return categoryWordsChoiceBox;
     }
 
-    static CategoryWords getIt() {
+    public static CategoryWords getIt() {
         return it;
     }
 
-    static CategoryWords getMedical() {
-        return medical;
+    public static CategoryWords getProfession() {
+        return profession;
     }
 
-    static CategoryWords getOther() {
+    public static CategoryWords getFor_communication() {
+        return for_communication;
+    }
+
+    public static CategoryWords getArchitecture() {
+        return architecture;
+    }
+
+    public static CategoryWords getBiologe() {
+        return biologe;
+    }
+
+    public static CategoryWords getGeogragh() {
+        return geogragh;
+    }
+
+    public static CategoryWords getNature() {
+        return nature;
+    }
+
+    public static CategoryWords getThings() {
+        return things;
+    }
+
+    public static CategoryWords getOther() {
         return other;
+    }
+
+    public static CategoryWords getAll() {
+        return all;
     }
 
     ChoiceBox<CategoryWords> getCategoryWordsChoiceBox() {

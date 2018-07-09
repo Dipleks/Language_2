@@ -19,7 +19,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-class ButtonsTransfer implements ArgumentsTexts, Texts, TableDB
+class ButtonsTransfer implements ArgumentsTexts, TableDB
 {
     private Stage panelAddText = new Stage();
 

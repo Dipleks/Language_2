@@ -1,15 +1,10 @@
 package texts;
 
-import db.CreateDB;
 import db.TableDB;
 import interfaceRoot.ArgumentsTexts;
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.ChoiceBox;
-
 import java.sql.*;
-
-import static db.TableDB.DB_URL;
 import static texts.MaxCountText.getCountTable;
 
 class ListNameText implements ArgumentsTexts, TableDB

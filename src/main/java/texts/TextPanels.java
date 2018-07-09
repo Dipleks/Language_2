@@ -1,14 +1,11 @@
 package texts;
 
-import control.ClearDisplay;
 import db.CreateDB;
 import db.TableDB;
-import interfaceRoot.EffectColor;
 import interfaceRoot.EffectFont;
 import javafx.scene.control.Pagination;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
 
 import java.sql.*;
 
@@ -35,7 +32,8 @@ public class TextPanels extends CallText implements TableDB
         stackPaneText.setLayoutX(widthSize/6);
         stackPaneText.setLayoutY(heightSize/8);
 
-        ROOT.getChildren().addAll(stackPaneText, listNameText.getListName(), TITLE);
+        ROOT.getChildren().addAll(stackPaneText, listNameText.getListName());
+        ROOT.getChildren().addAll(TITLE);
 
         return pagination;
     }
@@ -52,6 +50,7 @@ public class TextPanels extends CallText implements TableDB
 
         for (int i = 0; i < numberOfLines.numberOfLines(); i++) {
             if (s.byteValue()==i){
+
                 ROOT.getChildren().remove(buttonsTransfer);
                 ROOT.getChildren().add(buttonsTransfer);
                 buttons.getTransfer(textRUS(i), textENG(i));
@@ -61,8 +60,9 @@ public class TextPanels extends CallText implements TableDB
                 TITLE.setLayoutX(widthSize/4.5);
                 TITLE.setLayoutY(heightSize/14);
                 TITLE.setFont(EffectFont.getFontTITLE());
-                TITLE.setTextFill(EffectColor.getColorTextTITLE());
+//                TITLE.setTextFill(EffectColor.getColorTextTITLE());
                 TITLE.setText(getNameTitle(pagination.getCurrentPageIndex()+1));
+
             }
         }
 
