@@ -9,16 +9,17 @@ import javafx.stage.Stage;
 
 public interface ArgumentsSettings extends Root
 {
-    Stage SETTINGS = new Stage();
-    VBox MENU_SETTINGS = new VBox();
-    StackPane AREA_SETTINGS = new StackPane();
+//    VBox MENU_SETTINGS = new VBox();
+//    StackPane AREA_SETTINGS = new StackPane();
 
     Button reset = new Button("Заводские настройки");
     Button color = new Button("Внешний вид");
 
-    VBox panelSetting = new VBox();
-    Label textWarning = new Label("При сбросе всех настроек будут удалены все Ваши тексты и слова!");
-    Button resetSettings = new Button("Сбросить до зоводских настроек");
+//    VBox panelSetting = new VBox();
+//    Label textWarning = new Label("При сбросе всех настроек будут удалены все Ваши тексты и слова!");
+//    Button resetSettings = new Button("Сбросить до зоводских настроек");
 
-    VBox settingColor = new VBox();
+//    VBox settingColor = new VBox();
+//    StackPane factorySettings = new StackPane();
+//    StackPane appearance = new StackPane();
 }

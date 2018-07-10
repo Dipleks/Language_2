@@ -1,5 +1,7 @@
 package settings;
 
+import control.ClearDisplay;
+import control.MenuBarEngRus;
 import db.TableDB;
 import interfaceRoot.ArgumentsSettings;
 import javafx.animation.KeyFrame;
@@ -21,15 +23,20 @@ import java.sql.Statement;
 
 class FactorySettings implements ArgumentsSettings, TableDB
 {
-//    private Label textWarning = new Label("При сбросе всех настроек будут удалены все Ваши тексты и слова!");
-//    private Button resetSettings = new Button("Сбросить до зоводских настроек");
-//    private VBox panelSetting = new VBox();
+    private Label textWarning = new Label("При сбросе всех настроек будут удалены все Ваши тексты и слова!");
+    private Button resetSettings = new Button("Сбросить до зоводских настроек");
+    private VBox panelSetting = new VBox();
     private ProgressBar progressBar = new ProgressBar(0);
     private ProgressIndicator progressIndicator = new ProgressIndicator();
     private static Timeline timeline;
 
     Button resetSettings(){
-        CleaningSettings.clear();
+//        ClearDisplay.clearMethod();
+//        MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
+//        menuBarEngRus.getMenu();
+//        Settings setting = new Settings();
+//        setting.getSetting();
+
 
         panelSetting.setSpacing(30);
         panelSetting.setPadding(new Insets(20, 20, 20, 20));
@@ -42,16 +49,16 @@ class FactorySettings implements ArgumentsSettings, TableDB
         reset.setPrefWidth(widthSize/5.5);
         reset.setAlignment(Pos.CENTER_LEFT);
         reset.setOnAction(event -> {
+            ROOT.getChildren().remove(panelSetting);
+            panelSetting.getChildren().clear();
+            ROOT.getChildren().add(panelSetting);
             deleteSettings();
         });
 
         return reset;
     }
     private void deleteSettings(){
-
-        AREA_SETTINGS.getChildren().add(panelSetting);
         panelSetting.getChildren().addAll(textWarning, resetSettings);
-
         resetSettings.setOnAction(event -> {
             try {
                 Class.forName("org.postgresql.Driver");
@@ -77,7 +84,7 @@ class FactorySettings implements ArgumentsSettings, TableDB
                 timeline.setOnFinished(event1 -> stackPane.getChildren().clear()); // действие после завершения работы прогресс бара
 
                 stackPane.getChildren().addAll(progressBar, progressIndicator);
-                AREA_SETTINGS.getChildren().addAll(stackPane);
+                ROOT.getChildren().add(stackPane);
             } catch (ClassNotFoundException | SQLException e) {
                 System.out.println("таблицы my_text не существует");
                 creatTable();

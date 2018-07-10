@@ -7,9 +7,11 @@ public class RightPanel implements ArgumentsSettings
 {
     private StackPane AREA_SETTINGS;
 
-    public void setAREA_SETTINGS(StackPane AREA_SETTINGS) {
+    public StackPane areaSettings(){
+
         AREA_SETTINGS.setStyle("-fx-border-color: RED");
         AREA_SETTINGS.setPrefSize(widthSize/3, heightSize/3);
-        this.AREA_SETTINGS = AREA_SETTINGS;
+
+        return AREA_SETTINGS;
     }
 }

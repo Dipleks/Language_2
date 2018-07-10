@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f65712c-76b8-47ab-a8b3-e05b47f820ed" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/settings/CleaningSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/settings/RightPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/settings/TheAppearanceOf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/settings/CleaningSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/settings/CleaningSettings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/settings/FactorySettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/settings/FactorySettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/settings/RightPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/settings/RightPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/settings/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/settings/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/settings/TheAppearanceOf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/settings/TheAppearanceOf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/interfaceRoot/ArgumentsSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/interfaceRoot/ArgumentsSettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/settings/CleaningSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/settings/CleaningSettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/settings/FactorySettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/settings/FactorySettings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/settings/RightPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/settings/RightPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/settings/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/settings/Settings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/settings/TheAppearanceOf.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/settings/TheAppearanceOf.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,12 +30,10 @@
       <file leaf-file-name="Settings.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/settings/Settings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="56" />
+            <state relative-caret-position="174">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1228#1229#0" expanded="true" />
-                <element signature="e#1265#1266#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -38,8 +42,8 @@
       <file leaf-file-name="ArgumentsSettings.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsSettings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            <state relative-caret-position="362">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="23" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FactorySettings.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FactorySettings.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/settings/FactorySettings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="51" column="21" lean-forward="true" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+            <state relative-caret-position="300">
+              <caret line="86" column="50" selection-start-line="86" selection-start-column="50" selection-end-line="86" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,8 +66,8 @@
       <file leaf-file-name="TheAppearanceOf.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/settings/TheAppearanceOf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="200">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,20 +78,29 @@
       <file leaf-file-name="CleaningSettings.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/settings/CleaningSettings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="162">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RightPanel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RightPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/settings/RightPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="59" lean-forward="true" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+            <state relative-caret-position="144">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuBarEngRus.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -141,7 +154,6 @@
         <option value="$PROJECT_DIR$/src/main/java/interfaceRoot/SoundClick.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/CreateDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/texts/PaginationSet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/control/ClearDisplay.java" />
         <option value="$PROJECT_DIR$/src/main/java/texts/NumberOfLines.java" />
         <option value="$PROJECT_DIR$/src/main/java/myWords/ListCategory.java" />
         <option value="$PROJECT_DIR$/src/main/java/texts/MaxCountText.java" />
@@ -172,18 +184,19 @@
         <option value="$PROJECT_DIR$/src/main/java/exam/ExaminationParts.java" />
         <option value="$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsTexts.java" />
         <option value="$PROJECT_DIR$/src/main/java/texts/TextsParts.java" />
-        <option value="$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java" />
         <option value="$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsSetting.java" />
         <option value="$PROJECT_DIR$/src/main/java/setting/Setting.java" />
         <option value="$PROJECT_DIR$/src/main/java/settings/Setting.java" />
         <option value="$PROJECT_DIR$/src/main/java/settings/MenuSettings.java" />
         <option value="$PROJECT_DIR$/src/main/java/settings/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/settings/FactorySettings.java" />
-        <option value="$PROJECT_DIR$/src/main/java/settings/CleaningSettings.java" />
-        <option value="$PROJECT_DIR$/src/main/java/settings/TheAppearanceOf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/control/ClearDisplay.java" />
         <option value="$PROJECT_DIR$/src/main/java/settings/RightPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/settings/CleaningSettings.java" />
         <option value="$PROJECT_DIR$/src/main/java/settings/Settings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/settings/TheAppearanceOf.java" />
         <option value="$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsSettings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/settings/FactorySettings.java" />
       </list>
     </option>
   </component>
@@ -252,6 +265,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="language_2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="language_2" type="b2602c69:ProjectViewProjectNode" />
@@ -420,7 +441,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053364" side_tool="true" weight="0.2603306" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.16189112" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.21212122" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" weight="0.21212122" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -449,13 +470,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/texts/PaginationSet.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/control/ClearDisplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -664,13 +678,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="73" column="33" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -748,59 +758,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/settings/FactorySettings.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/control/ClearDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="51" column="21" lean-forward="true" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+        <state relative-caret-position="72">
+          <caret line="4" column="103" selection-start-line="4" selection-start-column="103" selection-end-line="4" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/settings/RightPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/control/MenuBarEngRus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/settings/CleaningSettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="162">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/settings/TheAppearanceOf.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/settings/Settings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="174">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/settings/Settings.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/settings/TheAppearanceOf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="56" />
+        <state relative-caret-position="200">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-            <element signature="e#1265#1266#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/interfaceRoot/ArgumentsSettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        <state relative-caret-position="362">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="23" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/settings/RightPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/settings/FactorySettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="59" lean-forward="true" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+        <state relative-caret-position="300">
+          <caret line="86" column="50" selection-start-line="86" selection-start-column="50" selection-end-line="86" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
