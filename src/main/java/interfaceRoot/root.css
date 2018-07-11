@@ -1,0 +1,9 @@
+.colorMenuSettings {
+    -fx-background-color: #ffffff;
+}
+.colorMenuSettings:hover {
+    -fx-background-color: #999999;
+}
+.progressBar {
+    -fx-accent: #8d5ab5;
+}

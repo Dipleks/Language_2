@@ -41,11 +41,11 @@ class ContextMenuTexts implements ArgumentsTexts, TableDB
     private void getMenuContainerColor(){
         String pref = "-fx-pref-width: 30;";
 
-        yellow.setStyle("-fx-background-color: KNOW_ON_ONE;" + pref);
-        red.setStyle("-fx-background-color: KNOW_ON_TWO;" + pref);
-        green.setStyle("-fx-background-color: KNOW_ON_THREE;" + pref);
-        blue.setStyle("-fx-background-color: KNOW_ON_FOUR;" + pref);
-        purple.setStyle("-fx-background-color: KNOW_ON_FIVE;" + pref);
+        yellow.setStyle("-fx-background-color: yellow;" + pref);
+        red.setStyle("-fx-background-color: red;" + pref);
+        green.setStyle("-fx-background-color: green;" + pref);
+        blue.setStyle("-fx-background-color: blue;" + pref);
+        purple.setStyle("-fx-background-color: purple;" + pref);
         black.setStyle("-fx-background-color: black;" + pref);
     }
 

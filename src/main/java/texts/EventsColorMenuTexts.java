@@ -10,11 +10,11 @@ import java.sql.Statement;
 class EventsColorMenuTexts implements ArgumentsTexts, TableDB
 {
     void getEvents(){
-        yellow.setOnAction(event -> colorDB("KNOW_ON_ONE"));
-        red.setOnAction(event -> colorDB("KNOW_ON_TWO"));
-        green.setOnAction(event -> colorDB("KNOW_ON_THREE"));
-        blue.setOnAction(event -> colorDB("KNOW_ON_FOUR"));
-        purple.setOnAction(event -> colorDB("KNOW_ON_FIVE"));
+        yellow.setOnAction(event -> colorDB("yellow"));
+        red.setOnAction(event -> colorDB("red"));
+        green.setOnAction(event -> colorDB("green"));
+        blue.setOnAction(event -> colorDB("blue"));
+        purple.setOnAction(event -> colorDB("purple"));
         black.setOnAction(event -> colorDB("black"));
     }
     private void colorDB(String s){

@@ -5,9 +5,17 @@ import interfaceRoot.ArgumentsSettings;
 class CleaningSettings implements ArgumentsSettings
 {
     static void clear(){
-//        AREA_SETTINGS.getChildren().clear();
-//        MENU_SETTINGS.getChildren().clear();
-//        panelSetting.getChildren().clear();
-//        settingColor.getChildren().clear();
+        settingColor.getChildren().clear();
+        one.getChildren().clear();
+        two.getChildren().clear();
+        three.getChildren().clear();
+        four.getChildren().clear();
+        five.getChildren().clear();
+        six.getChildren().clear();
+        seven.getChildren().clear();
+        eight.getChildren().clear();
+        panelSetting.getChildren().clear();
+        ROOT.getChildren().remove(panelSetting);
+        ROOT.getChildren().remove(settingColor);
     }
 }

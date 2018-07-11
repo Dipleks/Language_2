@@ -49,19 +49,19 @@ public class CallText implements ArgumentsTexts, TableDB
                     + pagination.getCurrentPageIndex()+"+1;");
             while (resultSet.next()){
                 switch (resultSet.getString("color")) {
-                    case "KNOW_ON_ONE":
+                    case "yellow":
                         TITLE.setTextFill(EffectColor.getColorYellow());
                         break;
-                    case "KNOW_ON_TWO":
+                    case "red":
                         TITLE.setTextFill(EffectColor.getColorRed());
                         break;
-                    case "KNOW_ON_THREE":
+                    case "green":
                         TITLE.setTextFill(EffectColor.getColorGreen());
                         break;
-                    case "KNOW_ON_FOUR":
+                    case "blue":
                         TITLE.setTextFill(EffectColor.getColorBlue());
                         break;
-                    case "KNOW_ON_FIVE":
+                    case "purple":
                         TITLE.setTextFill(EffectColor.getColorPurple());
                         break;
                     case "black":

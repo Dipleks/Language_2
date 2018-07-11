@@ -67,6 +67,9 @@ public class MenuBarEngRus implements Root
     }
     private void getMenuServes(){
         menuSetting.setOnAction(event -> {
+            ClearDisplay.clearMethod();
+            MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
+            menuBarEngRus.getMenu();
             Settings setting = new Settings();
             setting.getSetting();
         });

@@ -1,31 +1,42 @@
 package interfaceRoot;
 
+import db.TableDB;
 import javafx.scene.paint.Color;
 
-public class EffectColor
+public class EffectColor implements TableDB, ArgumentsSettings
 {
     public static Color getColorText() {
-        Color colorText = Color.BLACK;
+        String colorStr = Integer.toHexString(examColorOneL.getValue().hashCode()).substring(0, 6).toUpperCase();
+        System.out.println(colorStr);
+        Color colorText = Color.web("#" + colorStr);
         return colorText;
     }
 
     public static Color getColorTextImpr() {
-        Color colorTextImpr = Color.PURPLE;
+        String colorStr = Integer.toHexString(examColorTwoL.getValue().hashCode()).substring(0, 6).toUpperCase();
+        System.out.println(colorStr);
+        Color colorTextImpr = Color.web("#" + colorStr);
         return colorTextImpr;
     }
 
     public static Color getColorTextClick() {
-        Color colorTextClick = Color.LIMEGREEN;
+        String colorStr = Integer.toHexString(exerciseColorOneL.getValue().hashCode()).substring(0, 6).toUpperCase();
+        System.out.println(colorStr);
+        Color colorTextClick = Color.web("#" + colorStr);
         return colorTextClick;
     }
 
     public static Color getColorTextClickRED() {
-        Color colorTextClickRED = Color.RED;
+        String colorStr = Integer.toHexString(exerciseColorTwoL.getValue().hashCode()).substring(0, 6).toUpperCase();
+        System.out.println(colorStr);
+        Color colorTextClickRED = Color.web("#" + colorStr);
         return colorTextClickRED;
     }
 
     public static Color getColorTextClickPERU() {
-        Color colorTextClickPERU = Color.PERU;
+        String colorStr = Integer.toHexString(counterColorL.getValue().hashCode()).substring(0, 6).toUpperCase();
+        System.out.println(colorStr);
+        Color colorTextClickPERU = Color.web("#" + colorStr);
         return colorTextClickPERU;
     }
 

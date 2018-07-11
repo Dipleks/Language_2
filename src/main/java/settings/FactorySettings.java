@@ -14,7 +14,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.ProgressIndicator;
 import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
 import javafx.util.Duration;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -23,42 +22,31 @@ import java.sql.Statement;
 
 class FactorySettings implements ArgumentsSettings, TableDB
 {
-    private Label textWarning = new Label("При сбросе всех настроек будут удалены все Ваши тексты и слова!");
-    private Button resetSettings = new Button("Сбросить до зоводских настроек");
-    private VBox panelSetting = new VBox();
     private ProgressBar progressBar = new ProgressBar(0);
-    private ProgressIndicator progressIndicator = new ProgressIndicator();
     private static Timeline timeline;
 
     Button resetSettings(){
-//        ClearDisplay.clearMethod();
-//        MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
-//        menuBarEngRus.getMenu();
-//        Settings setting = new Settings();
-//        setting.getSetting();
-
-
         panelSetting.setSpacing(30);
         panelSetting.setPadding(new Insets(20, 20, 20, 20));
         panelSetting.setAlignment(Pos.TOP_LEFT);
 
-
-        reset.setStyle("-fx-background-color: #ffffff;");
-        reset.setOnMouseEntered(event -> reset.setStyle("-fx-background-color: #12affe;")); //действие при наведение курсора
-        reset.setOnMouseExited(event -> reset.setStyle("-fx-background-color: #ffffff;")); //действие при отведении курсора
+//        reset.setStyle("-fx-background-color: #ffffff;");
+        reset.getStyleClass().add("colorMenuSettings");
+//        reset.setOnMouseEntered(event -> reset.setStyle("-fx-background-color: #999999;")); //действие при наведение курсора
+//        reset.setOnMouseExited(event -> reset.setStyle("-fx-background-color: #ffffff;")); //действие при отведении курсора
         reset.setPrefWidth(widthSize/5.5);
         reset.setAlignment(Pos.CENTER_LEFT);
         reset.setOnAction(event -> {
-            ROOT.getChildren().remove(panelSetting);
-            panelSetting.getChildren().clear();
-            ROOT.getChildren().add(panelSetting);
+            CleaningSettings.clear();
             deleteSettings();
         });
-
         return reset;
     }
     private void deleteSettings(){
+        ROOT.getChildren().add(panelSetting);
         panelSetting.getChildren().addAll(textWarning, resetSettings);
+        panelSetting.setLayoutX(widthSize/2.3);
+        panelSetting.setLayoutY(heightSize/3);
         resetSettings.setOnAction(event -> {
             try {
                 Class.forName("org.postgresql.Driver");
@@ -66,12 +54,14 @@ class FactorySettings implements ArgumentsSettings, TableDB
                 Statement statement = connection.createStatement();
                 statement.executeUpdate("DROP TABLE my_text;");
                 statement.executeUpdate("DROP TABLE my_words;");
+                statement.executeUpdate("DROP TABLE settings;");
                 creatTable();
                 statement.close();
                 connection.close();
 
-                progressBar.setPrefSize(widthSize/4, heightSize/25);
-                progressBar.setStyle("-fx-accent: #8d5ab5;");
+                progressBar.setPrefSize(widthSize/4, heightSize/40);
+//                progressBar.setStyle("-fx-accent: #8d5ab5;"); // цвет бара
+                progressBar.getStyleClass().add("progressBar"); // цвет бара
 
                 // создаем анимацию прогресс бара:
                 timeline = new Timeline(
@@ -83,7 +73,9 @@ class FactorySettings implements ArgumentsSettings, TableDB
                 StackPane stackPane = new StackPane();
                 timeline.setOnFinished(event1 -> stackPane.getChildren().clear()); // действие после завершения работы прогресс бара
 
-                stackPane.getChildren().addAll(progressBar, progressIndicator);
+                stackPane.getChildren().add(progressBar);
+                stackPane.setLayoutX(widthSize/2.3);
+                stackPane.setLayoutY(heightSize/3.5);
                 ROOT.getChildren().add(stackPane);
             } catch (ClassNotFoundException | SQLException e) {
                 System.out.println("таблицы my_text не существует");
@@ -1097,6 +1089,17 @@ class FactorySettings implements ArgumentsSettings, TableDB
                     "('then again ',' с другой стороны','Для общения', 'Знаю на 1')," +
                     "('what about ',' как насчёт','Для общения', 'Знаю на 1')," +
                     "('what it takes to ',' то, что нужно чтобы','Для общения', 'Знаю на 1');");
+            statement.executeUpdate("CREATE TABLE IF NOT EXISTS settings " +
+                    "(id SERIAL PRIMARY KEY, parameter VARCHAR(50), actions VARCHAR(60));");
+            statement.executeUpdate("INSERT INTO settings (parameter, actions) " +
+                    "VALUES ('Цвет заданий и контрольных', '000000'), " +
+                    "('Цвет контрольных при нажатии на номер', '800080'), " +
+                    "('Цвет при переводе', '32cd32'), " +
+                    "('Цвет при неверном ответе в контрольных', 'ff0000'), " +
+                    "('Цвет значений счетчика контрольных', 'cd853f'), " +
+                    "('Цвет разделов заданий', 'a9a9a9'), " +
+                    "('Цвет Scene', 'ffffff'), " +
+                    "('Цвет часов', '006400');");
             statement.close();
             connection.close();
         } catch (ClassNotFoundException | SQLException e) {

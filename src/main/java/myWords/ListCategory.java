@@ -15,15 +15,15 @@ class ListCategory implements ArgumentsMyWords
     private static CategoryWords profession = new CategoryWords("Профессии");
     private static CategoryWords for_communication = new CategoryWords("Для общения");
     private static CategoryWords architecture = new CategoryWords("Архитектура");
-    private static CategoryWords biologe = new CategoryWords("Анатомия");
-    private static CategoryWords geogragh = new CategoryWords("География");
+    private static CategoryWords biology = new CategoryWords("Анатомия");
+    private static CategoryWords geography = new CategoryWords("География");
     private static CategoryWords nature = new CategoryWords("Природа");
     private static CategoryWords things = new CategoryWords("Вещи");
     private static CategoryWords other = new CategoryWords("Другое");
     private static CategoryWords all = new CategoryWords("Всё");
 
     private ObservableList<CategoryWords> list = FXCollections.observableArrayList(all, it, profession,
-            for_communication, architecture, biologe, geogragh, nature, things, other);
+            for_communication, architecture, biology, geography, nature, things, other);
 
     ChoiceBox<CategoryWords> addCategory(){
 
@@ -44,11 +44,20 @@ class ListCategory implements ArgumentsMyWords
                     leftC.getChildren().remove(my_word_en[i]);
                     rightC.getChildren().remove(my_word_ru[i]);
                 }
+                if (categoryWordsChoiceBox.getValue().getCategory().equals(all.getCategory())){
+                    ResultSet rs1 = CreateDB.connection().executeQuery("SELECT word_en FROM my_words ORDER BY id;");
+                    ResultSet rs2 = CreateDB.connection().executeQuery("SELECT word_ru FROM my_words ORDER BY id;");
+                    RestartTable restartTable = new RestartTable();
+                    restartTable.getWordList(rs1, rs2);
+                    rs2.close();
+                    rs1.close();
+                    r.close();
+                    CreateDB.connection().close();
+                }
                 ResultSet rs1 = CreateDB.connection().executeQuery("SELECT word_en FROM (SELECT DISTINCT id, word_en, word_ru " +
                         "FROM my_words WHERE category = '" + categoryWordsChoiceBox.getValue() + "') AS foo ORDER BY id;");
                 ResultSet rs2 = CreateDB.connection().executeQuery("SELECT word_ru FROM (SELECT DISTINCT id, word_en, word_ru " +
                         "FROM my_words WHERE category = '" + categoryWordsChoiceBox.getValue() + "') AS foo ORDER BY id;");
-
                 RestartTable restartTable = new RestartTable();
                 restartTable.getWordList(rs1, rs2);
                 rs2.close();
@@ -78,12 +87,12 @@ class ListCategory implements ArgumentsMyWords
         return architecture;
     }
 
-    public static CategoryWords getBiologe() {
-        return biologe;
+    public static CategoryWords getBiology() {
+        return biology;
     }
 
-    public static CategoryWords getGeogragh() {
-        return geogragh;
+    public static CategoryWords getGeography() {
+        return geography;
     }
 
     public static CategoryWords getNature() {

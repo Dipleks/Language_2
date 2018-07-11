@@ -1,16 +1,32 @@
 import control.MenuBarEngRus;
 import db.CreateDB;
+import db.TableDB;
+import interfaceRoot.ArgumentsSettings;
 import interfaceRoot.ClockDisplay;
 import interfaceRoot.Root;
 import javafx.application.Application;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import settings.ColorSetting;
+
+import java.sql.*;
 
 public class Language_2 extends Application implements Root
 {
     private MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
+    private ColorSetting colorSetting = new ColorSetting();
 
     @Override
     public void start(Stage primaryStage) {
+
+        colorSetting.getColorExamAndExercise();
+        colorSetting.getColorExamNumber();
+        colorSetting.getColorTranslation();
+        colorSetting.getColorMistakesExam();
+        colorSetting.getColorCounterExam();
+        colorSetting.getColorSection();
+        colorSetting.getColorScene();
+        colorSetting.getColorTime();
 
         // TODO сделать окно загрузки создания базы данных (прогресс бар)
 
@@ -42,6 +58,7 @@ public class Language_2 extends Application implements Root
 
         ROOT.getChildren().addAll();
 
+        SCENE_ROOT.getStylesheets().add(getClass().getResource("interfaceRoot/root.css").toExternalForm());
         WINDOW.setTitle("language_2");
         WINDOW.setMaximized(true); //устанавливаем размер окна на весь экран
         WINDOW.setScene(SCENE_ROOT);
