@@ -6,53 +6,115 @@ import javafx.scene.paint.Color;
 public class EffectColor implements TableDB, ArgumentsSettings
 {
     public static Color getColorText() {
+//        String colorStr = String.valueOf(examColorOneL.getValue());
+//        Color colorText = Color.web("#" + colorStr.substring(2, 8).toUpperCase());
         String colorStr = Integer.toHexString(examColorOneL.getValue().hashCode()).substring(0, 6).toUpperCase();
-        System.out.println(colorStr);
+        if (colorStr.equalsIgnoreCase("6400ff")){
+            Color colorClock = Color.web("#006400");
+            return colorClock;
+        }
         Color colorText = Color.web("#" + colorStr);
         return colorText;
     }
 
     public static Color getColorTextImpr() {
+//        String colorStr = String.valueOf(examColorTwoL.getValue());
+//        Color colorTextImpr = Color.web("#" + colorStr.substring(2, 8).toUpperCase());
         String colorStr = Integer.toHexString(examColorTwoL.getValue().hashCode()).substring(0, 6).toUpperCase();
-        System.out.println(colorStr);
+        if (colorStr.equalsIgnoreCase("6400ff")){
+            Color colorClock = Color.web("#006400");
+            return colorClock;
+        }
         Color colorTextImpr = Color.web("#" + colorStr);
         return colorTextImpr;
     }
 
     public static Color getColorTextClick() {
+//        String colorStr = String.valueOf(exerciseColorOneL.getValue());
+//        Color colorTextClick = Color.web("#" + colorStr.substring(2, 8).toUpperCase());
         String colorStr = Integer.toHexString(exerciseColorOneL.getValue().hashCode()).substring(0, 6).toUpperCase();
-        System.out.println(colorStr);
+        if (colorStr.equalsIgnoreCase("6400ff")){
+            Color colorClock = Color.web("#006400");
+            return colorClock;
+        }
         Color colorTextClick = Color.web("#" + colorStr);
         return colorTextClick;
     }
 
     public static Color getColorTextClickRED() {
+//        String colorStr = String.valueOf(exerciseColorTwoL.getValue());
+//        Color colorTextClickRED = Color.web("#" + colorStr.substring(2, 8).toUpperCase());
         String colorStr = Integer.toHexString(exerciseColorTwoL.getValue().hashCode()).substring(0, 6).toUpperCase();
-        System.out.println(colorStr);
+        if (colorStr.equalsIgnoreCase("6400ff")){
+            Color colorClock = Color.web("#006400");
+            return colorClock;
+        }
         Color colorTextClickRED = Color.web("#" + colorStr);
         return colorTextClickRED;
     }
 
     public static Color getColorTextClickPERU() {
+//        String colorStr = String.valueOf(counterColorL.getValue());
+//        Color colorTextClickPERU = Color.web("#" + colorStr.substring(2, 8).toUpperCase());
         String colorStr = Integer.toHexString(counterColorL.getValue().hashCode()).substring(0, 6).toUpperCase();
-        System.out.println(colorStr);
+        if (colorStr.equalsIgnoreCase("6400ff")){
+            Color colorClock = Color.web("#006400");
+            return colorClock;
+        }
         Color colorTextClickPERU = Color.web("#" + colorStr);
         return colorTextClickPERU;
     }
 
     public static Color getColorTitle() {
-        Color colorTitle = Color.DARKGRAY;
+//        String colorStr = String.valueOf(sectionColorL.getValue());
+//        Color colorTitle = Color.web("#" + colorStr.substring(2, 8).toUpperCase());
+
+        String colorStr = Integer.toHexString(sectionColorL.getValue().hashCode()).substring(0, 6).toUpperCase();
+        if (colorStr.equalsIgnoreCase("6400ff")){
+            Color colorClock = Color.web("#006400");
+            return colorClock;
+        }
+        Color colorTitle = Color.web("#" + colorStr);
         return colorTitle;
     }
 
     public static Color getColorScene() {
-        Color colorScene = Color.WHITE;
+//        String colorStr = String.valueOf(sceneColorL.getValue());
+//        Color colorScene = Color.web("#" + colorStr.substring(2, 8).toUpperCase());
+        String colorStr = Integer.toHexString(sceneColorL.getValue().hashCode()).substring(0, 6).toUpperCase();
+        if (colorStr.equalsIgnoreCase("6400ff")){
+            Color colorClock = Color.web("#006400");
+            return colorClock;
+        }
+        Color colorScene = Color.web("#" + colorStr);
         return colorScene;
     }
 
     public static Color getColorClock() {
-        Color colorClock = Color.DARKGREEN;
+        String colorStr = Integer.toHexString(timeColorL.getValue().hashCode()).substring(0, 6).toUpperCase();
+        if (colorStr.equalsIgnoreCase("6400ff")){
+            Color colorClock = Color.web("#006400");
+            return colorClock;
+        }
+
+//        String colorStr = String.valueOf(timeColorL.getValue());
+        Color colorClock = Color.web("#" + colorStr);
+//        Color colorClock = Color.web("#" + colorStr.substring(2, 8).toUpperCase());
         return colorClock;
+    }
+    public static String getColorButton() {
+        String colorButton = Integer.toHexString(buttonColorL.getValue().hashCode()).substring(0, 6).toUpperCase();
+        if (colorButton.equalsIgnoreCase("6400ff")){
+            return "006400";
+        }
+        return colorButton;
+    }
+    public static String getIlluminationButton() {
+        String colorIllumination = Integer.toHexString(buttonIlluminationL.getValue().hashCode()).substring(0, 6).toUpperCase();
+        if (colorIllumination.equalsIgnoreCase("6400ff")){
+            return "006400";
+        }
+        return colorIllumination;
     }
 
     public static Color getColorTextTITLE() {

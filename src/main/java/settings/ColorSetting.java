@@ -168,4 +168,44 @@ public class ColorSetting implements ArgumentsSettings, TableDB
         }
         timeColorL.setValue(color);
     }
+    public void getColorButton(){
+        Color color = null;
+        try {
+            Class.forName("org.postgresql.Driver");
+            Connection connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM settings WHERE id = 9;");
+            resultSet.next();
+            String colorStr = resultSet.getString("actions");
+            color = Color.rgb(Integer.valueOf( colorStr.substring( 0, 2 ), 16 ),
+                    Integer.valueOf( colorStr.substring( 2, 4 ), 16 ),
+                    Integer.valueOf( colorStr.substring( 4, 6 ), 16 ));
+            resultSet.close();
+            statement.close();
+            connection.close();
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+        buttonColorL.setValue(color);
+    }
+    public void getColorIllumination(){
+        Color color = null;
+        try {
+            Class.forName("org.postgresql.Driver");
+            Connection connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM settings WHERE id = 10;");
+            resultSet.next();
+            String colorStr = resultSet.getString("actions");
+            color = Color.rgb(Integer.valueOf( colorStr.substring( 0, 2 ), 16 ),
+                    Integer.valueOf( colorStr.substring( 2, 4 ), 16 ),
+                    Integer.valueOf( colorStr.substring( 4, 6 ), 16 ));
+            resultSet.close();
+            statement.close();
+            connection.close();
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+        buttonIlluminationL.setValue(color);
+    }
 }

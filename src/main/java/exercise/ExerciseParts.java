@@ -2,7 +2,9 @@ package exercise;
 
 import control.ButtonsMenu;
 import interfaceRoot.ArgumentsExercise;
+import interfaceRoot.EffectColor;
 import interfaceRoot.Root;
+import interfaceRoot.StyleButton;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 
@@ -17,7 +19,7 @@ public class ExerciseParts extends ButtonsMenu implements Root, ArgumentsExercis
             buttonApp[i].setText("Задание " + (i+1));
             buttonApp[i].setPrefWidth(widthSize-widthSize/1.07);
             buttonApp[i].setPrefHeight(widthSize-widthSize/1.03);
-            buttonApp[i].setStyle("-fx-focus-color: DARKGREEN;");
+            buttonApp[i].setStyle(StyleButton.getStyleButton());
             int finalI = i;
             buttonApp[i].setOnAction(event -> {
                 soundClick.soundClick(1);
@@ -45,7 +47,7 @@ public class ExerciseParts extends ButtonsMenu implements Root, ArgumentsExercis
             buttonNeg[i].setText("Задание " + (i + 1));
             buttonNeg[i].setPrefWidth(widthSize-widthSize/1.07);
             buttonNeg[i].setPrefHeight(widthSize-widthSize/1.03);
-            buttonNeg[i].setStyle("-fx-focus-color: DARKGREEN;");
+            buttonNeg[i].setStyle(StyleButton.getStyleButton());
             int finalI = i;
             buttonNeg[i].setOnAction(event -> {
                 soundClick.soundClick(1);
@@ -74,7 +76,7 @@ public class ExerciseParts extends ButtonsMenu implements Root, ArgumentsExercis
             buttonQues[i].setText("Задание " + (i + 1));
             buttonQues[i].setPrefWidth(widthSize-widthSize/1.07);
             buttonQues[i].setPrefHeight(widthSize-widthSize/1.03);
-            buttonQues[i].setStyle("-fx-focus-color: DARKGREEN;");
+            buttonQues[i].setStyle(StyleButton.getStyleButton());
             int finalI = i;
             buttonQues[i].setOnAction(event -> {
                 soundClick.soundClick(1);

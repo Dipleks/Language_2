@@ -1,6 +1,8 @@
 package exam;
 
 import interfaceRoot.EffectColor;
+import interfaceRoot.PanelTips;
+import interfaceRoot.StyleButton;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
@@ -44,11 +46,11 @@ class MergingPanels
 
         HBox hBox = new HBox();
         Button button = new Button("?");
-        button.setOnAction(e -> {
-            PanelTips.panes(str);
-        });
+        button.setOnAction(e -> PanelTips.panes(str));
+        button.setStyle(StyleButton.getStyleButton());
         improve.setPrefWidth(widthSize/3);
         hBox.setSpacing(10);
+        exitInMenu.setStyle(StyleButton.getStyleButton());
         hBox.getChildren().addAll(button, improve, exitInMenu, nameExam);
         improveClick1.setAlignment(Pos.CENTER);
         improveClick1.setTextFill(EffectColor.getColorTextClickPERU());

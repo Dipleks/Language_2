@@ -1,4 +1,4 @@
-package exam;
+package interfaceRoot;
 
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -11,9 +11,9 @@ import javafx.stage.Stage;
 import static interfaceRoot.Root.heightSize;
 import static interfaceRoot.Root.widthSize;
 
-class PanelTips
+public class PanelTips
 {
-    static void panes(String str) {
+    public static void panes(String str) {
         Stage win = new Stage();
         Label label = new Label(str);
         Button button = new Button("Закрыть");

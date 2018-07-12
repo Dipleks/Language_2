@@ -2,15 +2,17 @@ package settings;
 
 import interfaceRoot.ArgumentsSettings;
 import javafx.geometry.Pos;
+import javafx.scene.control.Button;
 
 class TheAppearanceOf implements ArgumentsSettings
 {
+    private UpdateColorTable updateColorTable = new UpdateColorTable();
 
     void changeColor(){
-//        color.setStyle("-fx-background-color: #ffffff;");
-        color.getStyleClass().add("colorMenuSettings");
-//        color.setOnMouseEntered(event -> color.setStyle("-fx-background-color: #999999;")); //действие при наведение курсора
-//        color.setOnMouseExited(event -> color.setStyle("-fx-background-color: #ffffff;")); //действие при отведении курсора
+        String colorStr = Integer.toHexString(sceneColorL.getValue().hashCode()).substring(0, 6).toUpperCase();
+        color.setStyle("-fx-background-color: #"+ colorStr +";");
+        color.setOnMouseEntered(event -> color.setStyle("-fx-background-color: #999999;")); //действие при наведение курсора
+        color.setOnMouseExited(event -> color.setStyle("-fx-background-color: #"+ colorStr +";")); //действие при отведении курсора
         color.setPrefWidth(widthSize/5.5);
         color.setAlignment(Pos.CENTER_LEFT);
         color.setOnAction(event -> {
@@ -29,16 +31,30 @@ class TheAppearanceOf implements ArgumentsSettings
         six.setSpacing(15);
         seven.setSpacing(15);
         eight.setSpacing(15);
+        nine.setSpacing(15);
+        ten.setSpacing(15);
 
-        examColorOneL.setOnAction(event -> {
-            // TODO сделать метод обновляющий цвета в базе
-            try {
-                String hex1 = Integer.toHexString(examColorOneL.getValue().hashCode()).substring(0, 6).toUpperCase();
-                System.out.println(hex1);
-            } catch (Exception e){
-                System.out.println("black");
-            }
-        });
+        String labVis = "-fx-color-label-visible: false;";
+        examColorOneL.setOnAction(event -> updateColorTable.addColorExamExercise());
+        examColorOneL.setStyle(labVis);
+        examColorTwoL.setOnAction(event -> updateColorTable.addColorExamPressNumber());
+        examColorTwoL.setStyle(labVis);
+        exerciseColorOneL.setOnAction(event -> updateColorTable.addColorTranslation());
+        exerciseColorOneL.setStyle(labVis);
+        exerciseColorTwoL.setOnAction(event -> updateColorTable.addColorExamMistakes());
+        exerciseColorTwoL.setStyle(labVis);
+        counterColorL.setOnAction(event -> updateColorTable.addColorExamConter());
+        counterColorL.setStyle(labVis);
+        sectionColorL.setOnAction(event -> updateColorTable.addColorSectionExercise());
+        sectionColorL.setStyle(labVis);
+        sceneColorL.setOnAction(event -> updateColorTable.addColorScene());
+        sceneColorL.setStyle(labVis);
+        timeColorL.setOnAction(event -> updateColorTable.addColorTime());
+        timeColorL.setStyle(labVis);
+        buttonColorL.setOnAction(event -> updateColorTable.addColorButton());
+        buttonColorL.setStyle(labVis);
+        buttonIlluminationL.setOnAction(event -> updateColorTable.addColorIllumination());
+        buttonIlluminationL.setStyle(labVis);
 
         ROOT.getChildren().add(settingColor);
         one.getChildren().addAll(examColorOneL, examColorOne);
@@ -49,7 +65,9 @@ class TheAppearanceOf implements ArgumentsSettings
         six.getChildren().addAll(sectionColorL, sectionColor);
         seven.getChildren().addAll(sceneColorL, sceneColor);
         eight.getChildren().addAll(timeColorL, timeColor);
-        settingColor.getChildren().addAll(one, two, three, four, five, six, seven, eight);
+        nine.getChildren().addAll(buttonColorL, buttonColor);
+        ten.getChildren().addAll(buttonIlluminationL, buttonIllumination);
+        settingColor.getChildren().addAll(one, two, three, four, five, six, seven, eight, nine, ten);
         settingColor.setLayoutX(widthSize/2.3);
         settingColor.setLayoutY(heightSize/8);
     }

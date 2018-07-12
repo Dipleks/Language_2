@@ -8,7 +8,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class EventsColorMenuWords implements ArgumentsMyWords, TableDB
+class EventsColorMenuWords implements ArgumentsMyWords, TableDB
 {
     void getEvents(int n){
         KNOW_ON_ONE.setOnAction(event -> colorDB("Знаю на 1", n));

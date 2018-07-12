@@ -5,6 +5,7 @@ import exercise.IExercises;
 import interfaceRoot.ClockDisplay;
 import interfaceRoot.EffectColor;
 import interfaceRoot.EffectFont;
+import interfaceRoot.StyleButton;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.*;
@@ -55,9 +56,9 @@ public class ButtonsMenu
         enBut.setSelected(true);
         ruBut.setToggleGroup(group);
 
-        enBut.setStyle("-fx-color: #E5E5E5; -fx-focus-color: DARKGREEN;");
-        ruBut.setStyle("-fx-color: #E5E5E5; -fx-focus-color: DARKGREEN;");
-        exit.setStyle("-fx-color: #E5E5E5; -fx-focus-color: DARKGREEN;");
+        enBut.setStyle(StyleButton.getStyleButton());
+        ruBut.setStyle(StyleButton.getStyleButton());
+        exit.setStyle(StyleButton.getStyleButton());
         groupRadBut.getChildren().addAll(enBut, ruBut, exit);
         groupRadBut.setSpacing(widthSize-widthSize/1.03);
 //        groupRadBut.setStyle("-fx-border-color: RED");

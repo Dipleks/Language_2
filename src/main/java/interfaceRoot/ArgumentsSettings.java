@@ -13,7 +13,7 @@ public interface ArgumentsSettings extends Root
 
     VBox panelSetting = new VBox();
     Label textWarning = new Label("При сбросе всех настроек будут удалены все Ваши тексты и слова!");
-    Button resetSettings = new Button("Сбросить до зоводских настроек");
+    Button resetSettings = new Button("Сбросить до заводских настроек");
 
     VBox settingColor = new VBox();
     HBox one = new HBox();
@@ -24,6 +24,8 @@ public interface ArgumentsSettings extends Root
     HBox six = new HBox();
     HBox seven = new HBox();
     HBox eight = new HBox();
+    HBox nine = new HBox();
+    HBox ten = new HBox();
 
     Label examColorOne = new Label("Контрольные и задания до перевода");
     Label examColorTwo = new Label("Перевод контрольых по нажатию на номер");
@@ -33,6 +35,8 @@ public interface ArgumentsSettings extends Root
     Label sectionColor = new Label("Разделы заданий");
     Label sceneColor = new Label("Цвет основного фона");
     Label timeColor = new Label("Цвет часов");
+    Label buttonColor = new Label("Цвет кнопок");
+    Label buttonIllumination = new Label("Цвет подсветки кнопок");
 
     ColorPicker examColorOneL = new ColorPicker();
     ColorPicker examColorTwoL = new ColorPicker();
@@ -42,4 +46,6 @@ public interface ArgumentsSettings extends Root
     ColorPicker sectionColorL = new ColorPicker();
     ColorPicker sceneColorL = new ColorPicker();
     ColorPicker timeColorL = new ColorPicker();
+    ColorPicker buttonColorL = new ColorPicker();
+    ColorPicker buttonIlluminationL = new ColorPicker();
 }

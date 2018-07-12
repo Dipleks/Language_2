@@ -13,6 +13,7 @@ import javafx.stage.Stage;
 public interface Root
 {
     // Главное окно:
+
     Stage WINDOW = new Stage();
     Screen SCREEN = Screen.getPrimary();
     double widthSize = SCREEN.getBounds().getWidth();
@@ -21,4 +22,5 @@ public interface Root
     Scene SCENE_ROOT = new Scene(ROOT, widthSize*0.95, heightSize*0.95, EffectColor.getColorScene());
 
     SoundClick soundClick = new SoundClick();
+
 }

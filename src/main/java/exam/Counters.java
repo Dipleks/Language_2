@@ -4,6 +4,7 @@ import db.CreateDB;
 import db.TableDB;
 import interfaceRoot.EffectColor;
 import interfaceRoot.EffectFont;
+import interfaceRoot.StyleButton;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
@@ -43,7 +44,7 @@ class Counters
             counterNO.setText("0");
             // Кнопка "Счетчик":
             Button resultExam = new Button("Статистика");
-            resultExam.setStyle("-fx-background-color: #c1b8b8;");
+            resultExam.setStyle(StyleButton.getStyleButton());
             resultExam.setOnAction(event -> statisticsWindow());
 
             counterVB.setSpacing(10);
@@ -61,6 +62,7 @@ class Counters
         TableView<AddMistakesTable> tableStatisticExam = new TableView<>();
 
         Button deleteCounter = new Button("Очистить статистику");
+        deleteCounter.setStyle(StyleButton.getStyleButton());
         deleteCounter.setOnAction(event -> {
             counterDeleteStatistic();
             statistics.close();

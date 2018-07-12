@@ -3,11 +3,10 @@ package exam;
 import interfaceRoot.ArgumentsExam;
 import interfaceRoot.EffectColor;
 import interfaceRoot.EffectFont;
+import interfaceRoot.PanelTips;
 import javafx.geometry.Pos;
 import javafx.scene.Cursor;
 import javafx.scene.control.Label;
-
-import java.sql.SQLException;
 
 public class Exams implements ArgumentsExam
 {

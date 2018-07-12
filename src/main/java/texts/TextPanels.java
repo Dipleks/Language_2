@@ -46,8 +46,6 @@ public class TextPanels extends CallText implements TableDB
         buttonsTransfer.getChildren().addAll(translation, add_my_test);
         ButtonsTransfer buttons = new ButtonsTransfer();
 
-
-
         for (int i = 0; i < numberOfLines.numberOfLines(); i++) {
             if (s.byteValue()==i){
 

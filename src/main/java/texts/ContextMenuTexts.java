@@ -4,7 +4,9 @@ import control.ClearDisplay;
 import control.MenuBarEngRus;
 import db.TableDB;
 import interfaceRoot.ArgumentsTexts;
+import interfaceRoot.EffectColor;
 import interfaceRoot.EffectFont;
+import interfaceRoot.StyleButton;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -18,11 +20,6 @@ class ContextMenuTexts implements ArgumentsTexts, TableDB
 {
     private MenuItem menuEditTexts = new MenuItem("Редактировать");
     private SeparatorMenuItem separatorMenuItem = new SeparatorMenuItem();
-//    private MenuItem KNOW_ON_ONE = new MenuItem();
-//    private MenuItem KNOW_ON_TWO = new MenuItem();
-//    private MenuItem KNOW_ON_THREE = new MenuItem();
-//    private MenuItem KNOW_ON_FOUR = new MenuItem();
-//    private MenuItem KNOW_ON_FIVE = new MenuItem();
     private Stage panelEditTexts = new Stage();
     private EventsColorMenuTexts events = new EventsColorMenuTexts();
 
@@ -73,6 +70,7 @@ class ContextMenuTexts implements ArgumentsTexts, TableDB
             vBox.setAlignment(Pos.CENTER);
             vBox.setSpacing(10);
             vBox.setPadding(new Insets(10, 10, 10, 10));
+            editText.setStyle(StyleButton.getStyleButton());
             vBox.getChildren().addAll(groupLabelAndText, textEdit, textEditRU, editText);
 
             Scene scene = new Scene(vBox, widthSize/1.5, heightSize/1.9);
@@ -107,6 +105,7 @@ class ContextMenuTexts implements ArgumentsTexts, TableDB
 
     // Действие кнопок OK и CANCEL:
     private void ok_cancel(){
+        OK.setStyle(StyleButton.getStyleButton());
         OK.setOnAction(event -> {
             Statement statement;
             Connection connection;
@@ -137,9 +136,8 @@ class ContextMenuTexts implements ArgumentsTexts, TableDB
                 e.printStackTrace();
             }
         });
-        CANCEL.setOnAction(event -> {
-            SAVE_EDIT.close();
-        });
+        CANCEL.setStyle(StyleButton.getStyleButton());
+        CANCEL.setOnAction(event -> SAVE_EDIT.close());
     }
 
     private String getTextEN(){

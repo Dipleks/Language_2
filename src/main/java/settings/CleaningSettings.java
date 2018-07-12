@@ -14,6 +14,8 @@ class CleaningSettings implements ArgumentsSettings
         six.getChildren().clear();
         seven.getChildren().clear();
         eight.getChildren().clear();
+        nine.getChildren().clear();
+        ten.getChildren().clear();
         panelSetting.getChildren().clear();
         ROOT.getChildren().remove(panelSetting);
         ROOT.getChildren().remove(settingColor);

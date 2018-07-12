@@ -2,6 +2,8 @@ package myWords;
 
 import db.CreateDB;
 import interfaceRoot.ArgumentsMyWords;
+import interfaceRoot.EffectColor;
+import interfaceRoot.StyleButton;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.ChoiceBox;
@@ -31,6 +33,7 @@ public class ListCategoryKnowledge implements ArgumentsMyWords
 
     ChoiceBox<CategoryKnowledge> getCategory(){
 
+        categoryWordsChoiceBox.setStyle(StyleButton.getStyleButton());
         categoryWordsChoiceBox.setItems(list);
         categoryWordsChoiceBox.setValue(one);
         categoryWordsChoiceBox.setOnAction(event -> {

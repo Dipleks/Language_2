@@ -2,6 +2,8 @@ package myWords;
 
 import db.CreateDB;
 import interfaceRoot.ArgumentsMyWords;
+import interfaceRoot.EffectColor;
+import interfaceRoot.StyleButton;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
@@ -18,6 +20,9 @@ class NewWords implements ArgumentsMyWords
 
     // Добавление новых слов меню my_words:
     void addNewWords(){
+        addWords.setStyle(StyleButton.getStyleButton());
+        addCategory.setStyle(StyleButton.getStyleButton());
+
         addWords.setOnAction(e -> {
             if (!textEn.getText().equals("") & !textRu.getText().equals("")) {
                 Stage stage = new Stage();
