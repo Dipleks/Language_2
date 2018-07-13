@@ -3,6 +3,7 @@ package interfaceRoot;
 import javafx.scene.control.Button;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
@@ -14,7 +15,9 @@ public interface ArgumentsSettings extends Root
     VBox panelSetting = new VBox();
     Label textWarning = new Label("При сбросе всех настроек будут удалены все Ваши тексты и слова!");
     Button resetSettings = new Button("Сбросить до заводских настроек");
+    Button resetColor = new Button("Сбросить все изменения");
 
+    ScrollPane scrollSettingsColor = new ScrollPane();
     VBox settingColor = new VBox();
     HBox one = new HBox();
     HBox two = new HBox();

@@ -4,10 +4,7 @@ import db.CreateDB;
 import interfaceRoot.Root;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.Menu;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.MenuItem;
+import javafx.scene.control.*;
 import javafx.scene.layout.StackPane;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontPosture;
@@ -22,9 +19,12 @@ public class MenuBarEngRus implements Root
 {
     private final MenuBar menuBar = new MenuBar();
 
+    private SeparatorMenuItem separatorMenuItem = new SeparatorMenuItem();
+
     private final Menu menuExercise = new Menu("Задания");
     private final Menu menuExams = new Menu("Контрольные");
     private final Menu menuTexts = new Menu("Тексты");
+    private final Menu menuCards = new Menu("Карточки");
     private final MenuItem menuPS = new MenuItem("Present Simple");
     private final MenuItem menu_my_words = new MenuItem("Мой словарь");
     private final MenuItem examPS = new MenuItem("Контрольная PS");
@@ -33,6 +33,9 @@ public class MenuBarEngRus implements Root
     private final MenuItem textsLevelOne = new MenuItem("Легкий");
     private final MenuItem textsLevelTwo = new MenuItem("Средний");
     private final MenuItem textsLevelThree = new MenuItem("Сложный");
+    private final MenuItem cardsWords = new MenuItem("Слова");
+    private final MenuItem cardsPhrases = new MenuItem("Фразы");
+    private final MenuItem cardsOffers = new MenuItem("Предложения");
 
     private final Menu menuHelp = new Menu("Подсказки");
 
@@ -55,13 +58,17 @@ public class MenuBarEngRus implements Root
         getMenuServes();
 
         menuHelp.setDisable(true);
+        cardsWords.setDisable(true);
+        cardsPhrases.setDisable(true);
+        cardsOffers.setDisable(true);
 
         menuBar.setMinWidth(widthSize);
         menuTexts.getItems().addAll(textsLevelOne, textsLevelTwo, textsLevelThree);
         menuServes.getItems().addAll(menuSetting, about);
-        menuExercise.getItems().addAll(menuPS, menuToBe, menu_my_words);
+        menuExercise.getItems().addAll(menuPS, menuToBe, separatorMenuItem, menu_my_words);
         menuExams.getItems().addAll(examPS, examToBe);
-        menuBar.getMenus().addAll(menuExercise, menuExams, menuTexts, menuHelp, menuServes);
+        menuCards.getItems().addAll(cardsWords, cardsPhrases, cardsOffers);
+        menuBar.getMenus().addAll(menuExercise, menuExams, menuTexts, menuCards, menuHelp, menuServes);
 
         return menuBar;
     }
@@ -117,8 +124,7 @@ public class MenuBarEngRus implements Root
             label.setPrefSize(widthSize/4, heightSize/4);
             label.setText("Автор программы Ghost \n" + "\n" + "Программа предназначена " +
                     "\nдля изучения Английского языка." +
-                    "\n\n                                    Версия программы: 2.0.4" +
-                    "\n\n\nИзменения:\nОптимизация кода. Изменение кнопок управления.");
+                    "\n\n                                    Версия программы: 2.2.0");
             label.setFont(Font.font("Time New Roman", FontWeight.BOLD,
                     FontPosture.ITALIC, heightSize*0.015));
             label.setAlignment(Pos.CENTER);

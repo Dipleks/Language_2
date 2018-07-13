@@ -19,5 +19,7 @@ class CleaningSettings implements ArgumentsSettings
         panelSetting.getChildren().clear();
         ROOT.getChildren().remove(panelSetting);
         ROOT.getChildren().remove(settingColor);
+        ROOT.getChildren().remove(resetColor);
+        ROOT.getChildren().remove(scrollSettingsColor);
     }
 }
