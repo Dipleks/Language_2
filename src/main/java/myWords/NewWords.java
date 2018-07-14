@@ -2,6 +2,8 @@ package myWords;
 
 import db.CreateDB;
 import interfaceRoot.ArgumentsMyWords;
+import interfaceRoot.EffectColor;
+import interfaceRoot.StyleButton;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
@@ -14,9 +16,13 @@ import java.sql.SQLException;
 class NewWords implements ArgumentsMyWords
 {
     private ListCategory listCategory = new ListCategory();
+    private ListCategoryKnowledge listCategoryKnowledge = new ListCategoryKnowledge();
 
     // Добавление новых слов меню my_words:
     void addNewWords(){
+        addWords.setStyle(StyleButton.getStyleButton());
+        addCategory.setStyle(StyleButton.getStyleButton());
+
         addWords.setOnAction(e -> {
             if (!textEn.getText().equals("") & !textRu.getText().equals("")) {
                 Stage stage = new Stage();
@@ -24,8 +30,8 @@ class NewWords implements ArgumentsMyWords
                 Scene scene = new Scene(vBox, widthSize/4, heightSize/4);
                 addCategory.setOnAction(event -> {
                     try {
-                        CreateDB.connection().executeUpdate("INSERT INTO my_words (word_en, word_ru, category) VALUES ('" + textEn.getText()
-                                + "', '" + textRu.getText() + "', '" + listCategory.getCategoryWordsChoiceBox().getValue() + "')");
+                        CreateDB.connection().executeUpdate("INSERT INTO my_words (word_en, word_ru, category, color) VALUES ('" + textEn.getText()
+                                + "', '" + textRu.getText() + "', '" + listCategory.getCategoryWordsChoiceBox().getValue() + "', 'black')");
                         ResultSet r = CreateDB.connection().executeQuery("SELECT word_en FROM my_words");
                         for (int i = 0; r.next(); i++) {
                             leftC.getChildren().remove(my_word_en[i]);

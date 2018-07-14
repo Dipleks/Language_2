@@ -4,6 +4,7 @@ import db.CreateDB;
 import interfaceRoot.ArgumentsMyWords;
 import interfaceRoot.EffectColor;
 import interfaceRoot.EffectFont;
+import interfaceRoot.StyleButton;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -19,6 +20,7 @@ class Search implements ArgumentsMyWords
 {
     // Поиск меню my_words:
     void getSearch(){
+        searchWords.setStyle(StyleButton.getStyleButton());
         searchWords.setOnAction(e -> {
             if (textSearch.getText().equals("")){
                 textSearch.setPromptText("Введите букву или слово для поиска...");

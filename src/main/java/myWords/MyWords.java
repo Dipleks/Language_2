@@ -1,23 +1,14 @@
 package myWords;
 
-import db.CreateDB;
-import interfaceRoot.EffectColor;
 import interfaceRoot.EffectFont;
 import javafx.geometry.Insets;
-import javafx.geometry.Pos;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
-
-import java.sql.*;
-
 
 public class MyWords extends ContextMenuMyWords
 {
     private ListCategory listCategory = new ListCategory();
+    private ListCategoryKnowledge listCategoryKnowledge = new ListCategoryKnowledge();
 
     // Добавление Базы данных, меню "Мои слова":
     public void getMyWordsList(){
@@ -79,7 +70,7 @@ public class MyWords extends ContextMenuMyWords
         hBox1.setSpacing(heightSize-heightSize/1.009);
         hBox1.setLayoutX(widthSize/2.8);
         hBox1.setLayoutY(heightSize/10.5);
-        hBox1.getChildren().addAll(label, listCategory.getCategory());
+        hBox1.getChildren().addAll(label, listCategory.getCategory(), listCategoryKnowledge.getCategory());
 
         ROOT.getChildren().addAll(addElement, hBox1, hBox);
     }

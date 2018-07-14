@@ -1,6 +1,7 @@
 package myWords;
 
 import db.CreateDB;
+import db.TableDB;
 import interfaceRoot.ArgumentsMyWords;
 import interfaceRoot.EffectColor;
 import interfaceRoot.EffectFont;
@@ -8,10 +9,9 @@ import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.control.Tooltip;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
-class RestartTable implements ArgumentsMyWords
+class RestartTable implements ArgumentsMyWords, TableDB
 {
     private ContextMenuMyWords contextMenuMyWords = new ContextMenuMyWords();
     private NewWords newWords = new NewWords();
@@ -33,9 +33,9 @@ class RestartTable implements ArgumentsMyWords
         }
     }
 
-    void getWordList(ResultSet rs1, ResultSet rs2) throws SQLException {
-        for (int i = 0; rs1.next(); i++) {
-            rs2.next();
+    void getWordList(ResultSet rsEn, ResultSet rsRu) throws SQLException {
+        for (int i = 0; rsEn.next(); i++) {
+            rsRu.next();
             int finalI = i;
             contextMenuMyWords.subMenuMyWords(i);
             my_word_en[i] = new Label();
@@ -46,7 +46,7 @@ class RestartTable implements ArgumentsMyWords
             my_word_en[i].setAlignment(Pos.BASELINE_RIGHT);
 //                my_word_en[i].setWrapText(true);
 //                my_word_en[i].setCursor(Cursor.HAND);
-            my_word_en[i].setText(rs1.getString("word_en"));
+            my_word_en[i].setText(rsEn.getString("word_en"));
             my_word_en[i].setOnContextMenuRequested(e ->
                     contextMenuMyWords.subMenuMyWords(finalI).show(my_word_en[finalI], e.getScreenX(), e.getScreenY()));
 
@@ -57,7 +57,7 @@ class RestartTable implements ArgumentsMyWords
             my_word_ru[i].setPrefWidth(widthSize-widthSize/2.45);
 //                my_word_ru[i].setWrapText(true);
 //                my_word_ru[i].setCursor(Cursor.HAND);
-            my_word_ru[i].setText(rs2.getString("word_ru"));
+            my_word_ru[i].setText(rsRu.getString("word_ru"));
             my_word_ru[i].setOnContextMenuRequested(e ->
                     contextMenuMyWords.subMenuMyWords(finalI).show(my_word_ru[finalI], e.getScreenX(), e.getScreenY()));
             if (my_word_ru[i].getText().length()>33) {

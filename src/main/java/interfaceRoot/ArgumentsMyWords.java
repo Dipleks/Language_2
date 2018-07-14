@@ -23,5 +23,9 @@ public interface ArgumentsMyWords extends Root
     Button addWords = new Button("Добавить");
     Button addCategory = new Button("Выбрать категорию");
 
-
+    MenuItem KNOW_ON_ONE = new MenuItem("Знаю на 1");
+    MenuItem KNOW_ON_TWO = new MenuItem("Знаю на 2");
+    MenuItem KNOW_ON_THREE = new MenuItem("Знаю на 3");
+    MenuItem KNOW_ON_FOUR = new MenuItem("Знаю на 4");
+    MenuItem KNOW_ON_FIVE = new MenuItem("Знаю на 5");
 }

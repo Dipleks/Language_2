@@ -5,7 +5,9 @@ import control.MenuBarEngRus;
 import db.CreateDB;
 import db.TableDB;
 import interfaceRoot.ArgumentsTexts;
+import interfaceRoot.EffectColor;
 import interfaceRoot.EffectFont;
+import interfaceRoot.StyleButton;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -19,11 +21,12 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-class ButtonsTransfer implements ArgumentsTexts, Texts, TableDB
+class ButtonsTransfer implements ArgumentsTexts, TableDB
 {
     private Stage panelAddText = new Stage();
 
     Button getTransfer(String rusText, String engText) {
+        translation.setStyle(StyleButton.getStyleButton());
         translation.setOnAction(e -> {
             if (text.getText().equals(engText)) {
                 text.setPrefWidth(scrollPane.getPrefWidth()/1.055);
@@ -41,6 +44,7 @@ class ButtonsTransfer implements ArgumentsTexts, Texts, TableDB
     }
 
     Button addMyText() {
+        add_my_test.setStyle(StyleButton.getStyleButton());
         add_my_test.setOnAction(e -> {
 
             VBox vBox = new VBox();
@@ -74,6 +78,7 @@ class ButtonsTransfer implements ArgumentsTexts, Texts, TableDB
         return add_my_test;
     }
     private void getNewText() {
+        addNewText.setStyle(StyleButton.getStyleButton());
         addNewText.setOnAction(event -> {
 
             if(!nameText.getText().equals("") & !textEng.getText().equals("") & !textRus.getText().equals("")) {

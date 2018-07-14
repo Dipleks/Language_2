@@ -1,15 +1,12 @@
 package texts;
 
-import db.CreateDB;
 import db.TableDB;
 import interfaceRoot.ArgumentsTexts;
-import javafx.collections.FXCollections;
+import interfaceRoot.EffectColor;
+import interfaceRoot.StyleButton;
 import javafx.collections.ObservableList;
 import javafx.scene.control.ChoiceBox;
-
 import java.sql.*;
-
-import static db.TableDB.DB_URL;
 import static texts.MaxCountText.getCountTable;
 
 class ListNameText implements ArgumentsTexts, TableDB
@@ -18,6 +15,7 @@ class ListNameText implements ArgumentsTexts, TableDB
     ChoiceBox<NameText> getListName() {
 
 //        ROOT.getChildren().remove(listName);
+        listName.setStyle(StyleButton.getStyleButton());
         listName.setLayoutX(widthSize/1.5);
         listName.setLayoutY(heightSize/14);
         listName.setItems(listName());

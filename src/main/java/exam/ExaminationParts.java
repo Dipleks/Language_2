@@ -1,17 +1,14 @@
 package exam;
 
 import control.ButtonsMenu;
-import interfaceRoot.ArgumentsExercise;
-import interfaceRoot.EffectColor;
-import interfaceRoot.EffectFont;
-import interfaceRoot.Root;
+import interfaceRoot.*;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 
 import static interfaceRoot.ArgumentsExam.exitInMenu;
 import static interfaceRoot.ArgumentsExam.nameExam;
 
-public class ExaminationParts extends ButtonsMenu implements Root, ArgumentsExercise
+public class ExaminationParts extends ButtonsMenu implements Root, ArgumentsExercise, ArgumentsSettings
 {
 
 
@@ -24,7 +21,8 @@ public class ExaminationParts extends ButtonsMenu implements Root, ArgumentsExer
             buttonExam[i].setText("Часть №" + (i + 1));
             buttonExam[i].setPrefWidth(widthSize-widthSize/1.06);
             buttonExam[i].setPrefHeight(widthSize-widthSize/1.03);
-            buttonExam[i].setStyle("-fx-focus-color: DARKGREEN;");
+            buttonExam[i].setStyle(StyleButton.getStyleButton());
+
             int finalI = i;
             buttonExam[i].setOnAction(event -> {
 

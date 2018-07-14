@@ -2,35 +2,52 @@ package texts;
 
 import control.ClearDisplay;
 import control.MenuBarEngRus;
-import db.CreateDB;
 import db.TableDB;
 import interfaceRoot.ArgumentsTexts;
+import interfaceRoot.EffectColor;
 import interfaceRoot.EffectFont;
+import interfaceRoot.StyleButton;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
-
 import java.sql.*;
 
-public class ContextMenuTexts implements ArgumentsTexts, TableDB
+class ContextMenuTexts implements ArgumentsTexts, TableDB
 {
     private MenuItem menuEditTexts = new MenuItem("Редактировать");
+    private SeparatorMenuItem separatorMenuItem = new SeparatorMenuItem();
     private Stage panelEditTexts = new Stage();
+    private EventsColorMenuTexts events = new EventsColorMenuTexts();
 
+    // Контекстное меню "Текстов"
     ContextMenu menuTexts(){
         ContextMenu contextMenuTexts = new ContextMenu();
         menuEdit();
+        getMenuContainerColor();
+        events.getEvents();
 
-        contextMenuTexts.getItems().addAll(menuEditTexts);
+        contextMenuTexts.getItems().addAll(menuEditTexts, separatorMenuItem, yellow, red, green, blue, purple, black);
         return contextMenuTexts;
     }
 
-    private MenuItem menuEdit() {
+    // Контестное меню "цветовых панелей"
+    private void getMenuContainerColor(){
+        String pref = "-fx-pref-width: 30;";
+
+        yellow.setStyle("-fx-background-color: yellow;" + pref);
+        red.setStyle("-fx-background-color: red;" + pref);
+        green.setStyle("-fx-background-color: green;" + pref);
+        blue.setStyle("-fx-background-color: blue;" + pref);
+        purple.setStyle("-fx-background-color: purple;" + pref);
+        black.setStyle("-fx-background-color: black;" + pref);
+    }
+
+    // Действие контекстного меню текстов "Редактирование"
+    private void menuEdit() {
         menuEditTexts.setOnAction(e -> {
 
             VBox vBox = new VBox();
@@ -53,19 +70,14 @@ public class ContextMenuTexts implements ArgumentsTexts, TableDB
             vBox.setAlignment(Pos.CENTER);
             vBox.setSpacing(10);
             vBox.setPadding(new Insets(10, 10, 10, 10));
+            editText.setStyle(StyleButton.getStyleButton());
             vBox.getChildren().addAll(groupLabelAndText, textEdit, textEditRU, editText);
-
-//            getNewText();
 
             Scene scene = new Scene(vBox, widthSize/1.5, heightSize/1.9);
             panelEditTexts.setScene(scene);
             panelEditTexts.setTitle("Редактирование текста");
-//            panelEditTexts.initModality(Modality.APPLICATION_MODAL);
             panelEditTexts.show();
-
-
         });
-        return menuEditTexts;
     }
 
     // Действие кнопки "Сохранить изменения"
@@ -93,6 +105,7 @@ public class ContextMenuTexts implements ArgumentsTexts, TableDB
 
     // Действие кнопок OK и CANCEL:
     private void ok_cancel(){
+        OK.setStyle(StyleButton.getStyleButton());
         OK.setOnAction(event -> {
             Statement statement;
             Connection connection;
@@ -123,9 +136,8 @@ public class ContextMenuTexts implements ArgumentsTexts, TableDB
                 e.printStackTrace();
             }
         });
-        CANCEL.setOnAction(event -> {
-            SAVE_EDIT.close();
-        });
+        CANCEL.setStyle(StyleButton.getStyleButton());
+        CANCEL.setOnAction(event -> SAVE_EDIT.close());
     }
 
     private String getTextEN(){

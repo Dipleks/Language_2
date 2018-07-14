@@ -1,8 +1,0 @@
---таблица с путями к звуковым файлам:
-CREATE TABLE IF NOT EXISTS music (id SERIAL PRIMARY KEY, name VARCHAR(40), mp3 TEXT);
-
-INSERT INTO music (name, mp3)
-VALUES ('click', 'language_2-2.0.4-jar-with-dependencies/click.wav'),
-('verno', 'language_2-2.0.4-jar-with-dependencies/verno.mp3'),
-('ne_verno', 'language_2-2.0.4-jar-with-dependencies/ne_verno.mp3'),
-('transition', 'language_2-2.0.4-jar-with-dependencies/transition.wav');

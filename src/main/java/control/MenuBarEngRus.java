@@ -4,10 +4,7 @@ import db.CreateDB;
 import interfaceRoot.Root;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.Menu;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.MenuItem;
+import javafx.scene.control.*;
 import javafx.scene.layout.StackPane;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontPosture;
@@ -15,30 +12,35 @@ import javafx.scene.text.FontWeight;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import myWords.MyWords;
-import texts.TextPanels;
-
-import java.sql.SQLException;
+import settings.Settings;
+import texts.TextsParts;
 
 public class MenuBarEngRus implements Root
 {
     private final MenuBar menuBar = new MenuBar();
 
+    private SeparatorMenuItem separatorMenuItem = new SeparatorMenuItem();
+
     private final Menu menuExercise = new Menu("Задания");
     private final Menu menuExams = new Menu("Контрольные");
     private final Menu menuTexts = new Menu("Тексты");
+    private final Menu menuCards = new Menu("Карточки");
     private final MenuItem menuPS = new MenuItem("Present Simple");
     private final MenuItem menu_my_words = new MenuItem("Мой словарь");
     private final MenuItem examPS = new MenuItem("Контрольная PS");
     private final MenuItem menuToBe = new MenuItem("Форма \"to be\"");
     private final MenuItem examToBe = new MenuItem("Контрольная \"to be\"");
-    private final MenuItem textsLevelOne = new MenuItem("Уровень 1");
+    private final MenuItem textsLevelOne = new MenuItem("Легкий");
+    private final MenuItem textsLevelTwo = new MenuItem("Средний");
+    private final MenuItem textsLevelThree = new MenuItem("Сложный");
+    private final MenuItem cardsWords = new MenuItem("Слова");
+    private final MenuItem cardsPhrases = new MenuItem("Фразы");
+    private final MenuItem cardsOffers = new MenuItem("Предложения");
 
     private final Menu menuHelp = new Menu("Подсказки");
 
     private final Menu menuServes = new Menu("Сервис");
-    private final Menu menuSetting = new Menu("Режим");
-    private final MenuItem menuWHITE = new MenuItem("День");
-    private final MenuItem menuBLACK = new MenuItem("Ночь");
+    private final MenuItem menuSetting = new MenuItem("Настройки");
     private final MenuItem about = new MenuItem("О программе");
 
     public void getMenu() {
@@ -52,25 +54,34 @@ public class MenuBarEngRus implements Root
         getAbout();
         getMenuToBe();
         getExamToBe();
-        getMenuBLACK();
-        getMenuWHITE();
         getTextsLevelOne();
+        getMenuServes();
 
-        menuWHITE.setDisable(true);
-        menuBLACK.setDisable(true);
         menuHelp.setDisable(true);
-//        menuTexts.setDisable(true);
+        cardsWords.setDisable(true);
+        cardsPhrases.setDisable(true);
+        cardsOffers.setDisable(true);
 
         menuBar.setMinWidth(widthSize);
-        menuTexts.getItems().addAll(textsLevelOne);
-        menuSetting.getItems().addAll(menuWHITE, menuBLACK);
+        menuTexts.getItems().addAll(textsLevelOne, textsLevelTwo, textsLevelThree);
         menuServes.getItems().addAll(menuSetting, about);
-        menuExercise.getItems().addAll(menuPS, menuToBe, menu_my_words);
+        menuExercise.getItems().addAll(menuPS, menuToBe, separatorMenuItem, menu_my_words);
         menuExams.getItems().addAll(examPS, examToBe);
-        menuBar.getMenus().addAll(menuExercise, menuExams, menuTexts, menuHelp, menuServes);
+        menuCards.getItems().addAll(cardsWords, cardsPhrases, cardsOffers);
+        menuBar.getMenus().addAll(menuExercise, menuExams, menuTexts, menuCards, menuHelp, menuServes);
 
         return menuBar;
     }
+    private void getMenuServes(){
+        menuSetting.setOnAction(event -> {
+            ClearDisplay.clearMethod();
+            MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
+            menuBarEngRus.getMenu();
+            Settings setting = new Settings();
+            setting.getSetting();
+        });
+    }
+
     private void getMenu_my_words() {
 
         if (CreateDB.checkConnection()) {
@@ -113,8 +124,7 @@ public class MenuBarEngRus implements Root
             label.setPrefSize(widthSize/4, heightSize/4);
             label.setText("Автор программы Ghost \n" + "\n" + "Программа предназначена " +
                     "\nдля изучения Английского языка." +
-                    "\n\n                                    Версия программы: 2.0.4" +
-                    "\n\n\nИзменения:\nОптимизация кода. Изменение кнопок управления.");
+                    "\n\n                                    Версия программы: 2.2.0");
             label.setFont(Font.font("Time New Roman", FontWeight.BOLD,
                     FontPosture.ITALIC, heightSize*0.015));
             label.setAlignment(Pos.CENTER);
@@ -145,35 +155,13 @@ public class MenuBarEngRus implements Root
             addExerciseExam.AddMenuButtonExamToBe();
         });
     }
-    private void getMenuBLACK(){
-        menuBLACK.setOnAction(event -> {
-//            EffectColor.setColorText(Color.WHITE);
-//            EffectColor.setColorTextClick();
-//            EffectColor.setColorTextClickPERU();
-//            EffectColor.setColorTextClickRED();
-//            EffectColor.setColorTextImpr();
-//            EffectColor.setColorScene();
-//            SCENE_ROOT.setFill(Color.BLACK);
-//            EffectColor.setColorTitle();
-        });
-    }
-    private void getMenuWHITE(){
-        menuBLACK.setOnAction(event -> {
-
-        });
-    }
     private void getTextsLevelOne(){
         textsLevelOne.setOnAction(event -> {
-            try {
-                ClearDisplay.clearMethod();
-                MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
-                menuBarEngRus.getMenu();
-                TextPanels textPanels = new TextPanels();
-                textPanels.call();
-            } catch (Exception e){
-                System.out.println("ошибка повторного нажатия меню Уровень 1");
-            }
-
+            ClearDisplay.clearMethod();
+            MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
+            menuBarEngRus.getMenu();
+            TextsParts textsParts = new TextsParts();
+            textsParts.getMenuButtonTexts();
         });
     }
 }
