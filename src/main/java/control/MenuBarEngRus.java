@@ -61,6 +61,8 @@ public class MenuBarEngRus implements Root
         cardsWords.setDisable(true);
         cardsPhrases.setDisable(true);
         cardsOffers.setDisable(true);
+        textsLevelTwo.setDisable(true);
+        textsLevelThree.setDisable(true);
 
         menuBar.setMinWidth(widthSize);
         menuTexts.getItems().addAll(textsLevelOne, textsLevelTwo, textsLevelThree);

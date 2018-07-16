@@ -36,7 +36,7 @@ public interface ArgumentsSettings extends Root
     Label exerciseColorTwo = new Label("Контрольные и Задания не верный перевод");
     Label counterColor = new Label("Значения счетчика");
     Label sectionColor = new Label("Разделы заданий");
-    Label sceneColor = new Label("Цвет основного фона");
+    Label sceneColor = new Label("Цвет основного фона (требуется перезапустить программу!)");
     Label timeColor = new Label("Цвет часов");
     Label buttonColor = new Label("Цвет кнопок");
     Label buttonIllumination = new Label("Цвет подсветки кнопок");

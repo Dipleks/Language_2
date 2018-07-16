@@ -1,18 +1,15 @@
-import control.MenuBarEngRus;
 import db.*;
 import interfaceRoot.*;
 import javafx.application.Application;
 import javafx.stage.Stage;
-import settings.ColorSetting;
-import update.WindowUpdate;
+import update.UpDate;
+import update.WindowUpdate_2_2_0;
 
 import java.sql.*;
 
 public class Language_2 extends Application implements Root, TableDB
 {
-    private MenuBarEngRus menuBarEngRus = new MenuBarEngRus();
-    private static ColorSetting colorSetting = new ColorSetting();
-    private WindowUpdate windowUpdate = new WindowUpdate();
+    private Run run = new Run();
 
     @Override
     public void start(Stage primaryStage) {
@@ -30,62 +27,15 @@ public class Language_2 extends Application implements Root, TableDB
         }
         if (!checkSettingsTable()){
             SettingsTable.bildSettingsTable();
-//            colorSetting.getColorExamAndExercise();
-//            colorSetting.getColorExamNumber();
-//            colorSetting.getColorTranslation();
-//            colorSetting.getColorMistakesExam();
-//            colorSetting.getColorCounterExam();
-//            colorSetting.getColorSection();
-//            colorSetting.getColorScene();
-//            colorSetting.getColorTime();
         }
 
-        runMethod();
-        windowUpdate.getUpdate();
-//        try {
-//            if (CreateDB.checkConnection()) {
-//                runMethod();
-//            } else {
-//                // TODO если БД отсутствует создать вместе с ней и все таблицы!!!
-//                CreateDB.newDB();
-//                CreateDB.newCounterFirstRun();
-//                runMethod();
-//            }
-//        } catch (Exception e) {
-//
-//            // TODO действие если БД нет вообще на ПК
-//
-//            System.out.println("База данных не найдена!");
-//            e.printStackTrace();
-//        }
 
+
+        run.runMethod();
     }
 
     public static void main(String[] args) {
         launch(args);
-    }
-
-    private void runMethod() {
-        colorSetting.getColorExamAndExercise();
-        colorSetting.getColorExamNumber();
-        colorSetting.getColorTranslation();
-        colorSetting.getColorMistakesExam();
-        colorSetting.getColorCounterExam();
-        colorSetting.getColorSection();
-        colorSetting.getColorScene();
-        colorSetting.getColorTime();
-        colorSetting.getColorButton();
-        colorSetting.getColorIllumination();
-
-        menuBarEngRus.getMenu();
-        ClockDisplay.clock();
-
-        ROOT.getChildren().addAll();
-
-        WINDOW.setTitle("language_2");
-        WINDOW.setMaximized(true); //устанавливаем размер окна на весь экран
-        WINDOW.setScene(SCENE_ROOT);
-        WINDOW.show();
     }
 
     private boolean checkCounterTable(){
