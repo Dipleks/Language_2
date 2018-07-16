@@ -14,7 +14,7 @@ public class Settings implements ArgumentsSettings
     private Label setting = new Label("Настройки");
 
     public void getSetting(){
-        MENU_SETTINGS.setStyle("-fx-border-color: RED");
+//        MENU_SETTINGS.setStyle("-fx-border-color: RED");
 
         factorySettings.resetSettings();
         theAppearanceOf.changeColor();

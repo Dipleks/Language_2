@@ -91,9 +91,9 @@ class ButtonsTransfer implements ArgumentsTexts, TableDB
                     Class.forName("org.postgresql.Driver");
                     connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
                     statement = connection.createStatement();
-                    statement.executeUpdate("INSERT INTO my_text (title_text, text_eng, text_rus) "
+                    statement.executeUpdate("INSERT INTO my_text (title_text, text_eng, text_rus, color) "
                             + "VALUES ('" + nameText.getText() + " ', '" + textEng.getText() + "', '"
-                            + textRus.getText() + "');");
+                            + textRus.getText() + "', 'black');");
                     statement.close();
                     connection.close();
 

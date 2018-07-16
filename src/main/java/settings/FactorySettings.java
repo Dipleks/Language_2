@@ -66,7 +66,7 @@ class FactorySettings implements ArgumentsSettings, TableDB
                 // создаем анимацию прогресс бара:
                 timeline = new Timeline(
                         new KeyFrame(Duration.millis(0),    new KeyValue(progressBar.progressProperty(), 0)),
-                        new KeyFrame(Duration.millis(5000), new KeyValue(progressBar.progressProperty(), 1))
+                        new KeyFrame(Duration.millis(7000), new KeyValue(progressBar.progressProperty(), 1))
                 );
                 timeline.playFromStart();
 

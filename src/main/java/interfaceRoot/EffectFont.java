@@ -12,6 +12,12 @@ public class EffectFont implements Root
         return fontText;
     }
 
+    public static Font getFontTextUpDate() {
+        Font fontText = Font.font("Time New Roman",
+                FontPosture.ITALIC, heightSize * 0.015);
+        return fontText;
+    }
+
     public static Font getFontTextExam() {
         Font fontTextExam = Font.font("Time New Roman", FontWeight.BOLD,
                 FontPosture.ITALIC, heightSize * 0.018);

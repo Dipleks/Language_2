@@ -36,7 +36,8 @@ public class SettingsTable implements TableDB
                     "('Цвет Scene', 'ffffff'), " +
                     "('Цвет часов', '006400')," +
                     "('Цвет кнопок', 'e6e6e6')," +
-                    "('Цвет подсветки кнопок', '006400');");
+                    "('Цвет подсветки кнопок', '006400')," +
+                    "('Обновление', 'not_done');");
             statement.close();
             connection.close();
         } catch (ClassNotFoundException | SQLException e) {
