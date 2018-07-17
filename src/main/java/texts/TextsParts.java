@@ -29,6 +29,7 @@ public class TextsParts implements ArgumentsTexts
                 TextPanels textPanels = new TextPanels();
                 textPanels.call();
             } catch (Exception e){
+                e.printStackTrace();
                 System.out.println("ошибка повторного нажатия меню Уровень 1");
             }
         });

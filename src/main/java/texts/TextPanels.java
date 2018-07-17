@@ -1,44 +1,27 @@
 package texts;
 
-import db.CreateDB;
 import db.TableDB;
+import interfaceRoot.ArgumentsSettings;
+import interfaceRoot.EffectColor;
 import interfaceRoot.EffectFont;
-import javafx.scene.control.Pagination;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.HBox;
+import javafx.scene.paint.Color;
 
 import java.sql.*;
 
-public class TextPanels extends CallText implements TableDB
+class TextPanels extends CallText implements TableDB, ArgumentsSettings
 {
     private ListNameText listNameText = new ListNameText();
-    private NumberOfLines numberOfLines = new NumberOfLines();
 
-    public void call(){
-        getPagination();
+    void call(){
+        getScroll();
     }
 
-    private Pagination getPagination () {
+    private ScrollPane getScroll() {
 
-        pagination.setPageFactory(this::getScroll);
-        pagination.setPageCount(numberOfLines.numberOfLines());
-        pagination.setMaxPageIndicatorCount(10);
-        pagination.setCurrentPageIndex(0);
-//        pagination.setLayoutX(widthSize/6);
-//        pagination.setLayoutY(heightSize/8);
-        pagination.setPrefSize(widthSize/1.5, heightSize/1.5);
-
-        stackPaneText.getChildren().addAll(pagination);
-        stackPaneText.setLayoutX(widthSize/6);
-        stackPaneText.setLayoutY(heightSize/8);
-
-        ROOT.getChildren().addAll(stackPaneText, listNameText.getListName());
-        ROOT.getChildren().addAll(TITLE);
-
-        return pagination;
-    }
-
-    private ScrollPane getScroll(Integer s) {
         HBox buttonsTransfer = new HBox();
         buttonsTransfer.setLayoutX(widthSize/2.5);
         buttonsTransfer.setLayoutY(heightSize/14);
@@ -46,29 +29,34 @@ public class TextPanels extends CallText implements TableDB
         buttonsTransfer.getChildren().addAll(translation, add_my_test);
         ButtonsTransfer buttons = new ButtonsTransfer();
 
-        for (int i = 0; i < numberOfLines.numberOfLines(); i++) {
-            if (s.byteValue()==i){
+        scrollPane.setPrefSize(widthSize/1.5, heightSize/1.5);
+        scrollPane.setLayoutX(widthSize/6);
+        scrollPane.setLayoutY(heightSize/8);
+        String colorStr = Integer.toHexString(sceneColorL.getValue().hashCode()).substring(0, 6).toUpperCase();
+        scrollPane.setStyle("-fx-background-color: transparent; -fx-background: #"
+                + colorStr +";");
 
-                ROOT.getChildren().remove(buttonsTransfer);
-                ROOT.getChildren().add(buttonsTransfer);
-                buttons.getTransfer(textRUS(i), textENG(i));
-                buttons.addMyText();
-                setText(textENG(i));
+        ROOT.getChildren().remove(buttonsTransfer);
+        ROOT.getChildren().add(buttonsTransfer);
+        buttons.getTransfer();
+        buttons.addMyText();
+        setText(textENG());
 
-                TITLE.setLayoutX(widthSize/4.5);
-                TITLE.setLayoutY(heightSize/14);
-                TITLE.setFont(EffectFont.getFontTITLE());
+        TITLE.setLayoutX(widthSize/4.5);
+        TITLE.setLayoutY(heightSize/14);
+        TITLE.setFont(EffectFont.getFontTITLE());
 //                TITLE.setTextFill(EffectColor.getColorTextTITLE());
-                TITLE.setText(getNameTitle(pagination.getCurrentPageIndex()+1));
+        TITLE.setText(getNameTitle());
+//        getColorTitle();
+        ColorTitle colorTitle = new ColorTitle();
+        colorTitle.getColorTitle();
 
-            }
-        }
-
+        ROOT.getChildren().addAll(scrollPane, listNameText.getListName(), TITLE);
         return scrollPane;
     }
 
     // Получаем название текста
-    private static String getNameTitle(int n){
+    private static String getNameTitle(){
         Statement statement;
         Connection connection;
         String str = null;
@@ -76,9 +64,11 @@ public class TextPanels extends CallText implements TableDB
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
             statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT title_text FROM my_text WHERE id ="+ n +";");
-            resultSet.next();
-            str = resultSet.getString("title_text");
+            ResultSet resultSet = statement.executeQuery("SELECT title_text FROM my_text " +
+                    "WHERE id = 1;");
+            while (resultSet.next()) {
+                str = resultSet.getString("title_text");
+            }
             resultSet.close();
             statement.close();
             connection.close();
@@ -88,38 +78,22 @@ public class TextPanels extends CallText implements TableDB
         return str;
     }
 
-    private String textENG(int i){
-        ResultSet resultSet = null;
+    private String textENG(){
+        ResultSet resultSet;
         String str = null;
         try {
-            resultSet = CreateDB.connection().executeQuery("SELECT text_eng FROM my_text " +
-                    "WHERE id = "+ (i+1) +";");
+            Class.forName("org.postgresql.Driver");
+            Connection connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+            Statement statement = connection.createStatement();
+            resultSet = statement.executeQuery("SELECT text_eng FROM my_text " +
+                    "WHERE id = 1;");
             resultSet.next();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        try {
-            assert resultSet != null;
             str = resultSet.getString("text_eng");
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return str;
-    }
-    private String textRUS(int i){
-        ResultSet resultSet = null;
-        String str = null;
-        try {
-            resultSet = CreateDB.connection().executeQuery("SELECT text_rus FROM my_text " +
-                    "WHERE id = "+ (i+1) +";");
-            resultSet.next();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        try {
-            assert resultSet != null;
-            str = resultSet.getString("text_rus");
-        } catch (SQLException e) {
+
+            resultSet.close();
+            statement.close();
+            connection.close();
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         return str;

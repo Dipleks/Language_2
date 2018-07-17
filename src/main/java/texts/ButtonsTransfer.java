@@ -16,28 +16,32 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 class ButtonsTransfer implements ArgumentsTexts, TableDB
 {
     private Stage panelAddText = new Stage();
 
-    Button getTransfer(String rusText, String engText) {
+    Button getTransfer() {
         translation.setStyle(StyleButton.getStyleButton());
         translation.setOnAction(e -> {
-            if (text.getText().equals(engText)) {
-                text.setPrefWidth(scrollPane.getPrefWidth()/1.055);
-                textRU.setPrefWidth(0);
-                textRU.setText("");
-                text.setText(rusText);
-            } else if (text.getText().equals(rusText)) {
-                text.setPrefWidth(scrollPane.getPrefWidth()/1.055);
-                textRU.setPrefWidth(0);
-                textRU.setText("");
-                text.setText(engText);
+            try {
+                Class.forName("org.postgresql.Driver");
+                Connection connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+                Statement statement = connection.createStatement();
+                ResultSet resultSet = statement.executeQuery("SELECT * FROM my_text " +
+                        "WHERE title_text = '"+ listName.getValue() +"' ORDER BY id;");
+                resultSet.next();
+                if (text.getText().equals(resultSet.getString("text_eng"))){
+                    text.setText(resultSet.getString("text_rus"));
+                } else {
+                    text.setText(resultSet.getString("text_eng"));
+                }
+                resultSet.close();
+                statement.close();
+                connection.close();
+            } catch (SQLException | ClassNotFoundException ex) {
+                ex.printStackTrace();
             }
         });
         return translation;

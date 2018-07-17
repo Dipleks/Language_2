@@ -102,20 +102,38 @@ class ContextMenuTexts implements ArgumentsTexts, TableDB
             SAVE_EDIT.show();
         });
     }
+    private int getNumberTitle(){
+        int n = 0;
+        try {
+            Class.forName("org.postgresql.Driver");
+            Connection connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT id FROM my_text " +
+                    "WHERE title_text = '"+ listName.getValue() +"';");
+            while (resultSet.next()) {
+                n = resultSet.getInt("id");
+            }
+            resultSet.close();
+            statement.close();
+            connection.close();
+
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+        return n;
+    }
 
     // Действие кнопок OK и CANCEL:
     private void ok_cancel(){
         OK.setStyle(StyleButton.getStyleButton());
         OK.setOnAction(event -> {
-            Statement statement;
-            Connection connection;
             try {
                 Class.forName("org.postgresql.Driver");
-                connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
-                statement = connection.createStatement();
+                Connection connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+                Statement statement = connection.createStatement();
                 statement.executeUpdate("UPDATE my_text SET title_text = '" + editName.getText()
                         + "', text_eng = '"+ textEdit.getText()+"', text_rus = '"+ textEditRU.getText()
-                        + "' WHERE id = "+ pagination.getCurrentPageIndex()+"+1;");
+                        + "' WHERE id = "+ getNumberTitle() +";");
                 statement.close();
                 connection.close();
 
@@ -148,8 +166,8 @@ class ContextMenuTexts implements ArgumentsTexts, TableDB
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
             statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT text_eng FROM my_text WHERE id = "
-                    + (pagination.getCurrentPageIndex()+1) + ";");
+            ResultSet resultSet = statement.executeQuery("SELECT text_eng FROM my_text WHERE title_text = '"
+                    + listName.getValue() + "';");
             resultSet.next();
             s = resultSet.getString("text_eng");
             resultSet.close();
@@ -168,8 +186,8 @@ class ContextMenuTexts implements ArgumentsTexts, TableDB
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
             statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT text_rus FROM my_text WHERE id = "
-                    + (pagination.getCurrentPageIndex()+1) + ";");
+            ResultSet resultSet = statement.executeQuery("SELECT text_rus FROM my_text WHERE title_text = '"
+                    + listName.getValue() + "';");
             resultSet.next();
             s = resultSet.getString("text_rus");
             resultSet.close();
@@ -188,8 +206,8 @@ class ContextMenuTexts implements ArgumentsTexts, TableDB
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
             statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT title_text FROM my_text WHERE id = "
-                    + (pagination.getCurrentPageIndex()+1) + ";");
+            ResultSet resultSet = statement.executeQuery("SELECT title_text FROM my_text WHERE title_text = '"
+                    + listName.getValue() + "';");
             resultSet.next();
             s = resultSet.getString("title_text");
             resultSet.close();

@@ -2,10 +2,8 @@ package texts;
 
 import db.TableDB;
 import interfaceRoot.ArgumentsTexts;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+
+import java.sql.*;
 
 class EventsColorMenuTexts implements ArgumentsTexts, TableDB
 {
@@ -18,14 +16,17 @@ class EventsColorMenuTexts implements ArgumentsTexts, TableDB
         black.setOnAction(event -> colorDB("black"));
     }
     private void colorDB(String s){
-        Statement statement;
-        Connection connection;
         try {
             Class.forName("org.postgresql.Driver");
-            connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
-            statement = connection.createStatement();
+            Connection connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT id FROM my_text WHERE title_text = '"+listName.getValue()+"';");
+            int a = 0;
+            while (resultSet.next()){
+                a = resultSet.getInt("id");
+            }
             statement.executeUpdate("UPDATE my_text SET color = '"+ s +"' WHERE id = "
-                    + pagination.getCurrentPageIndex()+"+1;");
+                    + a +";");
             statement.close();
             connection.close();
         } catch (ClassNotFoundException | SQLException e) {

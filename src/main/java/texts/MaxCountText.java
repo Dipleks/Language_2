@@ -1,8 +1,6 @@
 package texts;
 
-import db.CreateDB;
 import db.TableDB;
-
 import java.sql.*;
 
 class MaxCountText implements TableDB

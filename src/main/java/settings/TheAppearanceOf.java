@@ -88,7 +88,9 @@ class TheAppearanceOf implements ArgumentsSettings, TableDB
         ten.getChildren().addAll(buttonIlluminationL, buttonIllumination);
         settingColor.getChildren().addAll(one, two, three, four, five, six, seven, eight, nine, ten);
         scrollSettingsColor.setContent(settingColor);
-        scrollSettingsColor.setStyle("-fx-background-color: transparent; -fx-background: #FFFFFF;");
+        String colorStr = Integer.toHexString(sceneColorL.getValue().hashCode()).substring(0, 6).toUpperCase();
+        scrollSettingsColor.setStyle("-fx-background-color: transparent; -fx-background: #"
+                + colorStr +";");
 //        scrollSettingsColor.setMaxHeight(heightSize/2);
         scrollSettingsColor.setPrefSize(widthSize/3, heightSize/2);
         scrollSettingsColor.setLayoutX(widthSize/2.3);

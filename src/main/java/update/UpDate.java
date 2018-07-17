@@ -35,8 +35,6 @@ public class UpDate implements ArgumentsUpdate, TableDB
                 statement.close();
                 connection.close();
                 stage.close();
-                Run run = new Run();
-                run.runMethod();
             } catch (ClassNotFoundException | SQLException e) {
                 System.out.println("галочка установлена! UpDate.getUpdate");
                 e.printStackTrace();
@@ -55,7 +53,9 @@ public class UpDate implements ArgumentsUpdate, TableDB
         group.getChildren().addAll(update, textUp, gr);
 
         stage.setScene(scene);
+        WINDOW.show();
         stage.show();
+
     }
 
     private void getTextUpdate(String text){

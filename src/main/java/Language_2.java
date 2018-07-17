@@ -2,15 +2,21 @@ import db.*;
 import interfaceRoot.*;
 import javafx.application.Application;
 import javafx.stage.Stage;
-import update.UpDate;
-import update.WindowUpdate_2_2_0;
 
 import java.sql.*;
 
 public class Language_2 extends Application implements Root, TableDB
 {
     private Run run = new Run();
-    private WindowUpdate_2_2_0 version_2_2_0 = new WindowUpdate_2_2_0();
+//    private ColletionText colletionText = new ColletionText();
+//    private Map<Integer, String> textEnL = new HashMap<>();
+//    private Map<Integer, String> textRuL = new HashMap<>();
+
+    @Override
+    public void init() throws Exception {
+//        colletionText.setTextEn(textEnL);
+//        colletionText.setTextRu(textRuL);
+    }
 
     @Override
     public void start(Stage primaryStage) {
@@ -31,26 +37,8 @@ public class Language_2 extends Application implements Root, TableDB
         }
 
 
-        try {
-            Class.forName("org.postgresql.Driver");
-            Connection connection = DriverManager.getConnection(DB_URL + db, USER, PASS);
-            Statement statement = connection.createStatement();
-            ResultSet r = statement.executeQuery("SELECT actions FROM settings WHERE id = 11;");
-            r.next();
-            if (r.getString("actions").equals("not_done")){
-                UpDate upDate = new UpDate();
-                version_2_2_0.startUpDate(upDate);
-            } else {
-                run.runMethod();
-                System.out.println("обновление выполнено!");
-            }
-            r.close();
-            statement.close();
-            connection.close();
-        } catch (ClassNotFoundException | SQLException e) {
-            System.out.println("exception");
-            e.printStackTrace();
-        }
+
+        run.runMethod();
     }
 
     public static void main(String[] args) {

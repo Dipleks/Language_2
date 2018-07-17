@@ -3,15 +3,13 @@ package interfaceRoot;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.*;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import texts.NameText;
-import texts.NumberOfLines;
 
 public interface ArgumentsTexts extends Root
 {
-    Pagination pagination = new Pagination();
+//    Pagination pagination = new Pagination();
     ScrollPane scrollPane = new ScrollPane();
     StackPane stackPaneText = new StackPane();
 
