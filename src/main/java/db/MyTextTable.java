@@ -63,12 +63,12 @@ public class MyTextTable implements TableDB
                     "очень люблю помогать моей маме с моей маленькой сестренкой. Наша семья очень дружная. Мы " +
                     "любим друг друга и всегда пытаемся проводить больше времени вместе.', 'black')," +
                     "('Lunches for school','Every day in elementary school in America begins at 9.20 a.m. " +
-                    "Children have classes till 3.15 p.m. At 12 o^clock children have lunch. Many boys and girls " +
+                    "Children have classes till 3.15 p.m. At 12 o''clock children have lunch. Many boys and girls " +
                     "bring their lunch from home. But some of them go for lunch to a school cafeteria. Mrs. Bradley " +
                     "prepares school lunches almost every weekday for her two children. Sometimes she gives the " +
                     "children money and they eat in the school cafeteria. But usually the children prefer to take " +
                     "a lunch from home. This morning Mrs. Bradley is making peanut butter and cheese sandwiches, " +
-                    "the children^s favorite. She puts two bottles of apple juice for the children to drink. She " +
+                    "the children''s favorite. She puts two bottles of apple juice for the children to drink. She " +
                     "is going to put the sandwiches, some cherry tomatoes and two bananas in their lunchboxes. " +
                     "The lunchbox is easy for the children to carry to school.','Каждый день в начальной школе в " +
                     "Америке начинается в 9.30 утра. Уроки у детей длятся до 3.15 дня. В 12 часов у детей обед. " +
@@ -208,7 +208,7 @@ public class MyTextTable implements TableDB
                     "find two dogs and one cat, aquarium with fish and two hamsters. Most of all I love dogs," +
                     " but my mom loves cats. My brother is a very reserved person by character, so he keeps" +
                     " fish, but my sister loves hamsters. As for dad, his love is sufficient for all the animals." +
-                    " He, just like me, doesn^t mind playing with any pet in our house. As I said earlier, I’m" +
+                    " He, just like me, doesn''t mind playing with any pet in our house. As I said earlier, I’m" +
                     " responsible mainly for the dogs in the house. Every day I take them for a walk twice. At " +
                     "the first opportunity I play with a ball with them or throw an artificial bone to them. My " +
                     "dogs are very smart and know a lot of tricks. I believe that life without animals would be " +
@@ -226,7 +226,7 @@ public class MyTextTable implements TableDB
                     "два раза. При первой же возможности я играю с ними с мяч или бросаю им искусственную косточку." +
                     " Мои собаки очень умны и знаю немало трюков. Я считаю, что жизнь без животных была бы скучна. " +
                     "Животные – это наши друзья, которые никогда не оставят тебя в трудную минуту.', 'black')," +
-                    "('Music in my life ','Who doesn^t love music? Whatever mood we have - bad or good, " +
+                    "('Music in my life ','Who doesn''t love music? Whatever mood we have - bad or good, " +
                     "from time to time we turn on our favorite song. And it, in turn, either calms us, or on " +
                     "the contrary, makes us fall into melancholy. Life without music would be boring and dull. " +
                     "Just imagine a disco being in silence or holidays being without musicians. Absolutely all " +
@@ -259,7 +259,7 @@ public class MyTextTable implements TableDB
                     "first floor and the departure part is on the second floor. There are some elevators " +
                     "(or lifts) and escalators to bring you upstairs and downstairs. You are departing. At first," +
                     " look at the flight announcements to find out is your flight on time or it is delayed. " +
-                    "Then you go to the check-in desk to check-in and pass your suitcase to the plane^s cargo. " +
+                    "Then you go to the check-in desk to check-in and pass your suitcase to the plane''s cargo. " +
                     "The check-in agent gives you a boarding pass. Then you go to the security check. The " +
                     "security stuff check you and your carry-on baggage. There are some rules, what things you " +
                     "are allowed and what things you are not allowed to carry on board. Then you go to the gate " +
@@ -276,7 +276,7 @@ public class MyTextTable implements TableDB
                     "правила о том, какие вещи вам позволено пронести на борт, а какие нет. Затем вы идете в " +
                     "зону посадки, где вы ждете своего вылета. Когда идет посадка на борт, вы подходите к стюарду " +
                     "и показываете свой посадочный талон. Тогда вы идете в самолет и занимаете свое место. " +
-                    "Удачного полета!', 'black'), ('Food store', 'Let^s go to the food store. There are a " +
+                    "Удачного полета!', 'black'), ('Food store', 'Let''s go to the food store. There are a " +
                     "lot of items in my shopping list, so I need a shopping trolley. There is a big discount " +
                     "on fruit and vegetables. I take cabbage, potato, carrots, and onion for a soup. " +
                     "I also take 2 packs of red delicious apples, a watermelon, and three bananas. Then I go " +
@@ -285,7 +285,7 @@ public class MyTextTable implements TableDB
                     "of eggs, and a pack of cheese slices. I see canned food shelves and take one can of baked beans." +
                     " At the fish and meat department I take a plastic tray with Salmon Fillet. It is quite " +
                     "expensive (more than 5 pound), but it’s tasty and healthy food. Then I am looking for " +
-                    "water and juice. It^s in aisle 2 opposite the food store^s enter. I take 2 bottles of " +
+                    "water and juice. It''s in aisle 2 opposite the food store''s enter. I take 2 bottles of " +
                     "mineral water and one carton of orange juice. Now I am ready to pay so I am going to the " +
                     "checkout. The cashier may ask me three questions: «Do you need a bag?», «Have you got any " +
                     "discount card?» and «How would you like to pay?» You can pay in cash, by credit card or " +
@@ -349,7 +349,7 @@ public class MyTextTable implements TableDB
                     " is going to prescribe him some medicine and he is going to feel better soon. I have " +
                     "a toothache. Why don’t you go to the dentist? I have a high temperature and my stomach " +
                     "is upset. Take some medicine. I have a broken arm and my leg hurts. I feel ill. My head " +
-                    "hurts. I^ve got a terrible headache. I^ve got a temperature. Why don^t you go home and " +
+                    "hurts. I''ve got a terrible headache. I''ve got a temperature. Why don''t you go home and " +
                     "lie down? Be healthy!', 'Что случилось? В чем дело? Если вы больны, ваше тело может " +
                     "болеть в разных местах. Г-н Смит чувствует себя больным. Он идет к своему врачу и " +
                     "рассказывает ему о своих симптомах. В офисе врача у людей часто возникают проблемы со " +
@@ -362,17 +362,17 @@ public class MyTextTable implements TableDB
                     " рука и моя нога болит. Я чувствую себя неважно. Моя голова болит. У меня ужасная " +
                     "головная боль. У меня температура. Почему бы тебе не пойти домой и не лечь? Будьте " +
                     "здоровы!', 'black'), ('Feelings', 'Life is full of feelings. They might be good ones" +
-                    " or not so good ones. I like it very much. I don^t like it at all. It makes me angry. " +
-                    "When I^m unhappy I go shopping. When I am bored I go to the cinema. I am a bit tired." +
-                    " He is thirsty. She is not very happy. I^m not at all hungry. Children make me happy." +
-                    " I find them funny. They are great, aren^t they? Sometimes I feel worried, frightened " +
+                    " or not so good ones. I like it very much. I don''t like it at all. It makes me angry. " +
+                    "When I''m unhappy I go shopping. When I am bored I go to the cinema. I am a bit tired." +
+                    " He is thirsty. She is not very happy. I''m not at all hungry. Children make me happy." +
+                    " I find them funny. They are great, aren''t they? Sometimes I feel worried, frightened " +
                     "or bored. When Victor is tired he goes to bed. When Anna is hungry she goes to a " +
-                    "restaurant. Paul enjoys his language lessons. He thinks it^s lovely. I^m a little sad " +
-                    "today, because it^s raining. How are you? I^m not sad, but I^m very hot. It^s really " +
-                    "hot today. I^m afraid I can^t go with you. Some things make me depressed. The telephone " +
-                    "call worries me. I am so sensitive. The height frightens me. I don^t think it^s " +
-                    "interesting. I think it^s disgusting. It^s so wonderful! I worry about practically " +
-                    "everything. I^m a bit nervous about even coming to a dentist. My brother makes me " +
+                    "restaurant. Paul enjoys his language lessons. He thinks it''s lovely. I''m a little sad " +
+                    "today, because it''s raining. How are you? I''m not sad, but I''m very hot. It''s really " +
+                    "hot today. I''m afraid I can''t go with you. Some things make me depressed. The telephone " +
+                    "call worries me. I am so sensitive. The height frightens me. I don''t think it''s " +
+                    "interesting. I think it''s disgusting. It''s so wonderful! I worry about practically " +
+                    "everything. I''m a bit nervous about even coming to a dentist. My brother makes me " +
                     "really annoyed and angry because he never stops crying. Fred is excited because he " +
                     "won. His mother is surprised. Lucy is confused. She is a very shy person. I was " +
                     "embarrassed.', 'Жизнь полна чувств. Они могут быть хорошие или не очень хорошие. " +
@@ -390,7 +390,7 @@ public class MyTextTable implements TableDB
                     "даже когда иду к стоматологу. Мой брат делает меня очень раздраженным и злым, потому " +
                     "что он никогда не перестает плакать. Фред возбужден, потому что он выиграл. " +
                     "Его мать удивлена. Люси смущена. Она очень застенчивый человек. Я был смущен.', 'black'), " +
-                    "('People', 'There are many people on our planet. We all look different. Everybody^s " +
+                    "('People', 'There are many people on our planet. We all look different. Everybody''s " +
                     "appearance is unique. First of all, there are men and women. We have different ages: " +
                     "there are old, middle-aged, young people and children. We have different skin colour. " +
                     "Some of us have black skin colour, others have white, and there are humans with yellow" +
@@ -418,8 +418,8 @@ public class MyTextTable implements TableDB
                     "or cafe. Many people can cook delicious food by themselves. Our food consists of fruits," +
                     " vegetables, cereals, meat and fish. We also eat dairy. Cooks can prepare different " +
                     "dishes from these products. They use recipes. Different nationalities have their own " +
-                    "cuisine. Some people today don^t eat meat and fish, they are called vegetarians. Some" +
-                    " people often watch their diet to lose weight or to be healthy. Then they don^t eat " +
+                    "cuisine. Some people today don''t eat meat and fish, they are called vegetarians. Some" +
+                    " people often watch their diet to lose weight or to be healthy. Then they don''t eat " +
                     "food with sugar, flour and fat. What do we usually drink? It is known that every person" +
                     " should drink plenty of water — about 2 litres a day. But we also drink other beverages" +
                     " like tea, coffee, milk, juice, wine, and lemonade.', 'Для каждого живого существа " +
@@ -438,7 +438,7 @@ public class MyTextTable implements TableDB
                     " The landscape is called «Peaceful Pond». It is an oil painting and it has a very " +
                     "interesting texture, but the surface of the painting is almost perfectly smooth. In " +
                     "the foreground, we see a pond. There are some reeds and water lilies on the pond, but " +
-                    "the water is still clean and clear, so we can see trees and clouds on the pond^s " +
+                    "the water is still clean and clear, so we can see trees and clouds on the pond''s " +
                     "surface. In the middle of the picture, we see ordinary green and yellow trees: pines," +
                     " aspens, oaks. The artist very carefully and accurately painted the landscape, it seems " +
                     "that we are standing on the edge of the pond. In the background, between the trees we " +
@@ -460,10 +460,10 @@ public class MyTextTable implements TableDB
                     "style. You look great in white. That colour is perfect for you. You are the best " +
                     "listener. This is a really nice picture! What a cute baby! The pizza is delicious. " +
                     "You are a fantastic cook! I appreciate you. What a nice flat! You have a beautiful " +
-                    "house. What do we say to respond a compliment? Thank you. You are very kind. That^s " +
+                    "house. What do we say to respond a compliment? Thank you. You are very kind. That''s " +
                     "very kind of you. Thank you very much, and the same to you. I am glad you like it. " +
                     "I appreciate the compliment. How kind of you to say so! Thank you very much, you look " +
-                    "very nice too! That makes me feel great! That^s very nice of you to say.', 'Люди " +
+                    "very nice too! That makes me feel great! That''s very nice of you to say.', 'Люди " +
                     "любят комплименты. Это здорово получать комплименты, но также здорово дарить комплименты." +
                     " Комплименты приносят счастье обеим сторонам. Что вы можете сказать в качестве " +
                     "комплимента? Вы замечательный. Ты хорошо выглядишь! Какое прекрасное платье! Мне " +
@@ -477,7 +477,7 @@ public class MyTextTable implements TableDB
                     "великолепно! Очень приятно, что вы это сказали.', 'black'), ('Habits', 'We all know " +
                     "there are bad and good habits. Good habits or custom bring us to healthy and effective" +
                     " life. They say, to change your life, change your habits. We need to break bad habits" +
-                    " and to build good ones, but it^s easier said than done. It^s very difficult to break " +
+                    " and to build good ones, but it''s easier said than done. It''s very difficult to break " +
                     "bad habits. Habits are actions that people do every day, or even many times a day. " +
                     "They usually happen without our control. We do not think of them much, we just do them." +
                     " For example, if a person like smoking, he or she feels annoyed without a cigarette. " +
@@ -528,7 +528,7 @@ public class MyTextTable implements TableDB
                     "of coffee is latte. Latte is espresso with lots of steamed milk. A barista is a man or" +
                     " woman, who makes your coffee. If you want to drink your order in a cafe you say «for " +
                     "here». If you go outside the cafe, just say «to take away» or «to go». Here are the " +
-                    "examples: — Hi, can I get a large cappuccino to go, please? — Hi, I^ll have a medium " +
+                    "examples: — Hi, can I get a large cappuccino to go, please? — Hi, I''ll have a medium " +
                     "espresso for here. You can also order something else: a chocolate bar, a sandwich or a " +
                     "piece of cake.', 'В кафе вы можете попробовать различные блюда из разных стран и " +
                     "пообедать в дружественной обстановке. Многие люди обедают в кафе. Но гораздо больше " +
@@ -554,7 +554,7 @@ public class MyTextTable implements TableDB
                     " lots of snow and icy. Rivers cover with ice. But some people like winters, because they " +
                     "can go skiing, skating and sledging. We have the most important holiday in December — " +
                     "it is a New Year. Autumn This period of the year is beautiful and colourful in Russia, " +
-                    "but it^s usually rainy. The weather is getting overcast and days become gloomy. The " +
+                    "but it''s usually rainy. The weather is getting overcast and days become gloomy. The " +
                     "leaves are changing colour and falling down the trees. People like going to a forest" +
                     " to pick up mushrooms. What season of the year do you like? Why?', 'Мы знаем четыре " +
                     "времени года. Каждый сезон длится три месяца. Погода и долгота дня различны для каждого" +
@@ -571,11 +571,11 @@ public class MyTextTable implements TableDB
                     "красочным в России, но он обычно дождливый. Погода становится пасмурной, а дни " +
                     "становятся мрачными. Листья меняют цвет и падают с деревьев. Люди любят ходить в лес " +
                     "и собирать грибы. Какое время года вы любите? Почему?', 'black'), ('A letter to my " +
-                    "penfriend', 'Hi Eric, My name is Olga Petrova. I^m your new penfriend from Moscow," +
-                    " Russia. Now I^m in London. It^s a wonderful city! I go sightseeing, shopping and" +
+                    "penfriend', 'Hi Eric, My name is Olga Petrova. I''m your new penfriend from Moscow," +
+                    " Russia. Now I''m in London. It''s a wonderful city! I go sightseeing, shopping and" +
                     " walking in different parks. I also listen to the native speakers and try to use the " +
                     "English language. I enjoy being in the UK. My favourite restaurant here is «Pret a " +
-                    "Manger». I love their food because it^s tasty, healthy, and easy to order and take away. " +
+                    "Manger». I love their food because it''s tasty, healthy, and easy to order and take away. " +
                     "Yesterday we went to the cinema. We saw a new movie called «Doctor Strange» with " +
                     "Benedict Cumberbatch. He is my favourite film star. I liked the film. Tomorrow we " +
                     "are going to Wimbledon. I like playing tennis. My favourite sports star is Maria " +
@@ -594,15 +594,15 @@ public class MyTextTable implements TableDB
                     " Я люблю поп-музыку, а мой любимый певец — Рики Мартин. Он из Пуэрто-Рико. Кто твои " +
                     "любимые звезды? Откуда они? Напиши мне в ближайшее время. Ольга.', 'black'), ('A sports " +
                     "centre', 'Anna: Do you know a sports centre near here? There is a big sports centre " +
-                    "near my house in Moscow and I often go there. Boris: Yes, there^s a good gym near the " +
+                    "near my house in Moscow and I often go there. Boris: Yes, there''s a good gym near the " +
                     "Gills church. Anna: Great! Is there a basketball court? Basketball is my favourite" +
-                    " sport. Boris: Yes, there is. There^re two big pools, four tennis courts, a " +
+                    " sport. Boris: Yes, there is. There''re two big pools, four tennis courts, a " +
                     "basketball court, a cafe, and a sauna. Anna: Fantastic! And is there a jacuzzi? " +
-                    "Boris: No, there isn^t. Anna: I can^t play basketball very well. Are there any " +
+                    "Boris: No, there isn''t. Anna: I can''t play basketball very well. Are there any " +
                     "classes? Boris: Yes, there are. There are basketball classes on Monday and Wednesday " +
                     "mornings. Anna: Can you play basketball? Boris: Yes, I play basketball pretty good. " +
                     "Anna: Well, come to the basketball classes with me! Boris: It would be great, but… " +
-                    "My favourite sport is swimming. Anna: Let^s go to a swimming pool on weekends and " +
+                    "My favourite sport is swimming. Anna: Let''s go to a swimming pool on weekends and " +
                     "to a basketball classes on Monday and Wednesday mornings. Boris: OK, let us try. " +
                     "And what about a cafe? Would you like a cup of tea? Anna: OK, but I prefer coffee.'," +
                     " 'Анна: Знаешь ли ты спортивный центр недалеко отсюда? Рядом с моим домом в Москве " +
@@ -617,19 +617,19 @@ public class MyTextTable implements TableDB
                     "Мой любимый спорт — плавание. Анна: Давай ходить в бассейн по выходным, а на " +
                     "баскетбольные занятия с утра в понедельник и в среду. Борис: Хорошо, давай попробуем. " +
                     "А что насчет чашечки чая, Анна: Хорошо, только я предпочитаю кофе.', 'black'), ('The " +
-                    "birthday party', 'Oleg: Hi Mary. Mary: Hi Oleg. Oleg: I^m having a birthday party on " +
+                    "birthday party', 'Oleg: Hi Mary. Mary: Hi Oleg. Oleg: I''m having a birthday party on " +
                     "Friday. I would like for you to come if you can. Mary: That would be great. Where " +
-                    "will it be held? Oleg: I^m having a small birthday party in my house at 2 pm. Mary: " +
+                    "will it be held? Oleg: I''m having a small birthday party in my house at 2 pm. Mary: " +
                     "Great! Do you want me to bring anything? Oleg: No, my mother is going to make plenty " +
                     "of food and to bake a big cake with candles on it. My sisters are decorating the house" +
-                    " with balloons. We are planning some entertainment. Hope, it will be fun. Mary: I can^t" +
+                    " with balloons. We are planning some entertainment. Hope, it will be fun. Mary: I can''t" +
                     " wait. How many people are you expecting? Oleg: Probably around 15 people including " +
                     "my relatives. Mary: I see. Is there a dress code? Oleg: No, just take a swimming suit." +
                     " We are going to play in our pool. Mary: OK, see you on Friday then. Friday Oleg: Hi " +
                     "Mary. Nice to see you. Mary: Hi Oleg. Happy birthday to you. This is my present for " +
-                    "you. I hope you^ll like it. Oleg: Oh, thank you very much! I have lots of presents " +
+                    "you. I hope you''ll like it. Oleg: Oh, thank you very much! I have lots of presents " +
                     "today! Mary: Look, your mother is bringing the cake. You should make a wish and blow " +
-                    "out the candles. Oleg: Yes, it^s time for my wish!', 'Олег: Привет, Мэри. Мэри: Привет," +
+                    "out the candles. Oleg: Yes, it''s time for my wish!', 'Олег: Привет, Мэри. Мэри: Привет," +
                     " Олег. Олег: У меня день рождения в пятницу. Я хотел бы, чтобы ты пришла, если можешь. " +
                     "Мэри: Это было бы здорово. Где он будет проходить? Олег: Будет небольшая вечеринка в " +
                     "моем доме в 2 часа дня. Мэри: Отлично! Ты хочешь, чтобы я принесла что-нибудь? Олег: " +
@@ -643,7 +643,7 @@ public class MyTextTable implements TableDB
                     "сегодня много подарков! Мэри: Смотри, твоя мама несет торт. Ты должен загадать " +
                     "желание и задуть свечи. Олег: Да, пришло время для моего желания!', 'black'), ('Price', " +
                     "'How much is the cost of living in London? London is a very expensive city. Houses in " +
-                    "London are the most expensive in the world. A single bus fare costs £1.50. That^s a " +
+                    "London are the most expensive in the world. A single bus fare costs £1.50. That''s a " +
                     "good price. Buses are cheaper than the tube. On Black Friday many companies will " +
                     "discount their products and stores offer reduced prices. The price keeps going up! " +
                     "There is a big discount on phones. Could you reduce the price by 10%? You could say:" +
@@ -651,8 +651,8 @@ public class MyTextTable implements TableDB
                     " What is the price of this coat? — The coat is £75. Do you know how much this " +
                     "costs? — The t-shirts are £4.99 each. Can you check the price of this dress for " +
                     "me, please? — The dress is £175. How much do the apples cost? — The apples are " +
-                    "£1.75 a kilo. How much does this box cost? — It^s £0.75. How much are these " +
-                    "pants? — They are £10. How much is this book? — It^s £3.25.', 'Сколько стоит жить" +
+                    "£1.75 a kilo. How much does this box cost? — It''s £0.75. How much are these " +
+                    "pants? — They are £10. How much is this book? — It''s £3.25.', 'Сколько стоит жить" +
                     " в Лондоне? Лондон очень дорогой город. Дома в Лондоне самые дорогие в мире. Одна " +
                     "поездка в автобусе стоит £1,50. Это хорошая цена. Автобусы стоят дешевле, чем " +
                     "метро. В Черную пятницу многие компании будут снижать цены на свои продукты, а " +
@@ -664,8 +664,8 @@ public class MyTextTable implements TableDB
                     "пожалуйста? — Платье стоит £175. Сколько стоят яблоки? — Яблоки £1,75 за килограмм." +
                     " Сколько стоит эта коробка? — Она стоит £0.75. Сколько стоят эти брюки? — " +
                     "Они стоят £10. Сколько стоит эта книга? — Она стоит £3,25.', 'black'), " +
-                    "('Healthy lifestyle', 'Mona: I^m hungry, I want a big hamburger for lunch. What about you? " +
-                    "Lisa: I don^t eat hamburgers. It is unhealthy food. Do you know I^m trying to lose weight?" +
+                    "('Healthy lifestyle', 'Mona: I''m hungry, I want a big hamburger for lunch. What about you? " +
+                    "Lisa: I don''t eat hamburgers. It is unhealthy food. Do you know I''m trying to lose weight?" +
                     " I go to a swimming pool three times a week, and I do morning exercises. I also drink about" +
                     " 2 litres of water a day and eat more fruits, herbs and vegetables. Mona: Why do you try to " +
                     "lose your weight? Lisa: My doctor told me that I should lead a healthy lifestyle because " +
@@ -674,7 +674,7 @@ public class MyTextTable implements TableDB
                     "eat for breakfast? Lisa: I eat 1 slice whole-grain bread with 2 slices low-fat cheese for " +
                     "breakfast. And of course I enjoy my cup of coffee. Then I can eat an apple or a pear before " +
                     "lunch. Mona: So, what are you going to take for lunch? Lisa: Three-egg omelette, 1 red pepper," +
-                    " 1 small tomato, and a whole-wheat bun. Mona: Good idea! I think it^s very tasty. What do you " +
+                    " 1 small tomato, and a whole-wheat bun. Mona: Good idea! I think it''s very tasty. What do you " +
                     "prefer to drink?', 'Мона: Я голодна, я хочу большой гамбургер на обед. А как насчет " +
                     "тебя? Лиза: Я не ем гамбургеры. Это нездоровое питание. Ты знаешь, что я стараюсь похудеть?" +
                     " Я хожу в бассейн три раза в неделю, и делаю утреннюю гимнастику. Я также пью около 2 " +

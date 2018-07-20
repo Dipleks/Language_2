@@ -41,7 +41,7 @@ public class AddExerciseExam
     private Exercises[] quesToBe = new Exercises[8];
 
     /** контрольные To Be */
-    private Exams[] examToBe = new Exams[2];
+    private Exams[] examToBe = new Exams[4];
 
     /** кнопки выбора упражнений PS */
     private ExerciseParts exercisePartsPS = new ExerciseParts();
@@ -167,8 +167,10 @@ public class AddExerciseExam
 
         examToBe[0] = new Exams(0);
         examToBe[1] = new Exams(100);
+        examToBe[2] = new Exams(200);
+        examToBe[3] = new Exams(300);
 
-        controlExamToBe.examMethod(examToBe, new Button[2], new ExamTobe());
+        controlExamToBe.examMethod(examToBe, new Button[4], new ExamTobe());
     }
 
 
