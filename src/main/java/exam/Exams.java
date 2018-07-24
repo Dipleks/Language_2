@@ -1,9 +1,6 @@
 package exam;
 
-import interfaceRoot.ArgumentsExam;
-import interfaceRoot.EffectColor;
-import interfaceRoot.EffectFont;
-import interfaceRoot.PanelTips;
+import interfaceRoot.*;
 import javafx.geometry.Pos;
 import javafx.scene.Cursor;
 import javafx.scene.control.Label;
@@ -33,6 +30,7 @@ public class Exams implements ArgumentsExam
             arrayOfOffersExam[i].setWrapText(true);
             arrayOfOffersExam[i].setText(iExam.getExamRUS(i, START));
             arrayOfOffersExam[i].setCursor(Cursor.HAND);
+            arrayOfOffersExam[i].setEffect(EffectReflection.getReflection());
 
             correctly[i] = new Label();
             correctly[i].setFont(EffectFont.getFontTextExam());
@@ -46,11 +44,13 @@ public class Exams implements ArgumentsExam
                         replaceAll("[!?.'^]", ""))){
                     arrayOfOffersExam[finalI].setTextFill(EffectColor.getColorTextClick());
                     correctly[finalI].setText("ВЕРНО!!!");
+                    correctly[finalI].setEffect(EffectReflection.getReflection());
                     soundClick.soundClick(2);
                     correctly[finalI].setTextFill(EffectColor.getColorTextClick());
                     improveClick1.setFont(EffectFont.getFontTextExam());
                     improveClick1.setTextFill(EffectColor.getColorText());
                     improveClick1.setText(improve.getText());
+                    improveClick1.setEffect(EffectShadow.getShadow());
                     improve.clear();
                 } else if (!improve.getText().equalsIgnoreCase("")){
                     /////////////
@@ -58,15 +58,18 @@ public class Exams implements ArgumentsExam
                     /////////////
                     arrayOfOffersExam[finalI].setTextFill(EffectColor.getColorTextClickRED());
                     correctly[finalI].setText("НЕ ВЕРНО!!!");
+                    correctly[finalI].setEffect(EffectReflection.getReflection());
                     soundClick.soundClick(3);
                     correctly[finalI].setTextFill(EffectColor.getColorTextClickRED());
                     improveClick1.setFont(EffectFont.getFontTextExam());
                     improveClick1.setTextFill(EffectColor.getColorText());
                     improveClick1.setText(improve.getText());
+                    improveClick1.setEffect(EffectShadow.getShadow());
                     improve.clear();
                 } else if (improve.getText().equalsIgnoreCase("")) {
                     improveClick1.setFont(EffectFont.getFontTextExam());
                     improveClick1.setTextFill(EffectColor.getColorTextClickRED());
+                    improveClick1.setEffect(EffectShadow.getShadow());
                     improveClick1.setText("Введите текст для проверки!");
                     PanelTips.panes("Напишите перевод для проверки...");
                 }

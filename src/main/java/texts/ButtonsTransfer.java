@@ -4,10 +4,7 @@ import control.ClearDisplay;
 import control.MenuBarEngRus;
 import db.CreateDB;
 import db.TableDB;
-import interfaceRoot.ArgumentsTexts;
-import interfaceRoot.EffectColor;
-import interfaceRoot.EffectFont;
-import interfaceRoot.StyleButton;
+import interfaceRoot.*;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -24,6 +21,7 @@ class ButtonsTransfer implements ArgumentsTexts, TableDB
 
     Button getTransfer() {
         translation.setStyle(StyleButton.getStyleButton());
+        translation.setEffect(EffectShadow.getShadow());
         translation.setOnAction(e -> {
             try {
                 Class.forName("org.postgresql.Driver");
@@ -49,6 +47,7 @@ class ButtonsTransfer implements ArgumentsTexts, TableDB
 
     Button addMyText() {
         add_my_test.setStyle(StyleButton.getStyleButton());
+        add_my_test.setEffect(EffectShadow.getShadow());
         add_my_test.setOnAction(e -> {
 
             VBox vBox = new VBox();

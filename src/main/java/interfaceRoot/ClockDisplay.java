@@ -28,6 +28,7 @@ public class ClockDisplay implements Root
         uiTimer.setTextFill(EffectColor.getColorClock());
         uiTimer.setWrapText(true);
         uiTimer.setAlignment(Pos.CENTER);
+        uiTimer.setEffect(EffectShadow.getShadow());
         timeline.setCycleCount(Timeline.INDEFINITE);
         timeline.play();
         ROOT.getChildren().addAll(uiTimer);

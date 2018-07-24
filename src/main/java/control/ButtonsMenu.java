@@ -2,10 +2,7 @@ package control;
 
 import exercise.Exercises;
 import exercise.IExercises;
-import interfaceRoot.ClockDisplay;
-import interfaceRoot.EffectColor;
-import interfaceRoot.EffectFont;
-import interfaceRoot.StyleButton;
+import interfaceRoot.*;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.*;
@@ -53,12 +50,15 @@ public class ButtonsMenu
 
     protected void radioBut(){
         enBut.setToggleGroup(group);
+        enBut.setEffect(EffectShadow.getShadow());
         enBut.setSelected(true);
         ruBut.setToggleGroup(group);
+        ruBut.setEffect(EffectShadow.getShadow());
 
         enBut.setStyle(StyleButton.getStyleButton());
         ruBut.setStyle(StyleButton.getStyleButton());
         exit.setStyle(StyleButton.getStyleButton());
+        exit.setEffect(EffectShadow.getShadow());
         groupRadBut.getChildren().addAll(enBut, ruBut, exit);
         groupRadBut.setSpacing(widthSize-widthSize/1.03);
 //        groupRadBut.setStyle("-fx-border-color: RED");
@@ -84,6 +84,7 @@ public class ButtonsMenu
         appL.setTextFill(EffectColor.getColorTitle());
         appL.setLayoutX((widthSize/2)-(widthSize-widthSize/1.25)/2);
         appL.setLayoutY(heightSize-heightSize/1.15);
+        appL.setEffect(EffectShadow.getShadow());
 
         negL.setText("Отрицания");
 //        negL.setStyle("-fx-border-color: RED");
@@ -93,6 +94,7 @@ public class ButtonsMenu
         negL.setTextFill(EffectColor.getColorTitle());
         negL.setLayoutX((widthSize/2)-(widthSize-widthSize/1.25)/2);
         negL.setLayoutY(appL.getLayoutY()+heightSize-heightSize/1.2);
+        negL.setEffect(EffectShadow.getShadow());
 
         quesL.setText("Вопросительные предложения");
 //        quesL.setStyle("-fx-border-color: RED");
@@ -102,6 +104,7 @@ public class ButtonsMenu
         quesL.setTextFill(EffectColor.getColorTitle());
         quesL.setLayoutX((widthSize/2)-(widthSize-widthSize/1.25)/2);
         quesL.setLayoutY(negL.getLayoutY()+heightSize-heightSize/1.2);
+        quesL.setEffect(EffectShadow.getShadow());
 
         ROOT.getChildren().addAll(appL, negL, quesL);
     }
@@ -114,6 +117,7 @@ public class ButtonsMenu
         examL.setTextFill(EffectColor.getColorTitle());
         examL.setLayoutX((widthSize/2)-(widthSize-widthSize/1.25)/2);
         examL.setLayoutY(heightSize-heightSize/1.15);
+        examL.setEffect(EffectShadow.getShadow());
         ROOT.getChildren().add(examL);
     }
     protected void groupButton(Exercises[] appnegquest, int finalI, IExercises iExercises){

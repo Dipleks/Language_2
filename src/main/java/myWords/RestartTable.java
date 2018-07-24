@@ -2,9 +2,7 @@ package myWords;
 
 import db.CreateDB;
 import db.TableDB;
-import interfaceRoot.ArgumentsMyWords;
-import interfaceRoot.EffectColor;
-import interfaceRoot.EffectFont;
+import interfaceRoot.*;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.control.Tooltip;
@@ -43,6 +41,7 @@ class RestartTable implements ArgumentsMyWords, TableDB
             my_word_en[i].setFont(EffectFont.getFontTextExam());
             my_word_en[i].setTextFill(EffectColor.getColorText());
             my_word_en[i].setPrefWidth(widthSize-widthSize/2.45);
+//            my_word_en[i].setEffect(EffectShadow.getShadow());
             my_word_en[i].setAlignment(Pos.BASELINE_RIGHT);
 //                my_word_en[i].setWrapText(true);
 //                my_word_en[i].setCursor(Cursor.HAND);
@@ -54,6 +53,7 @@ class RestartTable implements ArgumentsMyWords, TableDB
 //                my_word_ru[i].setStyle("-fx-border-color: RED");
             my_word_ru[i].setFont(EffectFont.getFontTextExam());
             my_word_ru[i].setTextFill(EffectColor.getColorText());
+//            my_word_ru[i].setEffect(EffectShadow.getShadow());
             my_word_ru[i].setPrefWidth(widthSize-widthSize/2.45);
 //                my_word_ru[i].setWrapText(true);
 //                my_word_ru[i].setCursor(Cursor.HAND);

@@ -17,8 +17,8 @@ public interface ArgumentsMyWords extends Root
     TextField textEn = new TextField();
     TextField textRu = new TextField();
     TextField textSearch = new TextField();
-    Label[] my_word_en = new Label[500];
-    Label[] my_word_ru = new Label[500];
+    Label[] my_word_en = new Label[2000];
+    Label[] my_word_ru = new Label[2000];
     Button searchWords = new Button("Поиск");
     Button addWords = new Button("Добавить");
     Button addCategory = new Button("Выбрать категорию");

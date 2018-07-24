@@ -2,6 +2,7 @@ package settings;
 
 import db.*;
 import interfaceRoot.ArgumentsSettings;
+import interfaceRoot.EffectShadow;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
@@ -43,10 +44,12 @@ class FactorySettings implements ArgumentsSettings, TableDB
     }
     private void deleteSettings(){
         ROOT.getChildren().add(panelSetting);
+        textWarning.setEffect(EffectShadow.getShadow());
         panelSetting.getChildren().addAll(textWarning, resetSettings);
         panelSetting.setLayoutX(widthSize/2.3);
         panelSetting.setLayoutY(heightSize/3);
 
+        resetSettings.setEffect(EffectShadow.getShadow());
         resetSettings.setOnAction(event -> {
             try {
                 Class.forName("org.postgresql.Driver");
@@ -62,6 +65,7 @@ class FactorySettings implements ArgumentsSettings, TableDB
 
                 progressBar.setPrefSize(widthSize/4, heightSize/40);
                 progressBar.setStyle("-fx-accent: #8d5ab5;"); // цвет бара
+                progressBar.setEffect(EffectShadow.getShadow());
 
                 // создаем анимацию прогресс бара:
                 timeline = new Timeline(

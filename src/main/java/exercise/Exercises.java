@@ -1,8 +1,6 @@
 package exercise;
 
-import interfaceRoot.ArgumentsExercise;
-import interfaceRoot.EffectColor;
-import interfaceRoot.EffectFont;
+import interfaceRoot.*;
 import javafx.geometry.Insets;
 import javafx.scene.Cursor;
 import javafx.scene.control.Label;
@@ -26,15 +24,15 @@ public class Exercises implements ArgumentsExercise
     public void getEnRu(String leftRight, String ENRU, IExercises iExercises){
         if (ENRU.equals("EN")) {
             if (leftRight.equals("LEFT")) {
-                getColumnLabEn(arrayOfOffersLeft, leftColumn, 6, START, "EN", "RU", iExercises);
+                getColumnLabEn(arrayOfOffersLeft, leftColumn, 5, START, "EN", "RU", iExercises);
             } else if (leftRight.equals("RIGHT")) {
-                getColumnLabEn(arrayOfOffersRight, rightColumn, 1.9, CLOSE, "EN", "RU", iExercises);
+                getColumnLabEn(arrayOfOffersRight, rightColumn, 1.8, CLOSE, "EN", "RU", iExercises);
             }
         } else if (ENRU.equals("RU")){
             if (leftRight.equals("LEFT")) {
-                getColumnLabEn(arrayOfOffersLeft, leftColumn, 6, START, "RU", "EN", iExercises);
+                getColumnLabEn(arrayOfOffersLeft, leftColumn, 5, START, "RU", "EN", iExercises);
             } else if (leftRight.equals("RIGHT")){
-                getColumnLabEn(arrayOfOffersRight, rightColumn, 1.9, CLOSE, "RU", "EN", iExercises);
+                getColumnLabEn(arrayOfOffersRight, rightColumn, 1.8, CLOSE, "RU", "EN", iExercises);
             }
         }
     }
@@ -48,6 +46,7 @@ public class Exercises implements ArgumentsExercise
 //            list[i].setStyle("-fx-border-color: RED");
             list[i].setPrefWidth(widthSize-widthSize/1.45);
             list[i].setWrapText(true);
+            list[i].setEffect(EffectShadow.getShadow());
             list[i].setText(iExercises.methodExercise(i, START_CLOSE, set));
 
             int finalI = i;
@@ -64,7 +63,7 @@ public class Exercises implements ArgumentsExercise
             });
         }
 //        listCol.setStyle("-fx-border-color: RED");
-        listCol.setSpacing(heightSize-heightSize/1.009);
+        listCol.setSpacing(heightSize/90);
         listCol.setLayoutX(widthSize/coordinateX);
         listCol.setLayoutY(heightSize-heightSize/1.12);
         listCol.setPadding(new Insets(0, 0, 0, 0));

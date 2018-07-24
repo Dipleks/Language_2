@@ -22,6 +22,7 @@ public class ExaminationParts extends ButtonsMenu implements Root, ArgumentsExer
             buttonExam[i].setPrefWidth(widthSize-widthSize/1.06);
             buttonExam[i].setPrefHeight(widthSize-widthSize/1.03);
             buttonExam[i].setStyle(StyleButton.getStyleButton());
+            buttonExam[i].setEffect(EffectShadow.getShadow());
 
             int finalI = i;
             buttonExam[i].setOnAction(event -> {
@@ -29,6 +30,7 @@ public class ExaminationParts extends ButtonsMenu implements Root, ArgumentsExer
                 nameExam.setText(buttonExam[finalI].getText());
                 nameExam.setFont(EffectFont.getFontTextExam());
                 nameExam.setTextFill(EffectColor.getColorText());
+                nameExam.setEffect(EffectShadow.getShadow());
 
                 soundClick.soundClick(1);
                 groupRadBut.setSpacing(widthSize-widthSize/1.03);
@@ -38,6 +40,7 @@ public class ExaminationParts extends ButtonsMenu implements Root, ArgumentsExer
                 groupRadBut.setLayoutY(heightSize-heightSize/1.09);
                 ROOT.getChildren().addAll(groupRadBut);
                 exitInMenu.setOnAction(e -> iExam.clearExams());
+                exitInMenu.setEffect(EffectShadow.getShadow());
                 exam[finalI].getExamList(iExam);
                 ROOT.getChildren().remove(getLengthButtonExam());
                 ROOT.getChildren().removeAll(getExamL());

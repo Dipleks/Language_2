@@ -3,6 +3,7 @@ package myWords;
 import db.CreateDB;
 import interfaceRoot.ArgumentsMyWords;
 import interfaceRoot.EffectColor;
+import interfaceRoot.EffectShadow;
 import interfaceRoot.StyleButton;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -32,6 +33,7 @@ class ListCategory implements ArgumentsMyWords
         categoryWordsChoiceBox.setStyle(StyleButton.getStyleButton());
         categoryWordsChoiceBox.setItems(list);
         categoryWordsChoiceBox.setValue(all);
+        categoryWordsChoiceBox.setEffect(EffectShadow.getShadow());
 
         return categoryWordsChoiceBox;
     }
@@ -41,6 +43,7 @@ class ListCategory implements ArgumentsMyWords
         categoryWordsChoiceBox.setStyle(StyleButton.getStyleButton());
         categoryWordsChoiceBox.setItems(list);
         categoryWordsChoiceBox.setValue(all);
+        categoryWordsChoiceBox.setEffect(EffectShadow.getShadow());
         categoryWordsChoiceBox.setOnAction(event -> {
             try {
                 ResultSet r = CreateDB.connection().executeQuery("SELECT word_en FROM my_words");

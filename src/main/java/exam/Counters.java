@@ -4,6 +4,7 @@ import db.CreateDB;
 import db.TableDB;
 import interfaceRoot.EffectColor;
 import interfaceRoot.EffectFont;
+import interfaceRoot.EffectShadow;
 import interfaceRoot.StyleButton;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -36,16 +37,21 @@ class Counters
             ROOT.getChildren().remove(counterVB);
             YES.setFont(EffectFont.getFontTextExam());
             YES.setTextFill(EffectColor.getColorTextClickPERU());
+            YES.setEffect(EffectShadow.getShadow());
             NO.setFont(EffectFont.getFontTextExam());
             NO.setTextFill(EffectColor.getColorTextClickPERU());
+            NO.setEffect(EffectShadow.getShadow());
             counterYES.setFont(EffectFont.getFontTextExam());
+            counterYES.setEffect(EffectShadow.getShadow());
             counterNO.setFont(EffectFont.getFontTextExam());
+            counterNO.setEffect(EffectShadow.getShadow());
             counterYES.setText("0");
             counterNO.setText("0");
             // Кнопка "Счетчик":
             Button resultExam = new Button("Статистика");
             resultExam.setStyle(StyleButton.getStyleButton());
             resultExam.setOnAction(event -> statisticsWindow());
+            resultExam.setEffect(EffectShadow.getShadow());
 
             counterVB.setSpacing(10);
             counterVB.setAlignment(Pos.CENTER);

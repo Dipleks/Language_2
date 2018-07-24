@@ -3,6 +3,7 @@ package texts;
 import db.TableDB;
 import interfaceRoot.ArgumentsTexts;
 import interfaceRoot.EffectColor;
+import interfaceRoot.EffectShadow;
 import interfaceRoot.StyleButton;
 import javafx.collections.ObservableList;
 import javafx.scene.control.ChoiceBox;
@@ -15,6 +16,7 @@ class ListNameText implements ArgumentsTexts, TableDB
     ChoiceBox<NameText> getListName() {
 
         listName.setStyle(StyleButton.getStyleButton());
+        listName.setEffect(EffectShadow.getShadow());
         listName.setLayoutX(widthSize/1.5);
         listName.setLayoutY(heightSize/14);
         listName.setItems(listName());

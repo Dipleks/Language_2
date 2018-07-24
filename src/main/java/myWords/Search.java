@@ -1,10 +1,7 @@
 package myWords;
 
 import db.CreateDB;
-import interfaceRoot.ArgumentsMyWords;
-import interfaceRoot.EffectColor;
-import interfaceRoot.EffectFont;
-import interfaceRoot.StyleButton;
+import interfaceRoot.*;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -21,6 +18,7 @@ class Search implements ArgumentsMyWords
     // Поиск меню my_words:
     void getSearch(){
         searchWords.setStyle(StyleButton.getStyleButton());
+        searchWords.setEffect(EffectShadow.getShadow());
         searchWords.setOnAction(e -> {
             if (textSearch.getText().equals("")){
                 textSearch.setPromptText("Введите букву или слово для поиска...");
@@ -51,6 +49,8 @@ class Search implements ArgumentsMyWords
                         r3.next();
                         my_word_en[i] = new Label();
                         my_word_en[i].setFont(EffectFont.getFontTextExam());
+//                        my_word_en[i].setEffect(EffectShadow.getShadow());
+//                        my_word_ru[i].setEffect(EffectShadow.getShadow());
                         my_word_en[i].setTextFill(EffectColor.getColorText());
                         my_word_en[i].setPrefWidth(widthSize-widthSize/2.45);
                         my_word_en[i].setText(r2.getString("word_en"));
@@ -64,6 +64,8 @@ class Search implements ArgumentsMyWords
                         r2.next();
                         my_word_ru[i] = new Label();
                         my_word_ru[i].setFont(EffectFont.getFontTextExam());
+//                        my_word_ru[i].setEffect(EffectShadow.getShadow());
+//                        my_word_en[i].setEffect(EffectShadow.getShadow());
                         my_word_ru[i].setTextFill(EffectColor.getColorText());
                         my_word_ru[i].setPrefWidth(widthSize-widthSize/2.45);
                         my_word_ru[i].setText(r3.getString("word_ru"));

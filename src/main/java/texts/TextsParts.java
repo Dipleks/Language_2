@@ -2,6 +2,7 @@ package texts;
 
 import control.ClearDisplay;
 import control.MenuBarEngRus;
+import interfaceRoot.EffectShadow;
 import interfaceRoot.PanelTips;
 import interfaceRoot.ArgumentsTexts;
 import interfaceRoot.StyleButton;
@@ -17,6 +18,7 @@ public class TextsParts implements ArgumentsTexts
         for (int i = 0; i < 3; i++) {
             buttonTexts[i] = new Button();
             buttonTexts[i].setText("Уровень: " + (i + 1));
+            buttonTexts[i].setEffect(EffectShadow.getShadow());
             buttonTexts[i].setPrefWidth(widthSize-widthSize/1.06);
             buttonTexts[i].setPrefHeight(widthSize-widthSize/1.03);
             buttonTexts[i].setStyle(StyleButton.getStyleButton());

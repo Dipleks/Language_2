@@ -1,10 +1,7 @@
 package exercise;
 
 import control.ButtonsMenu;
-import interfaceRoot.ArgumentsExercise;
-import interfaceRoot.EffectColor;
-import interfaceRoot.Root;
-import interfaceRoot.StyleButton;
+import interfaceRoot.*;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 
@@ -20,6 +17,7 @@ public class ExerciseParts extends ButtonsMenu implements Root, ArgumentsExercis
             buttonApp[i].setPrefWidth(widthSize-widthSize/1.07);
             buttonApp[i].setPrefHeight(widthSize-widthSize/1.03);
             buttonApp[i].setStyle(StyleButton.getStyleButton());
+            buttonApp[i].setEffect(EffectShadow.getShadow());
             int finalI = i;
             buttonApp[i].setOnAction(event -> {
                 soundClick.soundClick(1);
@@ -48,6 +46,7 @@ public class ExerciseParts extends ButtonsMenu implements Root, ArgumentsExercis
             buttonNeg[i].setPrefWidth(widthSize-widthSize/1.07);
             buttonNeg[i].setPrefHeight(widthSize-widthSize/1.03);
             buttonNeg[i].setStyle(StyleButton.getStyleButton());
+            buttonNeg[i].setEffect(EffectShadow.getShadow());
             int finalI = i;
             buttonNeg[i].setOnAction(event -> {
                 soundClick.soundClick(1);
@@ -77,6 +76,7 @@ public class ExerciseParts extends ButtonsMenu implements Root, ArgumentsExercis
             buttonQues[i].setPrefWidth(widthSize-widthSize/1.07);
             buttonQues[i].setPrefHeight(widthSize-widthSize/1.03);
             buttonQues[i].setStyle(StyleButton.getStyleButton());
+            buttonQues[i].setEffect(EffectShadow.getShadow());
             int finalI = i;
             buttonQues[i].setOnAction(event -> {
                 soundClick.soundClick(1);

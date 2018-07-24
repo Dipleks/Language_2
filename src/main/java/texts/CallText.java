@@ -4,6 +4,7 @@ import db.TableDB;
 import interfaceRoot.ArgumentsTexts;
 import interfaceRoot.EffectColor;
 import interfaceRoot.EffectFont;
+import interfaceRoot.EffectShadow;
 import javafx.geometry.Insets;
 import javafx.scene.layout.HBox;
 

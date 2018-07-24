@@ -4,6 +4,7 @@ import db.TableDB;
 import interfaceRoot.ArgumentsSettings;
 import interfaceRoot.EffectColor;
 import interfaceRoot.EffectFont;
+import interfaceRoot.EffectShadow;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
@@ -35,6 +36,7 @@ class TextPanels extends CallText implements TableDB, ArgumentsSettings
         String colorStr = Integer.toHexString(sceneColorL.getValue().hashCode()).substring(0, 6).toUpperCase();
         scrollPane.setStyle("-fx-background-color: transparent; -fx-background: #"
                 + colorStr +";");
+        scrollPane.setEffect(EffectShadow.getShadow());
 
         ROOT.getChildren().remove(buttonsTransfer);
         ROOT.getChildren().add(buttonsTransfer);
@@ -44,6 +46,7 @@ class TextPanels extends CallText implements TableDB, ArgumentsSettings
 
         TITLE.setLayoutX(widthSize/4.5);
         TITLE.setLayoutY(heightSize/14);
+        TITLE.setEffect(EffectShadow.getShadow());
         TITLE.setFont(EffectFont.getFontTITLE());
 //                TITLE.setTextFill(EffectColor.getColorTextTITLE());
         TITLE.setText(getNameTitle());

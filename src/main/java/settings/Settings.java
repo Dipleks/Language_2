@@ -2,6 +2,7 @@ package settings;
 
 import interfaceRoot.ArgumentsSettings;
 import interfaceRoot.EffectFont;
+import interfaceRoot.EffectShadow;
 import javafx.geometry.Insets;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
@@ -22,10 +23,12 @@ public class Settings implements ArgumentsSettings
 
         setting.setLayoutX(widthSize/4);
         setting.setLayoutY(heightSize/18);
+        setting.setEffect(EffectShadow.getShadow());
         setting.setFont(EffectFont.getFontTITLE());
         MENU_SETTINGS.setSpacing(5);
         MENU_SETTINGS.setLayoutX(widthSize/4);
         MENU_SETTINGS.setLayoutY(heightSize/11);
+        MENU_SETTINGS.setEffect(EffectShadow.getShadow());
         MENU_SETTINGS.setPadding(new Insets(10, 0, 10, 10));
         MENU_SETTINGS.setPrefSize(widthSize/7, heightSize/1.4);
 
